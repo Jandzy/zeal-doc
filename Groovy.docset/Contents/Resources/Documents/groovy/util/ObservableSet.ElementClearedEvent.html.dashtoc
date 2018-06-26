@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ObservableSet.ElementClearedEvent(Object, List)","path":"ObservableSet.ElementClearedEvent(java.lang.Object,%20java.util.List)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"getValues()","path":"getValues()","entryType":"Method"}]}

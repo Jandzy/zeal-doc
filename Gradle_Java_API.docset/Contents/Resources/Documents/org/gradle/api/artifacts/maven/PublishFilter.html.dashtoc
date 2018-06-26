@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"accept(Artifact, File)","path":"accept-org.apache.ivy.core.module.descriptor.Artifact-java.io.File-","entryType":"Method"},{"name":"","isSpacer":true},{"name":"Fields","isHeader":true},{"name":"ALWAYS_ACCEPT","path":"ALWAYS_ACCEPT","entryType":"Field"}]}

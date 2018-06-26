@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"NotSpec(Spec)","path":"NotSpec-org.gradle.api.specs.Spec-","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"isSatisfiedBy(T)","path":"isSatisfiedBy-T-","entryType":"Method"}]}

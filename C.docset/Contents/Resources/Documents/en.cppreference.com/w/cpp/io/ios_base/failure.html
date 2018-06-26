@@ -1,0 +1,458 @@
+<html><head><meta charset="utf-8"><title>std::ios_base::failure</title><link href="../../../css.css" rel="stylesheet" type="text/css"><script src="../../../js.js" type="text/javascript"></script><style>.t-example-live-link {display:none !important} .t-sidebar-body {display:none}\nbody{min-width:0}\ndiv.mw-geshi{width:95%}\ndiv#content {width:auto !important} div#content{background-image:none; margin-left:0px;} .t-lines {background:inherit !important} pre, div.mw-geshi {width: 100% !important} body {background:white !important} div#content {width:100% !important} pre, div.mw-geshi {width:auto !important} .t-example-live-link, #mw-head, #cpp-footer-base {display:none !important} .t-navbar-menu > div {position:relative !important}</style></head><body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_io_ios_base_failure skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <div class="noprint" id="mw-head">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/mwiki/index.php" id="searchform">
+		<input name="title" type="hidden" value="Special:Search">
+				<div id="simpleSearch">
+						<input accesskey="f" id="searchInput" name="search" title="Search cppreference.com [f]">						<button id="searchButton" name="button" title="Search the pages for this text" type="submit"><img alt="Search" src="../../../../mwiki/skins/cppreference2/images/search-ltr.png"></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div class="" id="p-personal">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fio%2Fios+base%2Ffailure&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a accesskey="o" href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fio%2Fios+base%2Ffailure" title="You are encouraged to log in; however, it is not mandatory [o]">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-namespaces">
+	<h5>Namespaces</h5>
+	<ul>
+					<li class="selected" id="ca-nstab-main"><span><a accesskey="c" href="./failure.html" title="View the content page [c]">Page</a></span></li>
+					<li class="new" id="ca-talk"><span><a accesskey="t" href="http://en.cppreference.com/mwiki/index.php?title=Talk:cpp/io/ios_base/failure&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-variants">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-views">
+	<h5>Views</h5>
+	<ul>
+					<li class="selected" id="ca-view"><span><a href="./failure.html">View</a></span></li>
+					<li id="ca-edit"><span><a accesskey="e" href="http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;action=edit" title="You can edit this page. Please use the preview button before saving [e]">Edit</a></span></li>
+					<li class="collapsible" id="ca-history"><span><a accesskey="h" href="http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;action=history" title="Past revisions of this page [h]">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-cactions">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 class="firstHeading" id="firstHeading"><span style="font-size:0.7em; line-height:130%">std::ios_base::</span>failure</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../../io.html" title="cpp/io">io</a>&lrm; | <a href="../ios_base.html" title="cpp/io/ios base">ios base</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../concept.html" title="cpp/concept"> Library concepts</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../io.html" title="cpp/io"> Input/output library</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="../manip.html" title="cpp/io/manip"> I/O manipulators</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../c.html" title="cpp/io/c"> C-style I/O</a></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Buffers </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_streambuf.html" title="cpp/io/basic streambuf"><span class="t-lines"><span>basic_streambuf</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_filebuf.html" title="cpp/io/basic filebuf"><span class="t-lines"><span>basic_filebuf</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_stringbuf.html" title="cpp/io/basic stringbuf"><span class="t-lines"><span>basic_stringbuf</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstreambuf.html" title="cpp/io/strstreambuf"><span class="t-lines"><span>strstreambuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(deprecated)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_syncbuf.html" title="cpp/io/basic syncbuf"><span class="t-lines"><span>basic_syncbuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Streams </td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Abstractions </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ios_base.html" title="cpp/io/ios base"><span class="t-lines"><span>ios_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ios.html" title="cpp/io/basic ios"><span class="t-lines"><span>basic_ios</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_istream.html" title="cpp/io/basic istream"><span class="t-lines"><span>basic_istream</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ostream.html" title="cpp/io/basic ostream"><span class="t-lines"><span>basic_ostream</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_iostream.html" title="cpp/io/basic iostream"><span class="t-lines"><span>basic_iostream</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> File I/O </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ifstream.html" title="cpp/io/basic ifstream"><span class="t-lines"><span>basic_ifstream</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ofstream.html" title="cpp/io/basic ofstream"><span class="t-lines"><span>basic_ofstream</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_fstream.html" title="cpp/io/basic fstream"><span class="t-lines"><span>basic_fstream</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> String I/O </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_istringstream.html" title="cpp/io/basic istringstream"><span class="t-lines"><span>basic_istringstream</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ostringstream.html" title="cpp/io/basic ostringstream"><span class="t-lines"><span>basic_ostringstream</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_stringstream.html" title="cpp/io/basic stringstream"><span class="t-lines"><span>basic_stringstream</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Array I/O </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../istrstream.html" title="cpp/io/istrstream"><span class="t-lines"><span>istrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(deprecated)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ostrstream.html" title="cpp/io/ostrstream"><span class="t-lines"><span>ostrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(deprecated)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstream.html" title="cpp/io/strstream"><span class="t-lines"><span>strstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(deprecated)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Synchronized Output</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_osyncstream.html" title="cpp/io/basic osyncstream"><span class="t-lines"><span>basic_osyncstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Types </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../streamoff.html" title="cpp/io/streamoff"><span class="t-lines"><span>streamoff</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../streamsize.html" title="cpp/io/streamsize"><span class="t-lines"><span>streamsize</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../fpos.html" title="cpp/io/fpos"><span class="t-lines"><span>fpos</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Error category interface </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../iostream_category.html" title="cpp/io/iostream category"><span class="t-lines"><span>iostream_category</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../io_errc.html" title="cpp/io/io errc"><span class="t-lines"><span>io_errc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../ios_base.html" title="cpp/io/ios base"><tt>std::ios_base</tt></a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./ios_base.html" title="cpp/io/ios base/ios base"><span class="t-lines"><span>ios_base::ios_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./%257Eios_base.html" title="cpp/io/ios base/~ios base"><span class="t-lines"><span>ios_base::~ios_base</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Formatting</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./flags.html" title="cpp/io/ios base/flags"><span class="t-lines"><span>ios_base::flags</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./setf.html" title="cpp/io/ios base/setf"><span class="t-lines"><span>ios_base::setf</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./unsetf.html" title="cpp/io/ios base/unsetf"><span class="t-lines"><span>ios_base::unsetf</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./precision.html" title="cpp/io/ios base/precision"><span class="t-lines"><span>ios_base::precision</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./width.html" title="cpp/io/ios base/width"><span class="t-lines"><span>ios_base::width</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Locales</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./imbue.html" title="cpp/io/ios base/imbue"><span class="t-lines"><span>ios_base::imbue</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./getloc.html" title="cpp/io/ios base/getloc"><span class="t-lines"><span>ios_base::getloc</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Internal extensible array</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./xalloc.html" title="cpp/io/ios base/xalloc"><span class="t-lines"><span>ios_base::xalloc</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./iword.html" title="cpp/io/ios base/iword"><span class="t-lines"><span>ios_base::iword</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./pword.html" title="cpp/io/ios base/pword"><span class="t-lines"><span>ios_base::pword</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Miscellaneous</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./register_callback.html" title="cpp/io/ios base/register callback"><span class="t-lines"><span>ios_base::register_callback</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./sync_with_stdio.html" title="cpp/io/ios base/sync with stdio"><span class="t-lines"><span>ios_base::sync_with_stdio</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Member classes</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>ios_base::failure</span></span></strong></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Init.html" title="cpp/io/ios base/Init"><span class="t-lines"><span>ios_base::Init</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Member types</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./openmode.html" title="cpp/io/ios base/openmode"><span class="t-lines"><span>ios_base::openmode</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./fmtflags.html" title="cpp/io/ios base/fmtflags"><span class="t-lines"><span>ios_base::fmtflags</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./iostate.html" title="cpp/io/ios base/iostate"><span class="t-lines"><span>ios_base::iostate</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./seekdir.html" title="cpp/io/ios base/seekdir"><span class="t-lines"><span>ios_base::seekdir</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./event.html" title="cpp/io/ios base/event"><span class="t-lines"><span>ios_base::event</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./event_callback.html" title="cpp/io/ios base/event callback"><span class="t-lines"><span>ios_base::event_callback</span></span></a></div></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/ios_base/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../../header/ios.html" title="cpp/header/ios">&lt;ios&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dcl">
+<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">class</span> failure<span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td class="t-dcl-nopad">  </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>The class <span class="t-lc"><strong class="selflink">std::ios_base::failure</strong></span> defines an exception object that is thrown on failure by the functions in the Input/Output library.
+</p><p><span class="t-rev-inl t-since-cxx17"><span><span class="t-lc"><strong class="selflink">std::ios_base::failure</strong></span> may be defined either as a member class of <span class="t-lc"><a href="../ios_base.html" title="cpp/io/ios base">std::ios_base</a></span> or as a synonym (typedef) for another class with equivalent functionality.</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>
+</p>
+ <table class="t-rev-begin">
+<tbody><tr class="t-rev t-until-cxx11"><td>
+<div class="t-inheritance-diagram">
+<div class="center"><div class="noresize" style="height: 40px; width: 252px; "><map name="ImageMap_1_1010161462"><area alt="cpp/error/exception" coords="5,4,107,36" href="../../error/exception.html" shape="rect" title="cpp/error/exception"></map><img alt="std-ios base-failure-2003-inheritance.svg" height="40" src="../../../../../upload.cppreference.com/mwiki/images/6/60/std-ios_base-failure-2003-inheritance.svg" usemap="#ImageMap_1_1010161462" width="252"><div style="margin-left: 232px; margin-top: -20px; text-align: left;"><a href="../../../File:std-ios_base-failure-2003-inheritance.svg" title="About this image"><img alt="About this image" src="../../../../mwiki/extensions/ImageMap/desc-20.png" style="border: none;"></a></div></div></div>
+<div style="text-align:center;">
+<p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
+</p>
+</div>
+</div>
+</td>
+<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
+<tr class="t-rev t-since-cxx11"><td>
+<div class="t-inheritance-diagram">
+<div class="center"><div class="noresize" style="height: 40px; width: 514px; "><map name="ImageMap_2_1896408767"><area alt="cpp/error/exception" coords="5,4,107,36" href="../../error/exception.html" shape="rect" title="cpp/error/exception"><area alt="cpp/error/runtime error" coords="135,4,238,36" href="../../error/runtime_error.html" shape="rect" title="cpp/error/runtime error"><area alt="cpp/error/system error" coords="266,4,369,36" href="../../error/system_error.html" shape="rect" title="cpp/error/system error"></map><img alt="std-ios base-failure-inheritance.svg" height="40" src="../../../../../upload.cppreference.com/mwiki/images/f/f2/std-ios_base-failure-inheritance.svg" usemap="#ImageMap_2_1896408767" width="514"><div style="margin-left: 494px; margin-top: -20px; text-align: left;"><a href="../../../File:std-ios_base-failure-inheritance.svg" title="About this image"><img alt="About this image" src="../../../../mwiki/extensions/ImageMap/desc-20.png" style="border: none;"></a></div></div></div>
+<div style="text-align:center;">
+<p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
+</p>
+</div>
+</div>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</tbody></table>
+<table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a class="internal" href="#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Member_functions"><span class="tocnumber">1</span> <span class="toctext">Member functions</span></a></li>
+<li class="toclevel-1"><a href="#std::ios_base::failure::failure"><span class="tocnumber">2</span> <span class="toctext"><span>std::ios_base::failure::</span>failure</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Parameters"><span class="tocnumber">2.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Inherited_from_std::system_error"><span class="tocnumber">3</span> <span class="toctext">Inherited from   <span>std::</span>system_error</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Member_functions_2"><span class="tocnumber">3.1</span> <span class="toctext">Member functions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Inherited_from_std::runtime_error"><span class="tocnumber">4</span> <span class="toctext">Inherited from   <span>std::</span>runtime_error</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_from_std::exception"><span class="tocnumber">5</span> <span class="toctext">Inherited from   <span>std::</span>exception</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Member_functions_3"><span class="tocnumber">5.1</span> <span class="toctext">Member functions</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Example"><span class="tocnumber">5.2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#See_also"><span class="tocnumber">5.3</span> <span class="toctext">See also</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;action=edit&amp;section=1" title="Edit section: Member functions">edit</a>]</span> <span class="mw-headline" id="Member_functions">Member functions</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><strong class="selflink"> <span class="t-lines"><span>(constructor)</span></span></strong></div></div>
+</td>
+<td>  constructs the exception object <br> <span class="t-mark">(public member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/ios_base/failure/dsc_constructor&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<div class="t-member">
+<h2> <span class="mw-headline" id="std::ios_base::failure::failure"> <span style="font-size:0.7em; line-height:130%">std::ios_base::failure::</span>failure </span></h2>
+<table class="t-dcl-begin"><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
+<tr class="t-dcl t-until-cxx11">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> failure<span class="br0">(</span> <span class="kw4">const</span> <a href="../../string/basic_string.html"><span class="kw1230">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> message <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-until-cxx11">(until C++11)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx11">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> failure<span class="br0">(</span> <span class="kw4">const</span> <a href="../../string/basic_string.html"><span class="kw1230">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> message, <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">const</span> <a href="../../error/error_code.html"><span class="kw877">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span> ec <span class="sy1">=</span> <a href="../io_errc.html"><span class="kw1810">std::<span class="me2">io_errc</span><span class="sy4">::</span><span class="me2">stream</span></span></a> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
+</tr>
+</tbody><tbody>
+<tr class="t-dcl t-since-cxx11">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> failure<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> message,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">const</span> <a href="../../error/error_code.html"><span class="kw877">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span> ec <span class="sy1">=</span> <a href="../io_errc.html"><span class="kw1810">std::<span class="me2">io_errc</span><span class="sy4">::</span><span class="me2">stream</span></span></a> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>Constructs the exception object using <code>message</code> as explanation string which can later be retrieved using <a href="../../error/exception/what.html" title="cpp/error/exception/what"><tt>what()</tt></a>. 
+</p>
+<h3> <span class="mw-headline" id="Parameters">Parameters</span></h3>
+<table class="t-par-begin">
+
+
+<tbody><tr class="t-par">
+<td>  message
+</td>
+<td> -
+</td>
+<td>  explanatory string
+</td></tr></tbody></table>
+</div>
+<div class="t-inherited">
+<h2> <span class="mw-headline" id="Inherited_from_std::system_error">Inherited from  <a href="../../error/system_error.html" title="cpp/error/system error"> <span style="font-size:0.7em; line-height:130%">std::</span>system_error</a> </span></h2>
+<h3> <span class="mw-headline" id="Member_functions_2">Member functions</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr id="//apple_ref/cpp/clm/code"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/clm/code"></a><a name="code"></a><a href="../../error/system_error/code.html" title="cpp/error/system error/code"> <span class="t-lines"><span>code</span></span></a></div></div>
+</td>
+<td>   returns error code <br> <span class="t-mark">(public member function of <code>std::system_error</code>)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/error/system_error/dsc_code&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/clm/what"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/clm/what"></a><a name="what"></a><a href="../../error/system_error/what.html" title="cpp/error/system error/what"> <span class="t-lines"><span>what</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
+</td>
+<td>   returns explanatory string <br> <span class="t-mark">(virtual public member function of <code>std::system_error</code>)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/error/system_error/dsc_what&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+</tbody></table>
+</div>
+<div class="t-inherited">
+<h2> <span class="mw-headline" id="Inherited_from_std::runtime_error">Inherited from  <a href="../../error/runtime_error.html" title="cpp/error/runtime error"> <span style="font-size:0.7em; line-height:130%">std::</span>runtime_error</a> </span></h2>
+<p><br>
+</p>
+</div>
+<div class="t-inherited">
+<h2> <span class="mw-headline" id="Inherited_from_std::exception">Inherited from  <a href="../../error/exception.html" title="cpp/error/exception"> <span style="font-size:0.7em; line-height:130%">std::</span>exception</a> </span></h2>
+<h3> <span class="mw-headline" id="Member_functions_3">Member functions</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr id="//apple_ref/cpp/clm/%28destructor%29"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a name="//apple_ref/cpp/clm/%28destructor%29"></a><a name="%28destructor%29"></a><a href="../../error/exception/%257Eexception.html" title="cpp/error/exception/~exception"> <span class="t-lines"><span>(destructor)</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
+</td>
+<td>  destroys the exception object <br> <span class="t-mark">(virtual public member function of <code>std::exception</code>)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/error/exception/dsc_destructor&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/clm/what"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/clm/what"></a><a name="what"></a><a href="../../error/exception/what.html" title="cpp/error/exception/what"> <span class="t-lines"><span>what</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
+</td>
+<td>   returns an explanatory string <br> <span class="t-mark">(virtual public member function of <code>std::exception</code>)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/error/exception/dsc_what&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+</tbody></table>
+</div>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;action=edit&amp;section=3" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div class="mw-geshi" dir="ltr" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;fstream&gt;</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../basic_ifstream.html"><span class="kw1731">std::<span class="me2">ifstream</span></span></a> f<span class="br0">(</span><span class="st0">&quot;doesn&#39;t exist&quot;</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">try</span> <span class="br0">{</span>
+        f.<span class="me1">exceptions</span><span class="br0">(</span>f.<span class="me1">failbit</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> std<span class="sy4">::</span><span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">failure</span><span class="sy3">&amp;</span> e<span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../cout.html"><span class="kw1757">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Caught an ios_base::failure.<span class="es1">\n</span>&quot;</span>
+                  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Explanatory string: &quot;</span> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&#39;<span class="es1">\n</span>&#39;</span>
+                  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Error code: &quot;</span> <span class="sy1">&lt;&lt;</span> e.<span class="me1">code</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&#39;<span class="es1">\n</span>&#39;</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span></pre></div></div>
+<p>Output:
+</p>
+<div class="mw-geshi" dir="ltr" style="text-align: left;"><div class="text source-text"><pre class="de1">Caught an ios_base::failure.
+Explanatory string: ios_base::clear: unspecified iostream_category error
+Error code: iostream:1</pre></div></div> 
+</div>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr id="//apple_ref/cpp/Enum/io_errc"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/Enum/io_errc"></a><a name="io_errc"></a><a href="../io_errc.html" title="cpp/io/io errc"> <span class="t-lines"><span>io_errc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   the IO stream error codes <br> <span class="t-mark">(enum)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/dsc_io_errc&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 5771/1000000
+Preprocessor generated node count: 11201/1000000
+Post‐expand include size: 139419/2097152 bytes
+Template argument size: 28264/2097152 bytes
+Highest expansion depth: 35/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:608-0!*!0!!en!2!* and timestamp 20180328223515 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from &quot;<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;oldid=95084">http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;oldid=95084</a>&quot;                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div class="catlinks catlinks-allhidden" id="catlinks"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div class="noprint" id="cpp-footer-base">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a accesskey="r" href="http://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]">Recent changes</a></li><li id="n-FAQ"><a href="http://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="http://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a accesskey="j" href="http://en.cppreference.com/w/Special:WhatLinksHere/cpp/io/ios_base/failure" title="A list of all wiki pages that link here [j]">What links here</a></li><li id="t-recentchangeslinked"><a accesskey="k" href="http://en.cppreference.com/w/Special:RecentChangesLinked/cpp/io/ios_base/failure" title="Recent changes in pages linked from this page [k]">Related changes</a></li><li id="t-upload"><a accesskey="u" href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]">Upload file</a></li><li id="t-specialpages"><a accesskey="q" href="http://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]">Special pages</a></li><li id="t-print"><a accesskey="p" href="http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;printable=yes" rel="alternate" title="Printable version of this page [p]">Printable version</a></li><li id="t-permalink"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;oldid=95084" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/io/ios_base/failure&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>In other languages</li></ul></div>
+            <div><ul>
+<li class="interwiki-de"><a href="http://de.cppreference.com/w/cpp/io/ios_base/failure" hreflang="de" lang="de" title="cpp/io/ios base/failure">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/io/ios_base/failure" hreflang="es" lang="es" title="cpp/io/ios base/failure">Espa&ntilde;ol</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/cpp/io/ios_base/failure" hreflang="fr" lang="fr" title="cpp/io/ios base/failure">Fran&ccedil;ais</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/cpp/io/ios_base/failure" hreflang="it" lang="it" title="cpp/io/ios base/failure">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/io/ios_base/failure" hreflang="ja" lang="ja" title="cpp/io/ios base/failure">&#x65E5;&#x672C;&#x8A9E;</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/cpp/io/ios_base/failure" hreflang="pt" lang="pt" title="cpp/io/ios base/failure">Portugu&ecirc;s</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/io/ios_base/failure" hreflang="ru" lang="ru" title="cpp/io/ios base/failure">&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/io/ios_base/failure" hreflang="zh" lang="zh" title="cpp/io/ios base/failure">&#x4E2D;&#x6587;</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 21 August 2017, at 06:52.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 49,451 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="http://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="http://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="http://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul class="noprint" id="footer-icons">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" src="../../../../mwiki/skins/common/images/poweredby_mediawiki_88x31.png" width="88"></a>                                            <a href="http://qbnz.com/highlighter/"><img alt="Powered by GeSHi" height="31" src="../../../../../upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" width="88"></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img alt="Hosted by Tiger Technologies" height="31" src="../../../../../upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" width="88"></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.038 secs. -->
+	
+<!-- Cached 20180329070329 -->
+
+</body><!-- Online page at http://en.cppreference.com/w/cpp/io/ios_base/failure --></html>

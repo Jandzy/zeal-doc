@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"copy()","path":"copy--","entryType":"Method"},{"name":"isForce()","path":"isForce--","entryType":"Method"},{"name":"setForce(boolean)","path":"setForce-boolean-","entryType":"Method"},{"name":"version(Action)","path":"version-org.gradle.api.Action-","entryType":"Method"}]}

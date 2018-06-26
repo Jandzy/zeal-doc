@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/expressions-deleteoperator.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Jun 2018 22:44:38 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>JavaScript Demo: Expressions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/codemirror-5-31-0.css" rel="stylesheet" />
+    <link href="../../css/editor-js.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+      <section id="static">
+          <pre>
+<code id="static-js">var Employee = {
+  firstname: "Mohammed",
+  lastname: "Haddad"
+}
+
+console.log(Employee.firstname);
+// expected output: "Mohammed"
+
+delete Employee.firstname;
+
+console.log(Employee.firstname);
+// expected output: undefined
+</code>
+</pre>
+
+      </section>
+
+      <section id="live" class="live hidden">
+          <header><h4>JavaScript Demo: Expressions - delete operator</h4></header>
+          <div id="editor" class="editor"></div>
+
+          <div class="output-container">
+              <div class="buttons-container">
+                  <button id="execute" class="button run" type="button">Run &rsaquo;</button>
+                  <button id="reset" type="button" class="button">Reset</button>
+              </div>
+              <div id="output" class="output"><code></code></div>
+          </div>
+      </section>
+
+    
+
+    <script src="../../js/codemirror-5-31-0.js"></script>
+    <script src="../../js/editor-js.js"></script>
+  </body>
+
+<!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/expressions-deleteoperator.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Jun 2018 22:44:38 GMT -->
+</html>

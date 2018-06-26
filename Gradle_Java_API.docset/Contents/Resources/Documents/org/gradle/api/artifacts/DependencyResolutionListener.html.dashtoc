@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"afterResolve(ResolvableDependencies)","path":"afterResolve-org.gradle.api.artifacts.ResolvableDependencies-","entryType":"Method"},{"name":"beforeResolve(ResolvableDependencies)","path":"beforeResolve-org.gradle.api.artifacts.ResolvableDependencies-","entryType":"Method"}]}

@@ -1,0 +1,409 @@
+<html><head><meta charset="utf-8"><title>std::experimental::parallel::transform_reduce</title><link href="../../css.css" rel="stylesheet" type="text/css"><script src="../../js.js" type="text/javascript"></script><style>.t-example-live-link {display:none !important} .t-sidebar-body {display:none}\nbody{min-width:0}\ndiv.mw-geshi{width:95%}\ndiv#content {width:auto !important} div#content{background-image:none; margin-left:0px;} .t-lines {background:inherit !important} pre, div.mw-geshi {width: 100% !important} body {background:white !important} div#content {width:100% !important} pre, div.mw-geshi {width:auto !important} .t-example-live-link, #mw-head, #cpp-footer-base {display:none !important} .t-navbar-menu > div {position:relative !important}</style></head><body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_experimental_transform_reduce skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <div class="noprint" id="mw-head">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/mwiki/index.php" id="searchform">
+		<input name="title" type="hidden" value="Special:Search">
+				<div id="simpleSearch">
+						<input accesskey="f" id="searchInput" name="search" title="Search cppreference.com [f]">						<button id="searchButton" name="button" title="Search the pages for this text" type="submit"><img alt="Search" src="../../../mwiki/skins/cppreference2/images/search-ltr.png"></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div class="" id="p-personal">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fexperimental%2Ftransform+reduce&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a accesskey="o" href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fexperimental%2Ftransform+reduce" title="You are encouraged to log in; however, it is not mandatory [o]">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-namespaces">
+	<h5>Namespaces</h5>
+	<ul>
+					<li class="selected" id="ca-nstab-main"><span><a accesskey="c" href="./transform_reduce.html" title="View the content page [c]">Page</a></span></li>
+					<li class="new" id="ca-talk"><span><a accesskey="t" href="http://en.cppreference.com/mwiki/index.php?title=Talk:cpp/experimental/transform_reduce&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-variants">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-views">
+	<h5>Views</h5>
+	<ul>
+					<li class="selected" id="ca-view"><span><a href="./transform_reduce.html">View</a></span></li>
+					<li id="ca-edit"><span><a accesskey="e" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=edit" title="You can edit this page. Please use the preview button before saving [e]">Edit</a></span></li>
+					<li class="collapsible" id="ca-history"><span><a accesskey="h" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=history" title="Past revisions of this page [h]">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-cactions">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 class="firstHeading" id="firstHeading"><span style="font-size:0.7em; line-height:130%">std::experimental::parallel::</span>transform_reduce</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../experimental.html" title="cpp/experimental">experimental</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../concept.html" title="cpp/concept"> Library concepts</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../experimental.html" title="cpp/experimental"> Technical specifications</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./lib_extensions.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-2-ts t-mark-ts">(library fundamentals 2 TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./parallelism.html" title="cpp/experimental/parallelism">Extensions for parallelism</a> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../language/constraints.html" title="cpp/language/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./special_math.html" title="cpp/experimental/special math">Special mathematical functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special math TR)</span></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/experimental/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="./parallelism.html" title="cpp/experimental/parallelism">Extensions for parallelism</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv-h1"><td colspan="5"> <a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism/execution_policy&amp;action=edit&amp;redlink=1" title="cpp/experimental/parallelism/execution policy (page does not exist)">Execution policies</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/execution_policy&amp;action=edit&amp;redlink=1" title="cpp/experimental/execution policy (page does not exist)"><span class="t-lines"><span>parallel::execution_policy</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./execution_policy_tag_t.html" title="cpp/experimental/execution policy tag t"><span class="t-lines"><span>parallel::sequential_execution_policy</span><span>parallel::parallel_execution_policy</span><span>parallel::parallel_vector_execution_policy</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./execution_policy_tag.html" title="cpp/experimental/execution policy tag"><span class="t-lines"><span>parallel::seq</span><span>parallel::par</span><span>parallel::par_vec</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> <a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism/parallel_algorithms&amp;action=edit&amp;redlink=1" title="cpp/experimental/parallelism/parallel algorithms (page does not exist)">Parallel algorithms</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Parallel exceptions </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/exception_list&amp;action=edit&amp;redlink=1" title="cpp/experimental/exception list (page does not exist)"><span class="t-lines"><span>parallel::exception_list</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> <a href="./parallelism/existing.html" title="cpp/experimental/parallelism/existing">Parallelized version of existing algorithms</a> </td></tr>
+<tr class="t-nv-h2"><td colspan="5"> New algorithms </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/for_each&amp;action=edit&amp;redlink=1" title="cpp/experimental/for each (page does not exist)"><span class="t-lines"><span>parallel::for_each</span><span>parallel::for_each_n</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./reduce.html" title="cpp/experimental/reduce"><span class="t-lines"><span>parallel::reduce</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/exclusive_scan&amp;action=edit&amp;redlink=1" title="cpp/experimental/exclusive scan (page does not exist)"><span class="t-lines"><span>parallel::exclusive_scan</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/inclusive_scan&amp;action=edit&amp;redlink=1" title="cpp/experimental/inclusive scan (page does not exist)"><span class="t-lines"><span>parallel::inclusive_scan</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>parallel::transform_reduce</span></span></strong></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_exclusive_scan&amp;action=edit&amp;redlink=1" title="cpp/experimental/transform exclusive scan (page does not exist)"><span class="t-lines"><span>parallel::transform_exclusive_scan</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_inclusive_scan&amp;action=edit&amp;redlink=1" title="cpp/experimental/transform inclusive scan (page does not exist)"><span class="t-lines"><span>parallel::transform_inclusive_scan</span></span></a></div></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/experimental/parallelism/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/experimental/numeric&amp;action=edit&amp;redlink=1" title="cpp/header/experimental/numeric (page does not exist)">&lt;experimental/numeric&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dcl t-since-parallelism">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIt, <span class="kw1">class</span> UnaryOp, <span class="kw1">class</span> T, <span class="kw1">class</span> BinaryOp<span class="sy1">&gt;</span><br>
+<p>T transform_reduce<span class="br0">(</span>InputIt first, InputIt last,<br>
+</p>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;UnaryOp unary_op, T init, BinaryOp binary_op<span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (1) </td>
+<td> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span> </td>
+</tr>
+<tr class="t-dcl t-since-parallelism">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ExecutionPolicy,<br>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw1">class</span> InputIt, <span class="kw1">class</span> UnaryOp, <span class="kw1">class</span> T, <span class="kw1">class</span> BinaryOp<span class="sy1">&gt;</span><br>
+T transform_reduce<span class="br0">(</span>ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;InputIt first, InputIt last,<br>
+</p>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;UnaryOp unary_op, T init, BinaryOp binary_op<span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (2) </td>
+<td> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span> </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>Applies <code>unary_op</code> to each element in the range <span class="texhtml" style="white-space: nowrap;">[first; last)</span> and reduces the results (possibly permuted and aggregated in unspecified manner) along with the initial value <code>init</code> over <code>binary_op</code>.
+</p><p>The behavior is non-deterministic if <code>binary_op</code> is not associative or not commutative.
+</p><p>The behavior is undefined if <code>unary_op</code> or <code>binary_op</code> modifies any element or invalidates any iterator in <span class="texhtml" style="white-space: nowrap;">[first; last)</span>.
+</p>
+<table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a class="internal" href="#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Complexity"><span class="tocnumber">3</span> <span class="toctext">Complexity</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Exceptions"><span class="tocnumber">4</span> <span class="toctext">Exceptions</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Notes"><span class="tocnumber">5</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Example"><span class="tocnumber">6</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
+<table class="t-par-begin">
+
+
+<tbody><tr class="t-par">
+<td>  first, last
+</td>
+<td> -
+</td>
+<td>  the range of elements to apply the algorithm to
+</td></tr>
+<tr class="t-par">
+<td>  init
+</td>
+<td> -
+</td>
+<td>  the initial value of the generalized sum
+</td></tr>
+<tr class="t-par">
+<td>  policy
+</td>
+<td> -
+</td>
+<td>  the <a href="./parallelism.html#Execution_policies" title="cpp/experimental/parallelism">execution policy</a>
+</td></tr>
+<tr class="t-par">
+<td>  unary_op
+</td>
+<td> -
+</td>
+<td>  unary <a href="../concept/FunctionObject.html" title="cpp/concept/FunctionObject"><code>FunctionObject</code></a> that will be applied to each element of the input range. The return type must be acceptable as input to <code>binary_op</code>
+</td></tr>
+<tr class="t-par">
+<td>  binary_op
+</td>
+<td> -
+</td>
+<td>  binary <a href="../concept/FunctionObject.html" title="cpp/concept/FunctionObject"><code>FunctionObject</code></a> that will be applied in unspecified order to the results of <code>unary_op</code>, the results of other <code>binary_op</code> and <code>init</code>.
+</td></tr>
+<tr class="t-par-hitem">
+<td colspan="3"> Type requirements
+</td></tr>
+<tr class="t-par-req">
+<td colspan="3"> -<div class="spacer"></div><code>InputIt</code> must meet the requirements of <a href="../concept/InputIterator.html" title="cpp/concept/InputIterator"><code>InputIterator</code></a>.
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
+<p>Generalized sum of <code>init</code> and <code>unary_op(*first)</code>, <code>unary_op(*(first+1))</code>, ... <code>unary_op(*(last-1))</code> over <code>binary_op</code>,
+</p><p>where generalized sum <span class="texhtml" style="white-space: nowrap;">GSUM(op, a<span class="t-su t-su-b"><br>1</span>, ..., a<span class="t-su t-su-b"><br>N</span>)</span> is defined as follows: 
+</p>
+<ul><li> if <span class="texhtml" style="white-space: nowrap;">N=1</span>, <span class="texhtml" style="white-space: nowrap;">a<span class="t-su t-su-b"><br>1</span></span>
+</li><li> if <span class="texhtml" style="white-space: nowrap;">N &gt; 1</span>, <span class="texhtml" style="white-space: nowrap;">op(GSUM(op, b<span class="t-su t-su-b"><br>1</span>, ..., b<span class="t-su t-su-b"><br>K</span>), GSUM(op, b<span class="t-su t-su-b"><br>M</span>, ..., b<span class="t-su t-su-b"><br>N</span>))</span> where
+</li></ul>
+<dl><dd><ul><li> <span class="texhtml" style="white-space: nowrap;">b<span class="t-su t-su-b"><br>1</span>, ..., b<span class="t-su t-su-b"><br>N</span></span> may be any permutation of <span class="texhtml" style="white-space: nowrap;">a1, ..., aN</span> and
+</li><li> <span class="texhtml" style="white-space: nowrap;">1 &lt; K+1 = M &le; N</span>
+</li></ul>
+</dd></dl>
+<p>in other words, the results of unary_op may be grouped and arranged in arbitrary order.
+</p>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=edit&amp;section=3" title="Edit section: Complexity">edit</a>]</span> <span class="mw-headline" id="Complexity">Complexity</span></h3>
+<p><span class="texhtml" style="white-space: nowrap;">O(last - first)</span> applications each of <code>unary_op</code> and <code>binary_op</code>.
+</p>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=edit&amp;section=4" title="Edit section: Exceptions">edit</a>]</span> <span class="mw-headline" id="Exceptions">Exceptions</span></h3>
+<ul><li>If execution of a function invoked as part of the algorithm throws an exception, 
+</li></ul>
+<dl><dd><ul><li> if <code>policy</code> is <code>parallel_vector_execution_policy</code>, <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> is called
+</li><li> if <code>policy</code> is <code>sequential_execution_policy</code> or <code>parallel_execution_policy</code>, the algorithm exits with an <a class="new" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/exception_list&amp;action=edit&amp;redlink=1" title="cpp/experimental/exception list (page does not exist)"><tt>exception_list</tt></a> containing all uncaught exceptions. If there was only one uncaught exception, the algorithm may rethrow it without wrapping in <code>exception_list</code>. It is unspecified how much work the algorithm will perform before returning after the first exception was encountered.
+</li><li> if <code>policy</code> is some other type, the behavior is implementation-defined
+</li></ul>
+</dd></dl>
+<ul><li> If the algorithm fails to allocate memory (either for itself or to construct an <code>exception_list</code> when handling a user exception), <span class="t-lc"><a href="../memory/new/bad_alloc.html" title="cpp/memory/new/bad alloc">std::bad_alloc</a></span> is thrown.
+</li></ul>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=edit&amp;section=5" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
+<p><code>unary_op</code> is not applied to <code>init</code>
+</p><p>If the range is empty, <code>init</code> is returned, unmodified
+</p>
+<ul><li> If <code>policy</code> is an instance of <code>sequential_execution_policy</code>, all operations are performed in the calling thread.
+</li><li> If <code>policy</code> is an instance of <code>parallel_execution_policy</code>, operations may be performed in unspecified number of threads, indeterminately sequenced with each other 
+</li><li> If <code>policy</code> is an instance of <code>parallel_vector_execution_policy</code>, execution may be both parallelized and vectorized: function body boundaries are not respected and user code may be overlapped and combined in arbitrary manner (in particular, this implies that a user-provided Callable must not acquire a mutex to access a shared resource)
+</li></ul>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=edit&amp;section=6" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><p>transform_reduce can be used to parallelize <span class="t-lc"><a href="../algorithm/inner_product.html" title="cpp/algorithm/inner product">std::inner_product</a></span>:
+</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div class="mw-geshi" dir="ltr" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;vector&gt;</span>
+<span class="co2">#include &lt;iterator&gt;</span>
+<span class="co2">#include &lt;functional&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;experimental/numeric&gt;</span>
+<span class="co2">#include &lt;experimental/execution_policy&gt;</span>
+<span class="co2">#include &lt;boost/iterator/zip_iterator.hpp&gt;</span>
+<span class="co2">#include &lt;boost/tuple.hpp&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../container/vector.html"><span class="kw1269">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span> xvalues<span class="br0">(</span><span class="nu0">10007</span>, <span class="nu16">1.0</span><span class="br0">)</span>, yvalues<span class="br0">(</span><span class="nu0">10007</span>, <span class="nu16">1.0</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw4">double</span> result <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">experimental</span><span class="sy4">::</span><span class="me2">parallel</span><span class="sy4">::</span><span class="me2">transform_reduce</span><span class="br0">(</span>
+        std<span class="sy4">::</span><span class="me2">experimental</span><span class="sy4">::</span><span class="me2">parallel</span><span class="sy4">::</span><span class="me2">par</span>,
+        boost<span class="sy4">::</span><span class="me2">iterators</span><span class="sy4">::</span><span class="me2">make_zip_iterator</span><span class="br0">(</span>
+            boost<span class="sy4">::</span><span class="me2">make_tuple</span><span class="br0">(</span><a href="../iterator/begin.html"><span class="kw676">std::<span class="me2">begin</span></span></a><span class="br0">(</span>xvalues<span class="br0">)</span>, <a href="../iterator/begin.html"><span class="kw676">std::<span class="me2">begin</span></span></a><span class="br0">(</span>yvalues<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>,
+        boost<span class="sy4">::</span><span class="me2">iterators</span><span class="sy4">::</span><span class="me2">make_zip_iterator</span><span class="br0">(</span>
+            boost<span class="sy4">::</span><span class="me2">make_tuple</span><span class="br0">(</span><a href="../iterator/end.html"><span class="kw680">std::<span class="me2">end</span></span></a><span class="br0">(</span>xvalues<span class="br0">)</span>, <a href="../iterator/end.html"><span class="kw680">std::<span class="me2">end</span></span></a><span class="br0">(</span>yvalues<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>,
+        <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">auto</span> r<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> boost<span class="sy4">::</span><span class="me2">get</span><span class="sy1">&lt;</span><span class="nu0">0</span><span class="sy1">&gt;</span><span class="br0">(</span>r<span class="br0">)</span> <span class="sy2">*</span> boost<span class="sy4">::</span><span class="me2">get</span><span class="sy1">&lt;</span><span class="nu0">1</span><span class="sy1">&gt;</span><span class="br0">(</span>r<span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+        <span class="nu16">0.0</span>,
+        <a href="../utility/functional/plus.html"><span class="kw1029">std::<span class="me2">plus</span></span></a><span class="sy1">&lt;&gt;</span><span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1758">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> result <span class="sy1">&lt;&lt;</span> <span class="st0">&#39;<span class="es1">\n</span>&#39;</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Output:
+</p>
+<div class="mw-geshi" dir="ltr" style="text-align: left;"><div class="text source-text"><pre class="de1">10007</pre></div></div> 
+</div>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr id="//apple_ref/cpp/func/accumulate"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/func/accumulate"></a><a name="accumulate"></a><a href="../algorithm/accumulate.html" title="cpp/algorithm/accumulate"> <span class="t-lines"><span>accumulate</span></span></a></div></div>
+</td>
+<td>   sums up a range of elements  <br> <span class="t-mark">(function template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/algorithm/dsc_accumulate&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/func/transform"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/func/transform"></a><a name="transform"></a><a href="../algorithm/transform.html" title="cpp/algorithm/transform"> <span class="t-lines"><span>transform</span></span></a></div></div>
+</td>
+<td>   applies a function to a range of elements  <br> <span class="t-mark">(function template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/algorithm/dsc_transform&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/func/reduce"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/func/reduce"></a><a name="reduce"></a><a href="./reduce.html" title="cpp/experimental/reduce"> <span class="t-lines"><span>reduce</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span></span></span></div></div>
+</td>
+<td>   similar to <span class="t-lc"><a href="../algorithm/accumulate.html" title="cpp/algorithm/accumulate">std::accumulate</a></span>, except out of order  <br> <span class="t-mark">(function template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/experimental/parallelism/dsc_reduce&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 2563/1000000
+Preprocessor generated node count: 8025/1000000
+Post‐expand include size: 73196/2097152 bytes
+Template argument size: 16307/2097152 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:14457-0!*!0!!en!*!* and timestamp 20180329051354 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from &quot;<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;oldid=84521">http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;oldid=84521</a>&quot;                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div class="catlinks catlinks-allhidden" id="catlinks"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div class="noprint" id="cpp-footer-base">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a accesskey="r" href="http://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]">Recent changes</a></li><li id="n-FAQ"><a href="http://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="http://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a accesskey="j" href="http://en.cppreference.com/w/Special:WhatLinksHere/cpp/experimental/transform_reduce" title="A list of all wiki pages that link here [j]">What links here</a></li><li id="t-recentchangeslinked"><a accesskey="k" href="http://en.cppreference.com/w/Special:RecentChangesLinked/cpp/experimental/transform_reduce" title="Recent changes in pages linked from this page [k]">Related changes</a></li><li id="t-upload"><a accesskey="u" href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]">Upload file</a></li><li id="t-specialpages"><a accesskey="q" href="http://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]">Special pages</a></li><li id="t-print"><a accesskey="p" href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;printable=yes" rel="alternate" title="Printable version of this page [p]">Printable version</a></li><li id="t-permalink"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;oldid=84521" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_reduce&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>In other languages</li></ul></div>
+            <div><ul>
+<li class="interwiki-de"><a href="http://de.cppreference.com/w/cpp/algorithm/partial_sum" hreflang="de" lang="de" title="cpp/algorithm/partial sum">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/algorithm/partial_sum" hreflang="es" lang="es" title="cpp/algorithm/partial sum">Espa&ntilde;ol</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/cpp/algorithm/partial_sum" hreflang="fr" lang="fr" title="cpp/algorithm/partial sum">Fran&ccedil;ais</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/cpp/algorithm/partial_sum" hreflang="it" lang="it" title="cpp/algorithm/partial sum">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/algorithm/partial_sum" hreflang="ja" lang="ja" title="cpp/algorithm/partial sum">&#x65E5;&#x672C;&#x8A9E;</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/cpp/algorithm/partial_sum" hreflang="pt" lang="pt" title="cpp/algorithm/partial sum">Portugu&ecirc;s</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/algorithm/partial_sum" hreflang="ru" lang="ru" title="cpp/algorithm/partial sum">&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/algorithm/partial_sum" hreflang="zh" lang="zh" title="cpp/algorithm/partial sum">&#x4E2D;&#x6587;</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 18 March 2016, at 16:31.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 7,005 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="http://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="http://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="http://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul class="noprint" id="footer-icons">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" src="../../../mwiki/skins/common/images/poweredby_mediawiki_88x31.png" width="88"></a>                                            <a href="http://qbnz.com/highlighter/"><img alt="Powered by GeSHi" height="31" src="../../../../upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" width="88"></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img alt="Hosted by Tiger Technologies" height="31" src="../../../../upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" width="88"></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.663 secs. -->
+	
+<!-- Cached 20180329051354 -->
+
+</body><!-- Online page at http://en.cppreference.com/w/cpp/experimental/transform_reduce --></html>

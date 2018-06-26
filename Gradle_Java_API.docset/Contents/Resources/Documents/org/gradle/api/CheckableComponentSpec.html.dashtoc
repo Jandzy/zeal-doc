@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"checkedBy(Object...)","path":"checkedBy-java.lang.Object...-","entryType":"Method"},{"name":"getCheckTask()","path":"getCheckTask--","entryType":"Method"},{"name":"setCheckTask(Task)","path":"setCheckTask-org.gradle.api.Task-","entryType":"Method"}]}

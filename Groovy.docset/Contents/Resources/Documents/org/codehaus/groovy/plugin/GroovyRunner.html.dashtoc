@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"canRun(Class, GroovyClassLoader)","path":"canRun(java.lang.Class,%20groovy.lang.GroovyClassLoader)","entryType":"Method"},{"name":"run(Class, GroovyClassLoader)","path":"run(java.lang.Class,%20groovy.lang.GroovyClassLoader)","entryType":"Method"}]}

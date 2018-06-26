@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ModelViewClosedException(ModelPath, ModelType, ModelRuleDescriptor)","path":"ModelViewClosedException-org.gradle.model.internal.core.ModelPath-org.gradle.model.internal.type.ModelType-org.gradle.model.internal.core.rule.describe.ModelRuleDescriptor-","entryType":"Constructor"}]}

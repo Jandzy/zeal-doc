@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ResolveException(String, Iterable)","path":"ResolveException-java.lang.String-java.lang.Iterable-","entryType":"Constructor"},{"name":"ResolveException(String, Throwable)","path":"ResolveException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"SignatorySupport()","path":"SignatorySupport--","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"sign(InputStream)","path":"sign-java.io.InputStream-","entryType":"Method"}]}

@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"DefaultPropertyReader()","path":"DefaultPropertyReader()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"read(Object, String)","path":"read(java.lang.Object,%20java.lang.String)","entryType":"Method"},{"name":"Fields","isHeader":true},{"name":"INSTANCE","path":"INSTANCE","entryType":"Field"}]}

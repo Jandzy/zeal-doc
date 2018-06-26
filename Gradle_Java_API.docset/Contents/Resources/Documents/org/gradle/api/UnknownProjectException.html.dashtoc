@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"UnknownProjectException(String)","path":"UnknownProjectException-java.lang.String-","entryType":"Constructor"},{"name":"UnknownProjectException(String, Throwable)","path":"UnknownProjectException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

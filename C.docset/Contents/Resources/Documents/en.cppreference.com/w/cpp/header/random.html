@@ -1,0 +1,832 @@
+<html><head><meta charset="utf-8"><title>Standard library header &lt;random&gt;</title><link href="../../css.css" rel="stylesheet" type="text/css"><script src="../../js.js" type="text/javascript"></script><style>.t-example-live-link {display:none !important} .t-sidebar-body {display:none}\nbody{min-width:0}\ndiv.mw-geshi{width:95%}\ndiv#content {width:auto !important} div#content{background-image:none; margin-left:0px;} .t-lines {background:inherit !important} pre, div.mw-geshi {width: 100% !important} body {background:white !important} div#content {width:100% !important} pre, div.mw-geshi {width:auto !important} .t-example-live-link, #mw-head, #cpp-footer-base {display:none !important} .t-navbar-menu > div {position:relative !important}</style></head><body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_header_random skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <div class="noprint" id="mw-head">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/mwiki/index.php" id="searchform">
+		<input name="title" type="hidden" value="Special:Search">
+				<div id="simpleSearch">
+						<input accesskey="f" id="searchInput" name="search" title="Search cppreference.com [f]">						<button id="searchButton" name="button" title="Search the pages for this text" type="submit"><img alt="Search" src="../../../mwiki/skins/cppreference2/images/search-ltr.png"></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div class="" id="p-personal">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fheader%2Frandom&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a accesskey="o" href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fheader%2Frandom" title="You are encouraged to log in; however, it is not mandatory [o]">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-namespaces">
+	<h5>Namespaces</h5>
+	<ul>
+					<li class="selected" id="ca-nstab-main"><span><a accesskey="c" href="./random.html" title="View the content page [c]">Page</a></span></li>
+					<li id="ca-talk"><span><a accesskey="t" href="http://en.cppreference.com/w/Talk:cpp/header/random" title="Discussion about the content page [t]">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-variants">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-views">
+	<h5>Views</h5>
+	<ul>
+					<li class="selected" id="ca-view"><span><a href="./random.html">View</a></span></li>
+					<li id="ca-edit"><span><a accesskey="e" href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/random&amp;action=edit" title="You can edit this page. Please use the preview button before saving [e]">Edit</a></span></li>
+					<li class="collapsible" id="ca-history"><span><a accesskey="h" href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/random&amp;action=history" title="Past revisions of this page [h]">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-cactions">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 class="firstHeading" id="firstHeading"><span style="font-size:0.7em; line-height:130%">Standard library header</span> &lt;random&gt;</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../header.html" title="cpp/header">header</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../concept.html" title="cpp/concept"> Library concepts</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../header.html" title="cpp/header"> Standard Library header files </a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv-h2"><td colspan="5"> Language Support</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cstddef.html" title="cpp/header/cstddef"><tt>&lt;cstddef&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./limits.html" title="cpp/header/limits"><tt>&lt;limits&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./climits.html" title="cpp/header/climits"><tt>&lt;climits&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./version.html" title="cpp/header/version"><tt>&lt;version&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cfloat.html" title="cpp/header/cfloat"><tt>&lt;cfloat&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cstdint.html" title="cpp/header/cstdint"><tt>&lt;cstdint&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./new.html" title="cpp/header/new"><tt>&lt;new&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./typeinfo.html" title="cpp/header/typeinfo"><tt>&lt;typeinfo&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./exception.html" title="cpp/header/exception"><tt>&lt;exception&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./initializer_list.html" title="cpp/header/initializer list"><tt>&lt;initializer_list&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./csignal.html" title="cpp/header/csignal"><tt>&lt;csignal&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./csetjmp.html" title="cpp/header/csetjmp"><tt>&lt;csetjmp&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cstdarg.html" title="cpp/header/cstdarg"><tt>&lt;cstdarg&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Diagnostics</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./stdexcept.html" title="cpp/header/stdexcept"><tt>&lt;stdexcept&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cassert.html" title="cpp/header/cassert"><tt>&lt;cassert&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cerrno.html" title="cpp/header/cerrno"><tt>&lt;cerrno&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./system_error.html" title="cpp/header/system error"><tt>&lt;system_error&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> General utilities</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./utility.html" title="cpp/header/utility"><tt>&lt;utility&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./memory_resource.html" title="cpp/header/memory resource"><tt>&lt;memory_resource&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./scoped_allocator.html" title="cpp/header/scoped allocator"><tt>&lt;scoped_allocator&gt;</tt></a>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./compare.html" title="cpp/header/compare"><tt>&lt;compare&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./bitset.html" title="cpp/header/bitset"><tt>&lt;bitset&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./tuple.html" title="cpp/header/tuple"><tt>&lt;tuple&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./optional.html" title="cpp/header/optional"><tt>&lt;optional&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./any.html" title="cpp/header/any"><tt>&lt;any&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./variant.html" title="cpp/header/variant"><tt>&lt;variant&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./type_traits.html" title="cpp/header/type traits"><tt>&lt;type_traits&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./ratio.html" title="cpp/header/ratio"><tt>&lt;ratio&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./chrono.html" title="cpp/header/chrono"><tt>&lt;chrono&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./typeindex.html" title="cpp/header/typeindex"><tt>&lt;typeindex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./ctime.html" title="cpp/header/ctime"><tt>&lt;ctime&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cstdlib.html" title="cpp/header/cstdlib"><tt>&lt;cstdlib&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Strings</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./string.html" title="cpp/header/string"><tt>&lt;string&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./string_view.html" title="cpp/header/string view"><tt>&lt;string_view&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cctype.html" title="cpp/header/cctype"><tt>&lt;cctype&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cwctype.html" title="cpp/header/cwctype"><tt>&lt;cwctype&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cwchar.html" title="cpp/header/cwchar"><tt>&lt;cwchar&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cuchar.html" title="cpp/header/cuchar"><tt>&lt;cuchar&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cstring.html" title="cpp/header/cstring"><tt>&lt;cstring&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./charconv.html" title="cpp/header/charconv"><tt>&lt;charconv&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Localization</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./locale.html" title="cpp/header/locale"><tt>&lt;locale&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./clocale.html" title="cpp/header/clocale"><tt>&lt;clocale&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Containers</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./span.html" title="cpp/header/span"><tt>&lt;span&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./array.html" title="cpp/header/array"><tt>&lt;array&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./vector.html" title="cpp/header/vector"><tt>&lt;vector&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./deque.html" title="cpp/header/deque"><tt>&lt;deque&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./forward_list.html" title="cpp/header/forward list"><tt>&lt;forward_list&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./list.html" title="cpp/header/list"><tt>&lt;list&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./map.html" title="cpp/header/map"><tt>&lt;map&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./set.html" title="cpp/header/set"><tt>&lt;set&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./queue.html" title="cpp/header/queue"><tt>&lt;queue&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./unordered_map.html" title="cpp/header/unordered map"><tt>&lt;unordered_map&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./unordered_set.html" title="cpp/header/unordered set"><tt>&lt;unordered_set&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./stack.html" title="cpp/header/stack"><tt>&lt;stack&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Iterators</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./iterator.html" title="cpp/header/iterator"><tt>&lt;iterator&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Algorithms</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./algorithm.html" title="cpp/header/algorithm"><tt>&lt;algorithm&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./execution.html" title="cpp/header/execution"><tt>&lt;execution&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Numerics</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./complex.html" title="cpp/header/complex"><tt>&lt;complex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <strong class="selflink"><tt>&lt;random&gt;</tt></strong></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./valarray.html" title="cpp/header/valarray"><tt>&lt;valarray&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./numeric.html" title="cpp/header/numeric"><tt>&lt;numeric&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cfenv.html" title="cpp/header/cfenv"><tt>&lt;cfenv&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cmath.html" title="cpp/header/cmath"><tt>&lt;cmath&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Input/Output</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./iosfwd.html" title="cpp/header/iosfwd"><tt>&lt;iosfwd&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./ios.html" title="cpp/header/ios"><tt>&lt;ios&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./iomanip.html" title="cpp/header/iomanip"><tt>&lt;iomanip&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./streambuf.html" title="cpp/header/streambuf"><tt>&lt;streambuf&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./istream.html" title="cpp/header/istream"><tt>&lt;istream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./ostream.html" title="cpp/header/ostream"><tt>&lt;ostream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./iostream.html" title="cpp/header/iostream"><tt>&lt;iostream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./sstream.html" title="cpp/header/sstream"><tt>&lt;sstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./fstream.html" title="cpp/header/fstream"><tt>&lt;fstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./syncstream.html" title="cpp/header/syncstream"><tt>&lt;syncstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cstdio.html" title="cpp/header/cstdio"><tt>&lt;cstdio&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cinttypes.html" title="cpp/header/cinttypes"><tt>&lt;cinttypes&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./strstream.html" title="cpp/header/strstream"><tt>&lt;strstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Regular expressions</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./regex.html" title="cpp/header/regex"><tt>&lt;regex&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Filesystem support</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./filesystem.html" title="cpp/header/filesystem"><tt>&lt;filesystem&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Thread support</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./thread.html" title="cpp/header/thread"><tt>&lt;thread&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./atomic.html" title="cpp/header/atomic"><tt>&lt;atomic&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./mutex.html" title="cpp/header/mutex"><tt>&lt;mutex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./shared_mutex.html" title="cpp/header/shared mutex"><tt>&lt;shared_mutex&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./condition_variable.html" title="cpp/header/condition variable"><tt>&lt;condition_variable&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./future.html" title="cpp/header/future"><tt>&lt;future&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> C compatibility</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./ciso646.html" title="cpp/header/ciso646"><tt>&lt;ciso646&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cstdalign.html" title="cpp/header/cstdalign"><tt>&lt;cstdalign&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cstdbool.html" title="cpp/header/cstdbool"><tt>&lt;cstdbool&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./ccomplex.html" title="cpp/header/ccomplex"><tt>&lt;ccomplex&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./ctgmath.html" title="cpp/header/ctgmath"><tt>&lt;ctgmath&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/header/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
+<p>This header is part of the <a href="../numeric/random.html" title="cpp/numeric/random">pseudo-random number generation</a> library.
+</p>
+<table class="t-dsc-begin">
+
+<tbody><tr>
+<td colspan="2"> <table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a class="internal" href="#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1"><a href="#Random_number_engines"><span class="tocnumber">1</span> <span class="toctext">Random number engines</span></a></li>
+<li class="toclevel-1"><a href="#Random_number_engine_adaptors"><span class="tocnumber">2</span> <span class="toctext">Random number engine adaptors</span></a></li>
+<li class="toclevel-1"><a href="#Predefined_generators"><span class="tocnumber">3</span> <span class="toctext">Predefined generators</span></a></li>
+<li class="toclevel-1"><a href="#Non-deterministic_random_numbers"><span class="tocnumber">4</span> <span class="toctext">Non-deterministic random numbers</span></a></li>
+<li class="toclevel-1"><a href="#Uniform_distributions"><span class="tocnumber">5</span> <span class="toctext">Uniform distributions</span></a></li>
+<li class="toclevel-1"><a href="#Bernoulli_distributions"><span class="tocnumber">6</span> <span class="toctext">Bernoulli distributions</span></a></li>
+<li class="toclevel-1"><a href="#Poisson_distributions"><span class="tocnumber">7</span> <span class="toctext">Poisson distributions</span></a></li>
+<li class="toclevel-1"><a href="#Normal_distributions"><span class="tocnumber">8</span> <span class="toctext">Normal distributions</span></a></li>
+<li class="toclevel-1"><a href="#Sampling_distributions"><span class="tocnumber">9</span> <span class="toctext">Sampling distributions</span></a></li>
+<li class="toclevel-1"><a href="#Utilities"><span class="tocnumber">10</span> <span class="toctext">Utilities</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Synopsis"><span class="tocnumber">11</span> <span class="toctext">Synopsis</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h5> <span class="mw-headline" id="Random_number_engines"> Random number engines </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/linear_congruential_engine"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/linear_congruential_engine"></a><a name="linear_congruential_engine"></a><a href="../numeric/random/linear_congruential_engine.html" title="cpp/numeric/random/linear congruential engine"> <span class="t-lines"><span>linear_congruential_engine</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   implements <a class="extiw" href="https://en.wikipedia.org/wiki/Linear_congruential_generator" title="enwiki:Linear congruential generator"> linear congruential</a> algorithm  <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_linear_congruential_engine&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/mersenne_twister_engine"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/mersenne_twister_engine"></a><a name="mersenne_twister_engine"></a><a href="../numeric/random/mersenne_twister_engine.html" title="cpp/numeric/random/mersenne twister engine"> <span class="t-lines"><span>mersenne_twister_engine</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   implements <a class="extiw" href="https://en.wikipedia.org/wiki/Mersenne_twister" title="enwiki:Mersenne twister"> Mersenne twister</a> algorithm  <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_mersenne_twister_engine&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/subtract_with_carry_engine"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/subtract_with_carry_engine"></a><a name="subtract_with_carry_engine"></a><a href="../numeric/random/subtract_with_carry_engine.html" title="cpp/numeric/random/subtract with carry engine"> <span class="t-lines"><span>subtract_with_carry_engine</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   implements a subtract-with-carry (<a class="extiw" href="https://en.wikipedia.org/wiki/Lagged_Fibonacci_generator" title="enwiki:Lagged Fibonacci generator"> lagged Fibonacci</a>) algorithm  <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_subtract_with_carry_engine&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Random_number_engine_adaptors"> Random number engine adaptors </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/discard_block_engine"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/discard_block_engine"></a><a name="discard_block_engine"></a><a href="../numeric/random/discard_block_engine.html" title="cpp/numeric/random/discard block engine"> <span class="t-lines"><span>discard_block_engine</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   discards some output of a random number engine  <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_discard_block_engine&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/independent_bits_engine"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/independent_bits_engine"></a><a name="independent_bits_engine"></a><a href="../numeric/random/independent_bits_engine.html" title="cpp/numeric/random/independent bits engine"> <span class="t-lines"><span>independent_bits_engine</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   packs the output of a random number engine into blocks of a specified number of bits  <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_independent_bits_engine&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/shuffle_order_engine"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/shuffle_order_engine"></a><a name="shuffle_order_engine"></a><a href="../numeric/random/shuffle_order_engine.html" title="cpp/numeric/random/shuffle order engine"> <span class="t-lines"><span>shuffle_order_engine</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   delivers the output of a random number engine in a different order  <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_shuffle_order_engine&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Predefined_generators"> Predefined generators </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>minstd_rand0</code>
+</td>
+<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/random/linear_congruential_engine.html"><span class="kw1480">std::<span class="me2">linear_congruential_engine</span></span></a><span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw126">std::<span class="me2">uint_fast32_t</span></span></a>, <span class="nu0">16807</span>, <span class="nu0">0</span>, <span class="nu0">2147483647</span><span class="sy1">&gt;</span></span></span><br>
+<p>Discovered in 1969 by Lewis, Goodman and Miller, adopted as &quot;Minimal standard&quot; in 1988 by Park and Miller <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_minstd_rand0&amp;action=edit" rel="nofollow">[edit]</a></span>
+</p>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>minstd_rand</code>
+</td>
+<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/random/linear_congruential_engine.html"><span class="kw1480">std::<span class="me2">linear_congruential_engine</span></span></a><span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw126">std::<span class="me2">uint_fast32_t</span></span></a>, <span class="nu0">48271</span>, <span class="nu0">0</span>, <span class="nu0">2147483647</span><span class="sy1">&gt;</span></span></span><br>
+<p>Newer &quot;Minimum standard&quot;, recommended by Park, Miller, and Stockmeyer in 1993<span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_minstd_rand&amp;action=edit" rel="nofollow">[edit]</a></span>
+</p>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>mt19937</code>
+</td>
+<td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/random/mersenne_twister_engine.html"><span class="kw1481">std::<span class="me2">mersenne_twister_engine</span></span></a><span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw126">std::<span class="me2">uint_fast32_t</span></span></a>, <span class="nu0">32</span>, <span class="nu0">624</span>, <span class="nu0">397</span>, <span class="nu0">31</span>, <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="nu12">0x9908b0df</span>, <span class="nu0">11</span>, <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="nu12">0xffffffff</span>, <span class="nu0">7</span>, <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="nu12">0x9d2c5680</span>, <span class="nu0">15</span>, <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="nu12">0xefc60000</span>, <span class="nu0">18</span>, <span class="nu0">1812433253</span><span class="sy1">&gt;</span></span></span><br>
+32-bit Mersenne Twister by Matsumoto and Nishimura, 1998<span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_mt19937&amp;action=edit" rel="nofollow">[edit]</a></span>
+</p>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>mt19937_64</code>
+</td>
+<td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/random/mersenne_twister_engine.html"><span class="kw1481">std::<span class="me2">mersenne_twister_engine</span></span></a><span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw127">std::<span class="me2">uint_fast64_t</span></span></a>, <span class="nu0">64</span>, <span class="nu0">312</span>, <span class="nu0">156</span>, <span class="nu0">31</span>,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="nu12">0xb5026f5aa96619e9</span>, <span class="nu0">29</span>,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="nu12">0x5555555555555555</span>, <span class="nu0">17</span>,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="nu12">0x71d67fffeda60000</span>, <span class="nu0">37</span>,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="nu12">0xfff7eee000000000</span>, <span class="nu0">43</span>, <span class="nu0">6364136223846793005</span><span class="sy1">&gt;</span></span></span><br>
+64-bit Mersenne Twister by Matsumoto and Nishimura, 2000<span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_mt19937_64&amp;action=edit" rel="nofollow">[edit]</a></span>
+</p>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>ranlux24_base</code>
+</td>
+<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/random/subtract_with_carry_engine.html"><span class="kw1482">std::<span class="me2">subtract_with_carry_engine</span></span></a><span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw126">std::<span class="me2">uint_fast32_t</span></span></a>, <span class="nu0">24</span>, <span class="nu0">10</span>, <span class="nu0">24</span><span class="sy1">&gt;</span></span></span><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_ranlux24_base&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>ranlux48_base</code>
+</td>
+<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/random/subtract_with_carry_engine.html"><span class="kw1482">std::<span class="me2">subtract_with_carry_engine</span></span></a><span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw127">std::<span class="me2">uint_fast64_t</span></span></a>, <span class="nu0">48</span>, <span class="nu0">5</span>, <span class="nu0">12</span><span class="sy1">&gt;</span></span></span><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_ranlux48_base&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>ranlux24</code>
+</td>
+<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/random/discard_block_engine.html"><span class="kw1483">std::<span class="me2">discard_block_engine</span></span></a><span class="sy1">&lt;</span><a href="../numeric/random/subtract_with_carry_engine.html"><span class="kw1491">std::<span class="me2">ranlux24_base</span></span></a>, <span class="nu0">223</span>, <span class="nu0">23</span><span class="sy1">&gt;</span></span></span><br>
+<p>24-bit RANLUX generator by Martin L&uuml;scher and Fred James, 1994<span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_ranlux24&amp;action=edit" rel="nofollow">[edit]</a></span>
+</p>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>ranlux48</code>
+</td>
+<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/random/discard_block_engine.html"><span class="kw1483">std::<span class="me2">discard_block_engine</span></span></a><span class="sy1">&lt;</span><a href="../numeric/random/subtract_with_carry_engine.html"><span class="kw1492">std::<span class="me2">ranlux48_base</span></span></a>, <span class="nu0">389</span>, <span class="nu0">11</span><span class="sy1">&gt;</span></span></span><br>
+<p>48-bit RANLUX generator by Martin L&uuml;scher and Fred James, 1994<span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_ranlux48&amp;action=edit" rel="nofollow">[edit]</a></span>
+</p>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>knuth_b</code>
+</td>
+<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/random/shuffle_order_engine.html"><span class="kw1485">std::<span class="me2">shuffle_order_engine</span></span></a><span class="sy1">&lt;</span><a href="../numeric/random/linear_congruential_engine.html"><span class="kw1487">std::<span class="me2">minstd_rand0</span></span></a>, <span class="nu0">256</span><span class="sy1">&gt;</span></span></span><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_knuth_b&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code>default_random_engine</code>
+</td>
+<td>  <i>implementation-defined</i>
+</td></tr>
+
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Non-deterministic_random_numbers"> Non-deterministic random numbers </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/random_device"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/random_device"></a><a name="random_device"></a><a href="../numeric/random/random_device.html" title="cpp/numeric/random/random device"> <span class="t-lines"><span>random_device</span></span></a></div></div>
+</td>
+<td>   non-deterministic random number generator using hardware entropy source  <br> <span class="t-mark">(class)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_random_device&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Uniform_distributions">  Uniform distributions </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/uniform_int_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/uniform_int_distribution"></a><a name="uniform_int_distribution"></a><a href="../numeric/random/uniform_int_distribution.html" title="cpp/numeric/random/uniform int distribution"> <span class="t-lines"><span>uniform_int_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces integer values evenly distributed across a range  <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_uniform_int_distribution&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/uniform_real_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/uniform_real_distribution"></a><a name="uniform_real_distribution"></a><a href="../numeric/random/uniform_real_distribution.html" title="cpp/numeric/random/uniform real distribution"> <span class="t-lines"><span>uniform_real_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values evenly distributed across a range  <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_uniform_real_distribution&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Bernoulli_distributions">  Bernoulli distributions </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/bernoulli_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/bernoulli_distribution"></a><a name="bernoulli_distribution"></a><a href="../numeric/random/bernoulli_distribution.html" title="cpp/numeric/random/bernoulli distribution"> <span class="t-lines"><span>bernoulli_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> values on a <a class="extiw" href="https://en.wikipedia.org/wiki/Bernoulli_distribution" title="enwiki:Bernoulli distribution"> Bernoulli distribution</a>.  <br> <span class="t-mark">(class)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/binomial_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/binomial_distribution"></a><a name="binomial_distribution"></a><a href="../numeric/random/binomial_distribution.html" title="cpp/numeric/random/binomial distribution"> <span class="t-lines"><span>binomial_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces integer values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Binomial_distribution" title="enwiki:Binomial distribution"> binomial distribution</a>.   <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/negative_binomial_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/negative_binomial_distribution"></a><a name="negative_binomial_distribution"></a><a href="../numeric/random/negative_binomial_distribution.html" title="cpp/numeric/random/negative binomial distribution"> <span class="t-lines"><span>negative_binomial_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces integer values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Negative_binomial_distribution" title="enwiki:Negative binomial distribution"> negative binomial distribution</a>.   <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/geometric_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/geometric_distribution"></a><a name="geometric_distribution"></a><a href="../numeric/random/geometric_distribution.html" title="cpp/numeric/random/geometric distribution"> <span class="t-lines"><span>geometric_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces integer values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Geometric_distribution" title="enwiki:Geometric distribution"> geometric distribution</a>.   <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Poisson_distributions">  Poisson distributions </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/poisson_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/poisson_distribution"></a><a name="poisson_distribution"></a><a href="../numeric/random/poisson_distribution.html" title="cpp/numeric/random/poisson distribution"> <span class="t-lines"><span>poisson_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces integer values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Poisson_distribution" title="enwiki:Poisson distribution"> poisson distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/exponential_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/exponential_distribution"></a><a name="exponential_distribution"></a><a href="../numeric/random/exponential_distribution.html" title="cpp/numeric/random/exponential distribution"> <span class="t-lines"><span>exponential_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values on an  <a class="extiw" href="https://en.wikipedia.org/wiki/Exponential_distribution" title="enwiki:Exponential distribution"> exponential distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/gamma_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/gamma_distribution"></a><a name="gamma_distribution"></a><a href="../numeric/random/gamma_distribution.html" title="cpp/numeric/random/gamma distribution"> <span class="t-lines"><span>gamma_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values on an  <a class="extiw" href="https://en.wikipedia.org/wiki/Gamma_distribution" title="enwiki:Gamma distribution"> gamma distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/weibull_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/weibull_distribution"></a><a name="weibull_distribution"></a><a href="../numeric/random/weibull_distribution.html" title="cpp/numeric/random/weibull distribution"> <span class="t-lines"><span>weibull_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>  produces real values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Weibull_distribution" title="enwiki:Weibull distribution"> Weibull distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/extreme_value_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/extreme_value_distribution"></a><a name="extreme_value_distribution"></a><a href="../numeric/random/extreme_value_distribution.html" title="cpp/numeric/random/extreme value distribution"> <span class="t-lines"><span>extreme_value_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values on an  <a class="extiw" href="https://en.wikipedia.org/wiki/Generalized_extreme_value_distribution" title="enwiki:Generalized extreme value distribution"> extreme value distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Normal_distributions">  Normal distributions </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/normal_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/normal_distribution"></a><a name="normal_distribution"></a><a href="../numeric/random/normal_distribution.html" title="cpp/numeric/random/normal distribution"> <span class="t-lines"><span>normal_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Normal_distribution" title="enwiki:Normal distribution"> standard normal (Gaussian) distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/lognormal_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/lognormal_distribution"></a><a name="lognormal_distribution"></a><a href="../numeric/random/lognormal_distribution.html" title="cpp/numeric/random/lognormal distribution"> <span class="t-lines"><span>lognormal_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Lognormal_distribution" title="enwiki:Lognormal distribution"> lognormal distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/chi_squared_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/chi_squared_distribution"></a><a name="chi_squared_distribution"></a><a href="../numeric/random/chi_squared_distribution.html" title="cpp/numeric/random/chi squared distribution"> <span class="t-lines"><span>chi_squared_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Chi-squared_distribution" title="enwiki:Chi-squared distribution"> chi-squared distribution</a>.   <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/cauchy_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/cauchy_distribution"></a><a name="cauchy_distribution"></a><a href="../numeric/random/cauchy_distribution.html" title="cpp/numeric/random/cauchy distribution"> <span class="t-lines"><span>cauchy_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Cauchy_distribution" title="enwiki:Cauchy distribution"> Cauchy distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/fisher_f_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/fisher_f_distribution"></a><a name="fisher_f_distribution"></a><a href="../numeric/random/fisher_f_distribution.html" title="cpp/numeric/random/fisher f distribution"> <span class="t-lines"><span>fisher_f_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/F-distribution" title="enwiki:F-distribution"> Fisher&#39;s F-distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/student_t_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/student_t_distribution"></a><a name="student_t_distribution"></a><a href="../numeric/random/student_t_distribution.html" title="cpp/numeric/random/student t distribution"> <span class="t-lines"><span>student_t_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values on a  <a class="extiw" href="https://en.wikipedia.org/wiki/Student%27s_t-distribution" title="enwiki:Student&#39;s t-distribution"> Student&#39;s t-distribution</a>.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Sampling_distributions">  Sampling distributions </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/discrete_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/discrete_distribution"></a><a name="discrete_distribution"></a><a href="../numeric/random/discrete_distribution.html" title="cpp/numeric/random/discrete distribution"> <span class="t-lines"><span>discrete_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces random integers on a discrete distribution.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/piecewise_constant_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/piecewise_constant_distribution"></a><a name="piecewise_constant_distribution"></a><a href="../numeric/random/piecewise_constant_distribution.html" title="cpp/numeric/random/piecewise constant distribution"> <span class="t-lines"><span>piecewise_constant_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values distributed on constant subintervals. <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/cl/piecewise_linear_distribution"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/piecewise_linear_distribution"></a><a name="piecewise_linear_distribution"></a><a href="../numeric/random/piecewise_linear_distribution.html" title="cpp/numeric/random/piecewise linear distribution"> <span class="t-lines"><span>piecewise_linear_distribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   produces real values distributed on defined subintervals.  <br> <span class="t-mark">(class template)</span>
+</td></tr>
+
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Utilities">  Utilities </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/func/generate_canonical"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/func/generate_canonical"></a><a name="generate_canonical"></a><a href="../numeric/random/generate_canonical.html" title="cpp/numeric/random/generate canonical"> <span class="t-lines"><span>generate_canonical</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   evenly distributes real values of given precision across [0, 1)  <br> <span class="t-mark">(function template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/random/dsc_generate_canonical&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/cl/seed_seq"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/cl/seed_seq"></a><a name="seed_seq"></a><a href="../numeric/random/seed_seq.html" title="cpp/numeric/random/seed seq"> <span class="t-lines"><span>seed_seq</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   general-purpose bias-eliminating scrambled seed sequence generator  <br> <span class="t-mark">(class)</span>
+</td></tr>
+
+
+</tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/random&amp;action=edit&amp;section=1" title="Edit section: Synopsis">edit</a>]</span> <span class="mw-headline" id="Synopsis">Synopsis</span></h3>
+<div class="mw-geshi" dir="ltr" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;initializer_list&gt;</span>
+<span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="co1">// class template linear_congruential_engine</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> UIntType, UIntType a, UIntType c, UIntType m<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> linear_congruential_engine<span class="sy4">;</span>
+  <span class="co1">// class template mersenne_twister_engine</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> UIntType, size_t w, size_t n, size_t m, size_t r,
+           UIntType a, size_t u, UIntType d, size_t s,
+           UIntType b, size_t t, UIntType c, size_t l, UIntType f<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> mersenne_twister_engine<span class="sy4">;</span>
+  <span class="co1">// class template subtract_with_carry_engine</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> UIntType, size_t w, size_t s, size_t r<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> subtract_with_carry_engine<span class="sy4">;</span>
+  <span class="co1">// class template discard_block_engine</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Engine, size_t p, size_t r<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> discard_block_engine<span class="sy4">;</span>
+  <span class="co1">// class template independent_bits_engine</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Engine, size_t w, <span class="kw1">class</span> UIntType<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> independent_bits_engine<span class="sy4">;</span>
+  <span class="co1">// class template shuffle_order_engine</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Engine, size_t k<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> shuffle_order_engine<span class="sy4">;</span>
+  <span class="co1">// engines and engine adaptors with predefined parameters</span>
+  <span class="kw1">using</span> minstd_rand0 <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="kw1">using</span> minstd_rand <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="kw1">using</span> mt19937 <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="kw1">using</span> mt19937_64 <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="kw1">using</span> ranlux24_base <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="kw1">using</span> ranlux48_base <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="kw1">using</span> ranlux24 <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="kw1">using</span> ranlux48 <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="kw1">using</span> knuth_b <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="kw1">using</span> default_random_engine <span class="sy1">=</span> <span class="coMULTI">/*see description*/</span> <span class="sy4">;</span>
+  <span class="co1">// class random_device</span>
+  <span class="kw1">class</span> random_device<span class="sy4">;</span>
+&nbsp;
+  <span class="co1">// class seed_seq</span>
+  <span class="kw1">class</span> seed_seq<span class="sy4">;</span>
+  <span class="co1">// function template generate_canonical</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType, size_t bits, <span class="kw1">class</span> URBG<span class="sy1">&gt;</span>
+  RealType generate_canonical<span class="br0">(</span>URBG<span class="sy3">&amp;</span> g<span class="br0">)</span><span class="sy4">;</span>
+  <span class="co1">// class template uniform_int_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IntType <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> uniform_int_distribution<span class="sy4">;</span>
+  <span class="co1">// class template uniform_real_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> uniform_real_distribution<span class="sy4">;</span>
+  <span class="co1">// class bernoulli_distribution</span>
+  <span class="kw1">class</span> bernoulli_distribution<span class="sy4">;</span>
+  <span class="co1">// class template binomial_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IntType <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> binomial_distribution<span class="sy4">;</span>
+  <span class="co1">// class template geometric_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IntType <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> geometric_distribution<span class="sy4">;</span>
+  <span class="co1">// class template negative_binomial_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IntType <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> negative_binomial_distribution<span class="sy4">;</span>
+  <span class="co1">// class template poisson_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IntType <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> poisson_distribution<span class="sy4">;</span>
+  <span class="co1">// class template exponential_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> exponential_distribution<span class="sy4">;</span>
+  <span class="co1">// class template gamma_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> gamma_distribution<span class="sy4">;</span>
+  <span class="co1">// class template weibull_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> weibull_distribution<span class="sy4">;</span>
+  <span class="co1">// class template extreme_value_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> extreme_value_distribution<span class="sy4">;</span>
+  <span class="co1">// class template normal_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> normal_distribution<span class="sy4">;</span>
+  <span class="co1">// class template lognormal_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> lognormal_distribution<span class="sy4">;</span>
+  <span class="co1">// class template chi_squared_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> chi_squared_distribution<span class="sy4">;</span>
+  <span class="co1">// class template cauchy_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> cauchy_distribution<span class="sy4">;</span>
+  <span class="co1">// class template fisher_f_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> fisher_f_distribution<span class="sy4">;</span>
+  <span class="co1">// class template student_t_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> student_t_distribution<span class="sy4">;</span>
+  <span class="co1">// class template discrete_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IntType <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> discrete_distribution<span class="sy4">;</span>
+  <span class="co1">// class template piecewise_constant_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> piecewise_constant_distribution<span class="sy4">;</span>
+  <span class="co1">// class template piecewise_linear_distribution</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> RealType <span class="sy1">=</span> <span class="kw4">double</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> piecewise_linear_distribution<span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 8728/1000000
+Preprocessor generated node count: 7985/1000000
+Post‐expand include size: 248577/2097152 bytes
+Template argument size: 60364/2097152 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9771-0!*!0!!en!*!* and timestamp 20180328221834 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from &quot;<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/random&amp;oldid=97697">http://en.cppreference.com/mwiki/index.php?title=cpp/header/random&amp;oldid=97697</a>&quot;                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div class="catlinks catlinks-allhidden" id="catlinks"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div class="noprint" id="cpp-footer-base">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a accesskey="r" href="http://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]">Recent changes</a></li><li id="n-FAQ"><a href="http://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="http://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a accesskey="j" href="http://en.cppreference.com/w/Special:WhatLinksHere/cpp/header/random" title="A list of all wiki pages that link here [j]">What links here</a></li><li id="t-recentchangeslinked"><a accesskey="k" href="http://en.cppreference.com/w/Special:RecentChangesLinked/cpp/header/random" title="Recent changes in pages linked from this page [k]">Related changes</a></li><li id="t-upload"><a accesskey="u" href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]">Upload file</a></li><li id="t-specialpages"><a accesskey="q" href="http://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]">Special pages</a></li><li id="t-print"><a accesskey="p" href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/random&amp;printable=yes" rel="alternate" title="Printable version of this page [p]">Printable version</a></li><li id="t-permalink"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/random&amp;oldid=97697" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/random&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>In other languages</li></ul></div>
+            <div><ul>
+<li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/header/random" hreflang="zh" lang="zh" title="cpp/header/random">&#x4E2D;&#x6587;</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 20 December 2017, at 21:27.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 53,356 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="http://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="http://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="http://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul class="noprint" id="footer-icons">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" src="../../../mwiki/skins/common/images/poweredby_mediawiki_88x31.png" width="88"></a>                                            <a href="http://qbnz.com/highlighter/"><img alt="Powered by GeSHi" height="31" src="../../../../upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" width="88"></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img alt="Hosted by Tiger Technologies" height="31" src="../../../../upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" width="88"></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.033 secs. -->
+	
+<!-- Cached 20180329045412 -->
+
+</body><!-- Online page at http://en.cppreference.com/w/cpp/header/random --></html>

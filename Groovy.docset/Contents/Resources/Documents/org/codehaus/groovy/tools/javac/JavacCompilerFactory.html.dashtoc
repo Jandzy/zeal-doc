@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"JavacCompilerFactory()","path":"JavacCompilerFactory()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"createCompiler(CompilerConfiguration)","path":"createCompiler(org.codehaus.groovy.control.CompilerConfiguration)","entryType":"Method"}]}

@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"isIncremental()","path":"isIncremental--","entryType":"Method"},{"name":"outOfDate(Action)","path":"outOfDate-org.gradle.api.Action-","entryType":"Method"},{"name":"removed(Action)","path":"removed-org.gradle.api.Action-","entryType":"Method"}]}

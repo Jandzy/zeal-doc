@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"GroovyRuntime(Project)","path":"GroovyRuntime-org.gradle.api.Project-","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"inferGroovyClasspath(Iterable)","path":"inferGroovyClasspath-java.lang.Iterable-","entryType":"Method"}]}

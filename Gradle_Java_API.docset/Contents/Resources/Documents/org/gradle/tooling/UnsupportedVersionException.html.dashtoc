@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"UnsupportedVersionException(String)","path":"UnsupportedVersionException-java.lang.String-","entryType":"Constructor"},{"name":"UnsupportedVersionException(String, Throwable)","path":"UnsupportedVersionException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

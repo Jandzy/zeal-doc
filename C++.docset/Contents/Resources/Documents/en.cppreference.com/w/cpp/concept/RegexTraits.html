@@ -1,0 +1,449 @@
+<html><head><meta charset="utf-8"><title>C++ concepts: RegexTraits</title><link href="../../css.css" rel="stylesheet" type="text/css"><script src="../../js.js" type="text/javascript"></script><style>.t-example-live-link {display:none !important} .t-sidebar-body {display:none}\nbody{min-width:0}\ndiv.mw-geshi{width:95%}\ndiv#content {width:auto !important} div#content{background-image:none; margin-left:0px;} .t-lines {background:inherit !important} pre, div.mw-geshi {width: 100% !important} body {background:white !important} div#content {width:100% !important} pre, div.mw-geshi {width:auto !important} .t-example-live-link, #mw-head, #cpp-footer-base {display:none !important} .t-navbar-menu > div {position:relative !important}</style></head><body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_concept_RegexTraits skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <div class="noprint" id="mw-head">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/mwiki/index.php" id="searchform">
+		<input name="title" type="hidden" value="Special:Search">
+				<div id="simpleSearch">
+						<input accesskey="f" id="searchInput" name="search" title="Search cppreference.com [f]">						<button id="searchButton" name="button" title="Search the pages for this text" type="submit"><img alt="Search" src="../../../mwiki/skins/cppreference2/images/search-ltr.png"></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div class="" id="p-personal">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fconcept%2FRegexTraits&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a accesskey="o" href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fconcept%2FRegexTraits" title="You are encouraged to log in; however, it is not mandatory [o]">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-namespaces">
+	<h5>Namespaces</h5>
+	<ul>
+					<li class="selected" id="ca-nstab-main"><span><a accesskey="c" href="./RegexTraits.html" title="View the content page [c]">Page</a></span></li>
+					<li class="new" id="ca-talk"><span><a accesskey="t" href="http://en.cppreference.com/mwiki/index.php?title=Talk:cpp/concept/RegexTraits&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-variants">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-views">
+	<h5>Views</h5>
+	<ul>
+					<li class="selected" id="ca-view"><span><a href="./RegexTraits.html">View</a></span></li>
+					<li id="ca-edit"><span><a accesskey="e" href="http://en.cppreference.com/mwiki/index.php?title=cpp/concept/RegexTraits&amp;action=edit" title="You can edit this page. Please use the preview button before saving [e]">Edit</a></span></li>
+					<li class="collapsible" id="ca-history"><span><a accesskey="h" href="http://en.cppreference.com/mwiki/index.php?title=cpp/concept/RegexTraits&amp;action=history" title="Past revisions of this page [h]">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-cactions">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 class="firstHeading" id="firstHeading"><span style="font-size:0.7em; line-height:130%">C++ concepts:</span> RegexTraits</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../concept.html" title="cpp/concept">concept</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../concept.html" title="cpp/concept"> Library concepts</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../concept.html" title="cpp/concept"> C++ concepts</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv-h1"><td colspan="5"> Basic</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./DefaultConstructible.html" title="cpp/concept/DefaultConstructible"><span class="t-lines"><span>DefaultConstructible</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./CopyAssignable.html" title="cpp/concept/CopyAssignable"><span class="t-lines"><span>CopyAssignable</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./CopyConstructible.html" title="cpp/concept/CopyConstructible"><span class="t-lines"><span>CopyConstructible</span></span></a></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./MoveAssignable.html" title="cpp/concept/MoveAssignable"><span class="t-lines"><span>MoveAssignable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./MoveConstructible.html" title="cpp/concept/MoveConstructible"><span class="t-lines"><span>MoveConstructible</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Destructible.html" title="cpp/concept/Destructible"><span class="t-lines"><span>Destructible</span></span></a></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Layout</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./TrivialType.html" title="cpp/concept/TrivialType"><span class="t-lines"><span>TrivialType</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./TriviallyCopyable.html" title="cpp/concept/TriviallyCopyable"><span class="t-lines"><span>TriviallyCopyable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./StandardLayoutType.html" title="cpp/concept/StandardLayoutType"><span class="t-lines"><span>StandardLayoutType</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./PODType.html" title="cpp/concept/PODType"><span class="t-lines"><span>PODType</span></span></a></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Library-Wide</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./EqualityComparable.html" title="cpp/concept/EqualityComparable"><span class="t-lines"><span>EqualityComparable</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./LessThanComparable.html" title="cpp/concept/LessThanComparable"><span class="t-lines"><span>LessThanComparable</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Swappable.html" title="cpp/concept/Swappable"><span class="t-lines"><span>Swappable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./ValueSwappable.html" title="cpp/concept/ValueSwappable"><span class="t-lines"><span>ValueSwappable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./NullablePointer.html" title="cpp/concept/NullablePointer"><span class="t-lines"><span>NullablePointer</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Hash.html" title="cpp/concept/Hash"><span class="t-lines"><span>Hash</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Allocator.html" title="cpp/concept/Allocator"><span class="t-lines"><span>Allocator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./FunctionObject.html" title="cpp/concept/FunctionObject"><span class="t-lines"><span>FunctionObject</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Callable.html" title="cpp/concept/Callable"><span class="t-lines"><span>Callable</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Predicate.html" title="cpp/concept/Predicate"><span class="t-lines"><span>Predicate</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./BinaryPredicate.html" title="cpp/concept/BinaryPredicate"><span class="t-lines"><span>BinaryPredicate</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Compare.html" title="cpp/concept/Compare"><span class="t-lines"><span>Compare</span></span></a></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Container</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Container.html" title="cpp/concept/Container"><span class="t-lines"><span>Container</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./SequenceContainer.html" title="cpp/concept/SequenceContainer"><span class="t-lines"><span>SequenceContainer</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./ContiguousContainer.html" title="cpp/concept/ContiguousContainer"><span class="t-lines"><span>ContiguousContainer</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./ReversibleContainer.html" title="cpp/concept/ReversibleContainer"><span class="t-lines"><span>ReversibleContainer</span></span></a></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./AssociativeContainer.html" title="cpp/concept/AssociativeContainer"><span class="t-lines"><span>AssociativeContainer</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./AllocatorAwareContainer.html" title="cpp/concept/AllocatorAwareContainer"><span class="t-lines"><span>AllocatorAwareContainer</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./UnorderedAssociativeContainer.html" title="cpp/concept/UnorderedAssociativeContainer"><span class="t-lines"><span>UnorderedAssociativeContainer</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Container Elements</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./DefaultInsertable.html" title="cpp/concept/DefaultInsertable"><span class="t-lines"><span>DefaultInsertable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./CopyInsertable.html" title="cpp/concept/CopyInsertable"><span class="t-lines"><span>CopyInsertable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./MoveInsertable.html" title="cpp/concept/MoveInsertable"><span class="t-lines"><span>MoveInsertable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./EmplaceConstructible.html" title="cpp/concept/EmplaceConstructible"><span class="t-lines"><span>EmplaceConstructible</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Erasable.html" title="cpp/concept/Erasable"><span class="t-lines"><span>Erasable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Iterator</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Iterator.html" title="cpp/concept/Iterator"><span class="t-lines"><span>Iterator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./OutputIterator.html" title="cpp/concept/OutputIterator"><span class="t-lines"><span>OutputIterator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./InputIterator.html" title="cpp/concept/InputIterator"><span class="t-lines"><span>InputIterator</span></span></a></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./ForwardIterator.html" title="cpp/concept/ForwardIterator"><span class="t-lines"><span>ForwardIterator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./BidirectionalIterator.html" title="cpp/concept/BidirectionalIterator"><span class="t-lines"><span>BidirectionalIterator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./RandomAccessIterator.html" title="cpp/concept/RandomAccessIterator"><span class="t-lines"><span>RandomAccessIterator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./ContiguousIterator.html" title="cpp/concept/ContiguousIterator"><span class="t-lines"><span>ContiguousIterator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Stream I/O</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./FormattedInputFunction.html" title="cpp/concept/FormattedInputFunction"><span class="t-lines"><span>FormattedInputFunction</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./UnformattedInputFunction.html" title="cpp/concept/UnformattedInputFunction"><span class="t-lines"><span>UnformattedInputFunction</span></span></a></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./FormattedOutputFunction.html" title="cpp/concept/FormattedOutputFunction"><span class="t-lines"><span>FormattedOutputFunction</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./UnformattedOutputFunction.html" title="cpp/concept/UnformattedOutputFunction"><span class="t-lines"><span>UnformattedOutputFunction</span></span></a></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Random Numbers</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./SeedSequence.html" title="cpp/concept/SeedSequence"><span class="t-lines"><span>SeedSequence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./RandomNumberEngine.html" title="cpp/concept/RandomNumberEngine"><span class="t-lines"><span>RandomNumberEngine</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./RandomNumberDistribution.html" title="cpp/concept/RandomNumberDistribution"><span class="t-lines"><span>RandomNumberDistribution</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./UniformRandomBitGenerator.html" title="cpp/concept/UniformRandomBitGenerator"><span class="t-lines"><span>UniformRandomBitGenerator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./RandomNumberEngineAdaptor.html" title="cpp/concept/RandomNumberEngineAdaptor"><span class="t-lines"><span>RandomNumberEngineAdaptor</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Concurrency</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./BasicLockable.html" title="cpp/concept/BasicLockable"><span class="t-lines"><span>BasicLockable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Lockable.html" title="cpp/concept/Lockable"><span class="t-lines"><span>Lockable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./TimedLockable.html" title="cpp/concept/TimedLockable"><span class="t-lines"><span>TimedLockable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Mutex.html" title="cpp/concept/Mutex"><span class="t-lines"><span>Mutex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./TimedMutex.html" title="cpp/concept/TimedMutex"><span class="t-lines"><span>TimedMutex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./SharedMutex.html" title="cpp/concept/SharedMutex"><span class="t-lines"><span>SharedMutex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./SharedTimedMutex.html" title="cpp/concept/SharedTimedMutex"><span class="t-lines"><span>SharedTimedMutex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx14">(C++14)</span></span></span></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Other</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./CharTraits.html" title="cpp/concept/CharTraits"><span class="t-lines"><span>CharTraits</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>RegexTraits</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./BitmaskType.html" title="cpp/concept/BitmaskType"><span class="t-lines"><span>BitmaskType</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./NumericType.html" title="cpp/concept/NumericType"><span class="t-lines"><span>NumericType</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./LiteralType.html" title="cpp/concept/LiteralType"><span class="t-lines"><span>LiteralType</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./UnaryTypeTrait.html" title="cpp/concept/UnaryTypeTrait"><span class="t-lines"><span>UnaryTypeTrait</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./BinaryTypeTrait.html" title="cpp/concept/BinaryTypeTrait"><span class="t-lines"><span>BinaryTypeTrait</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./TransformationTrait.html" title="cpp/concept/TransformationTrait"><span class="t-lines"><span>TransformationTrait</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./Clock.html" title="cpp/concept/Clock"><span class="t-lines"><span>Clock</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./TrivialClock.html" title="cpp/concept/TrivialClock"><span class="t-lines"><span>TrivialClock</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+</tbody></table></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/concept/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
+<p><strong class="selflink"><code>RegexTraits</code></strong> is a traits class that abstracts operations needed for a given character type when as template type parameters for <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../regex/basic_regex.html"><span class="kw1999">std::<span class="me2">basic_regex</span></span></a></span></span>.
+</p>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/concept/RegexTraits&amp;action=edit&amp;section=1" title="Edit section: Requirements">edit</a>]</span> <span class="mw-headline" id="Requirements">Requirements</span></h3>
+<p>Given
+</p>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">CharT</span></span>, a character type
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">X</span></span>, a <strong class="selflink"><code>RegexTraits</code></strong> type for type <span class="t-c"><span class="mw-geshi cpp source-cpp">CharT</span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">u</span></span>, an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">X</span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">v</span></span>, an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> X</span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span>, a value of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> CharT<span class="sy2">*</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">I1, I2</span></span>, input iterators
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">F1, F2</span></span>, forward iterators
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">c</span></span>, a value of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> CharT</span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span>, an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">string_type</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">cs</span></span>, an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> X<span class="sy4">::</span><span class="me2">string_type</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">b</span></span>, a value of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">I</span></span>, a value of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">cl</span></span>, an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">char_class_type</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">loc</span></span>, an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">locale_type</span></span></span>
+</li></ul>
+<p><br>
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>expression</th>
+<th>return type</th>
+<th>semantics
+</th></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">char_type</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">CharT</span></span> </td>
+<td> Used to refer to the character type.
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">string_type</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../string/basic_string.html"><span class="kw1228">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>CharT<span class="sy1">&gt;</span></span></span> </td>
+<td>
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">locale_type</span></span></span> </td>
+<td>  </td>
+<td> A <a href="./CopyConstructible.html" title="cpp/concept/CopyConstructible"><code>CopyConstructible</code></a> type that represents the locale used by the traits class.
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">char_class_type</span></span></span> </td>
+<td>  </td>
+<td> A <a href="./BitmaskType.html" title="cpp/concept/BitmaskType"><code>BitmaskType</code></a> type that represents a particular character classification.
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">length</span><span class="br0">(</span>p<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a></span></span> </td>
+<td> Returns: the smallest <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> such that <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">==</span> <span class="nu0">0</span></span></span>. Complexity is linear in <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>.
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">translate</span><span class="br0">(</span>c<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">char_type</span></span></span> </td>
+<td> Returns: a character such that for any character <span class="t-c"><span class="mw-geshi cpp source-cpp">d</span></span> considered to be equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">c</span></span>, then <span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">translate</span><span class="br0">(</span>c<span class="br0">)</span> <span class="sy1">==</span> v.<span class="me1">translate</span><span class="br0">(</span>d<span class="br0">)</span></span></span>.
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">translate_nocase</span><span class="br0">(</span>c<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">char_type</span></span></span> </td>
+<td> Returns: a character such that for any character <span class="t-c"><span class="mw-geshi cpp source-cpp">C</span></span> considered to be equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">c</span></span> without regard to case, then <span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">translate_nocase</span><span class="br0">(</span>c<span class="br0">)</span> <span class="sy1">==</span> v.<span class="me1">translate_nocase</span><span class="br0">(</span>C<span class="br0">)</span></span></span>.
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">transform</span><span class="br0">(</span>F1, F2<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">string_type</span></span></span> </td>
+<td> Returns: a sort key for the character sequence designated by the iterator range <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>F1, F2<span class="br0">)</span></span></span> such that if the character sequence <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>G1, G2<span class="br0">)</span></span></span> sorts before the character sequence <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>H1, H2<span class="br0">)</span></span></span>, then <span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">transform</span><span class="br0">(</span>G1, G2<span class="br0">)</span> <span class="sy1">&lt;</span> v.<span class="me1">transform</span><span class="br0">(</span>H1, H2<span class="br0">)</span></span></span>.
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">transform_primary</span><span class="br0">(</span>F1, F2<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">string_type</span></span></span> </td>
+<td> Returns: a sort key for the character sequence designated by the iterator range <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>F1, F2<span class="br0">)</span></span></span> such that if the character sequence <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>G1, G2<span class="br0">)</span></span></span> sorts before the character sequence <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>H1, H2<span class="br0">)</span></span></span> without regard to case, then <span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">transform_primary</span><span class="br0">(</span>G1, G2<span class="br0">)</span> <span class="sy1">&lt;</span> v.<span class="me1">transform_primary</span><span class="br0">(</span>H1, H2<span class="br0">)</span></span></span>.
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">lookup_collatename</span><span class="br0">(</span>F1, F2<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">string_type</span></span></span> </td>
+<td> Returns:
+<ul><li> An empty string if the character sequence is not a valid collating element
+</li><li> A sequence of characters that represents the collating element consisting of the character sequence designated by the iterator range <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>F1, F2<span class="br0">)</span></span></span> otherwise
+</li></ul>
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">lookup_classname</span><span class="br0">(</span>F1, F2, b<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">char_class_type</span></span></span> </td>
+<td>
+<ul><li> Converts the character sequence designated by the iterator range <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>F1, F2<span class="br0">)</span></span></span> into a value of a <a href="./BitmaskType.html" title="cpp/concept/BitmaskType"><code>BitmaskType</code></a> that can subsequently be passed to <span class="t-c"><span class="mw-geshi cpp source-cpp">isctype</span></span>
+</li><li> Values returned from <span class="t-c"><span class="mw-geshi cpp source-cpp">lookup_classname</span></span> can be bitwise or&#39;ed together; the resulting value represents membership in either of the corresponding character classes
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">b</span></span> is true, the returned bitmask is suitable for matching characters without regard to their case.
+</li><li> Returns <span class="t-c"><span class="mw-geshi cpp source-cpp">&#x200B;<span class="nu0">0</span>&#x200B;</span></span> if the character sequence is not the name of a character class recognized by <span class="t-c"><span class="mw-geshi cpp source-cpp">X</span></span>.
+</li><li> The value returned shall be independent of the case of the characters in the sequence.
+</li></ul>
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">isctype</span><span class="br0">(</span>c, cl<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> </td>
+<td> Returns: whether <span class="t-c"><span class="mw-geshi cpp source-cpp">c</span></span> is a member of one of the character classes designated by <span class="t-c"><span class="mw-geshi cpp source-cpp">cl</span></span> or not.
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">value</span><span class="br0">(</span>c, I<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> </td>
+<td> Returns:
+<ul><li> The value represented by the digit <span class="t-c"><span class="mw-geshi cpp source-cpp">c</span></span> in base <span class="t-c"><span class="mw-geshi cpp source-cpp">I</span></span> if the character <span class="t-c"><span class="mw-geshi cpp source-cpp">c</span></span> is a valid digit in base <span class="t-c"><span class="mw-geshi cpp source-cpp">I</span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="nu0">1</span></span></span> otherwise
+</li></ul>
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">u.<span class="me1">imbue</span><span class="br0">(</span>loc<span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">locale_type</span></span></span> </td>
+<td>
+<ul><li> Imbues <span class="t-c"><span class="mw-geshi cpp source-cpp">u</span></span> with the locale <span class="t-c"><span class="mw-geshi cpp source-cpp">loc</span></span>
+</li><li> Returns: The previous locale used by <span class="t-c"><span class="mw-geshi cpp source-cpp">u</span></span> if any
+</li></ul>
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">v.<span class="me1">getloc</span><span class="br0">(</span><span class="br0">)</span></span></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">locale_type</span></span></span> </td>
+<td> Returns: The previous locale used by <span class="t-c"><span class="mw-geshi cpp source-cpp">v</span></span> if any.
+</td></tr></tbody></table>
+<p><br>
+</p>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/concept/RegexTraits&amp;action=edit&amp;section=2" title="Edit section: Standard library">edit</a>]</span> <span class="mw-headline" id="Standard_library">Standard library</span></h3>
+<p><strong class="selflink"><code>RegexTraits</code></strong> is satisfied by the following standard library classes:
+</p>
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dcl">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">class</span> regex_traits<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
+<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">class</span> regex_traits<span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span><br><span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 7418/1000000
+Preprocessor generated node count: 7660/1000000
+Post‐expand include size: 173144/2097152 bytes
+Template argument size: 28584/2097152 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:16739-0!*!0!!*!*!* and timestamp 20180329083917 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from &quot;<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/concept/RegexTraits&amp;oldid=98362">http://en.cppreference.com/mwiki/index.php?title=cpp/concept/RegexTraits&amp;oldid=98362</a>&quot;                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div class="catlinks catlinks-allhidden" id="catlinks"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div class="noprint" id="cpp-footer-base">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a accesskey="r" href="http://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]">Recent changes</a></li><li id="n-FAQ"><a href="http://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="http://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a accesskey="j" href="http://en.cppreference.com/w/Special:WhatLinksHere/cpp/concept/RegexTraits" title="A list of all wiki pages that link here [j]">What links here</a></li><li id="t-recentchangeslinked"><a accesskey="k" href="http://en.cppreference.com/w/Special:RecentChangesLinked/cpp/concept/RegexTraits" title="Recent changes in pages linked from this page [k]">Related changes</a></li><li id="t-upload"><a accesskey="u" href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]">Upload file</a></li><li id="t-specialpages"><a accesskey="q" href="http://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]">Special pages</a></li><li id="t-print"><a accesskey="p" href="http://en.cppreference.com/mwiki/index.php?title=cpp/concept/RegexTraits&amp;printable=yes" rel="alternate" title="Printable version of this page [p]">Printable version</a></li><li id="t-permalink"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/concept/RegexTraits&amp;oldid=98362" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/concept/RegexTraits&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>In other languages</li></ul></div>
+            <div><ul>
+<li class="interwiki-de"><a href="http://de.cppreference.com/w/cpp/concept/RegexTraits" hreflang="de" lang="de" title="cpp/concept/RegexTraits">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/concept/RegexTraits" hreflang="es" lang="es" title="cpp/concept/RegexTraits">Espa&ntilde;ol</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/cpp/concept/RegexTraits" hreflang="fr" lang="fr" title="cpp/concept/RegexTraits">Fran&ccedil;ais</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/cpp/concept/RegexTraits" hreflang="it" lang="it" title="cpp/concept/RegexTraits">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/concept/RegexTraits" hreflang="ja" lang="ja" title="cpp/concept/RegexTraits">&#x65E5;&#x672C;&#x8A9E;</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/cpp/concept/RegexTraits" hreflang="pt" lang="pt" title="cpp/concept/RegexTraits">Portugu&ecirc;s</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/concept/RegexTraits" hreflang="ru" lang="ru" title="cpp/concept/RegexTraits">&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/concept/RegexTraits" hreflang="zh" lang="zh" title="cpp/concept/RegexTraits">&#x4E2D;&#x6587;</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 18 January 2018, at 10:25.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 634 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="http://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="http://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="http://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul class="noprint" id="footer-icons">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" src="../../../mwiki/skins/common/images/poweredby_mediawiki_88x31.png" width="88"></a>                                            <a href="http://qbnz.com/highlighter/"><img alt="Powered by GeSHi" height="31" src="../../../../upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" width="88"></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img alt="Hosted by Tiger Technologies" height="31" src="../../../../upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" width="88"></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 5.812 secs. -->
+	
+<!-- Cached 20180329083917 -->
+
+</body><!-- Online page at http://en.cppreference.com/w/cpp/concept/RegexTraits --></html>

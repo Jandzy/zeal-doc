@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"GradleException()","path":"GradleException--","entryType":"Constructor"},{"name":"GradleException(String)","path":"GradleException-java.lang.String-","entryType":"Constructor"},{"name":"GradleException(String, Throwable)","path":"GradleException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

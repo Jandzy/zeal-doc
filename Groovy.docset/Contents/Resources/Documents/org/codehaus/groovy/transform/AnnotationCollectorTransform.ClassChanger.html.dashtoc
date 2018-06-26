@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"AnnotationCollectorTransform.ClassChanger()","path":"AnnotationCollectorTransform.ClassChanger()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"transformClass(ClassNode)","path":"transformClass(org.codehaus.groovy.ast.ClassNode)","entryType":"Method"}]}

@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"getBuilder(String)","path":"getBuilder-java.lang.String-","entryType":"Method"},{"name":"register(ToolingModelBuilder)","path":"register-org.gradle.tooling.provider.model.ToolingModelBuilder-","entryType":"Method"}]}

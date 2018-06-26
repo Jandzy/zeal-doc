@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"getRules()","path":"getRules--","entryType":"Method"},{"name":"isFailOnViolation()","path":"isFailOnViolation--","entryType":"Method"},{"name":"rule(Action)","path":"rule-org.gradle.api.Action-","entryType":"Method"},{"name":"setFailOnViolation(boolean)","path":"setFailOnViolation-boolean-","entryType":"Method"}]}

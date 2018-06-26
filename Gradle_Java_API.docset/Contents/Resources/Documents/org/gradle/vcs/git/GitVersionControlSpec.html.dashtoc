@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"getUrl()","path":"getUrl--","entryType":"Method"},{"name":"setUrl(String)","path":"setUrl-java.lang.String-","entryType":"Method"},{"name":"setUrl(URI)","path":"setUrl-java.net.URI-","entryType":"Method"}]}

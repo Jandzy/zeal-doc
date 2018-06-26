@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"WritableFile(File)","path":"WritableFile(java.io.File)","entryType":"Constructor"},{"name":"WritableFile(File, String)","path":"WritableFile(java.io.File,%20java.lang.String)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"writeTo(Writer)","path":"writeTo(java.io.Writer)","entryType":"Method"}]}

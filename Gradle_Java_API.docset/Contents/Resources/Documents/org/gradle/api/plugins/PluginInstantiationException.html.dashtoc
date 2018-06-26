@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"PluginInstantiationException(String)","path":"PluginInstantiationException-java.lang.String-","entryType":"Constructor"},{"name":"PluginInstantiationException(String, Throwable)","path":"PluginInstantiationException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

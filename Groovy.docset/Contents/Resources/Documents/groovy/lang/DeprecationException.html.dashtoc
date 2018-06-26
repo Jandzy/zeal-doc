@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"DeprecationException(String)","path":"DeprecationException(java.lang.String)","entryType":"Constructor"},{"name":"DeprecationException(String, Throwable)","path":"DeprecationException(java.lang.String,%20java.lang.Throwable)","entryType":"Constructor"}]}

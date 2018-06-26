@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"NativeInstallationSpec()","path":"NativeInstallationSpec--","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"getDirectory()","path":"getDirectory--","entryType":"Method"},{"name":"setDirectory(File)","path":"setDirectory-java.io.File-","entryType":"Method"}]}

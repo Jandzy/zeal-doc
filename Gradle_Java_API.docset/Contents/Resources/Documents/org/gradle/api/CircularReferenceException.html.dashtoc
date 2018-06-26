@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"CircularReferenceException(String)","path":"CircularReferenceException-java.lang.String-","entryType":"Constructor"},{"name":"CircularReferenceException(String, Throwable)","path":"CircularReferenceException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

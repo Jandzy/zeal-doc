@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"SwingTimerTriggerBinding()","path":"SwingTimerTriggerBinding()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"createBinding(SourceBinding, TargetBinding)","path":"createBinding(org.codehaus.groovy.binding.SourceBinding,%20org.codehaus.groovy.binding.TargetBinding)","entryType":"Method"}]}

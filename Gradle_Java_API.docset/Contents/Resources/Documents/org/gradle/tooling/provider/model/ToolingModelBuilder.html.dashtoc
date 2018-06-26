@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"buildAll(String, Project)","path":"buildAll-java.lang.String-org.gradle.api.Project-","entryType":"Method"},{"name":"canBuild(String)","path":"canBuild-java.lang.String-","entryType":"Method"}]}

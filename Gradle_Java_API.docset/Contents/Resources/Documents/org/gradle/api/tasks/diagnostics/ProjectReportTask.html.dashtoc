@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"ProjectReportTask()","path":"ProjectReportTask--","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"generate(Project)","path":"generate-org.gradle.api.Project-","entryType":"Method"},{"name":"getRenderer()","path":"getRenderer--","entryType":"Method"}]}

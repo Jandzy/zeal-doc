@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"getAt(int)","path":"getAt(int)","entryType":"Method"},{"name":"iterator()","path":"iterator()","entryType":"Method"},{"name":"leftShift(TableColumn)","path":"leftShift(javax.swing.table.TableColumn)","entryType":"Method"},{"name":"size()","path":"size()","entryType":"Method"}]}

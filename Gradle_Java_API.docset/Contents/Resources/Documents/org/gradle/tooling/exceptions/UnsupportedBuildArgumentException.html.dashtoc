@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"UnsupportedBuildArgumentException(String)","path":"UnsupportedBuildArgumentException-java.lang.String-","entryType":"Constructor"},{"name":"UnsupportedBuildArgumentException(String, Throwable)","path":"UnsupportedBuildArgumentException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

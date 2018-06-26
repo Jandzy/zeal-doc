@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"dependencies(Closure)","path":"dependencies-groovy.lang.Closure-","entryType":"Method"},{"name":"exports(String)","path":"exports-java.lang.String-","entryType":"Method"},{"name":"getDependencies()","path":"getDependencies--","entryType":"Method"},{"name":"getExports()","path":"getExports--","entryType":"Method"}]}

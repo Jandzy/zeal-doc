@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"ObjectGraphBuilder.DefaultNewInstanceResolver()","path":"ObjectGraphBuilder.DefaultNewInstanceResolver()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"newInstance(Class, Map)","path":"newInstance(java.lang.Class,%20java.util.Map)","entryType":"Method"}]}

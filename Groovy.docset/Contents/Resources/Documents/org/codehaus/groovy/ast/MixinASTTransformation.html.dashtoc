@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"MixinASTTransformation()","path":"MixinASTTransformation()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"visit(ASTNode[], SourceUnit)","path":"visit(org.codehaus.groovy.ast.ASTNode%5B%5D,%20org.codehaus.groovy.control.SourceUnit)","entryType":"Method"}]}

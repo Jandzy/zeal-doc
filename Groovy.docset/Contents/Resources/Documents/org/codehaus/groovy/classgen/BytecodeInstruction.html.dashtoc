@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"BytecodeInstruction()","path":"BytecodeInstruction()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"visit(MethodVisitor)","path":"visit(org.objectweb.asm.MethodVisitor)","entryType":"Method"}]}

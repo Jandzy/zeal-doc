@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"AntlrASTProcessSnippets()","path":"AntlrASTProcessSnippets()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"process(AST)","path":"process(antlr.collections.AST)","entryType":"Method"}]}

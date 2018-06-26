@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"Tuple2(T1, T2)","path":"Tuple2(T1,%20T2)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"getFirst()","path":"getFirst()","entryType":"Method"},{"name":"getSecond()","path":"getSecond()","entryType":"Method"}]}

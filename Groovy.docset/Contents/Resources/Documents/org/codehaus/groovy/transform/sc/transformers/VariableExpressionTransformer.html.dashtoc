@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"VariableExpressionTransformer()","path":"VariableExpressionTransformer()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"transformVariableExpression(VariableExpression)","path":"transformVariableExpression(org.codehaus.groovy.ast.expr.VariableExpression)","entryType":"Method"}]}

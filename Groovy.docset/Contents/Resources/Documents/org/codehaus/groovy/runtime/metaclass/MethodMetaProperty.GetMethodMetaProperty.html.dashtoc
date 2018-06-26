@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"MethodMetaProperty.GetMethodMetaProperty(String, MetaMethod)","path":"MethodMetaProperty.GetMethodMetaProperty(java.lang.String,%20groovy.lang.MetaMethod)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"getProperty(Object)","path":"getProperty(java.lang.Object)","entryType":"Method"}]}

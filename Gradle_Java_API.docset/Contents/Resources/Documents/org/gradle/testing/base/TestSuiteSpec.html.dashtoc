@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"getTestedComponent()","path":"getTestedComponent--","entryType":"Method"},{"name":"setTestedComponent(ComponentSpec)","path":"setTestedComponent-org.gradle.platform.base.ComponentSpec-","entryType":"Method"},{"name":"testing(ComponentSpec)","path":"testing-org.gradle.platform.base.ComponentSpec-","entryType":"Method"}]}

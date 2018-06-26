@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"Namer()","path":"Namer--","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"determineName(Configuration)","path":"determineName-org.gradle.api.artifacts.Configuration-","entryType":"Method"}]}

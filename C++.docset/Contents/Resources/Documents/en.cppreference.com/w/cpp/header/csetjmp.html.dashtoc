@@ -1,1 +1,0 @@
-{"entries":[{"name":"Types","isHeader":true},{"name":"jmp_buf","path":"\/\/apple_ref\/cpp\/tdef\/jmp_buf","entryType":"Type"},{"name":"","isSpacer":true},{"name":"Functions","isHeader":true},{"name":"longjmp","path":"\/\/apple_ref\/cpp\/func\/longjmp","entryType":"Function"},{"name":"setjmp","path":"\/\/apple_ref\/cpp\/func\/setjmp","entryType":"Function"}]}

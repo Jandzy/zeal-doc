@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"ArrayIterator(T[])","path":"ArrayIterator(T%5B%5D)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"hasNext()","path":"hasNext()","entryType":"Method"},{"name":"next()","path":"next()","entryType":"Method"},{"name":"remove()","path":"remove()","entryType":"Method"}]}

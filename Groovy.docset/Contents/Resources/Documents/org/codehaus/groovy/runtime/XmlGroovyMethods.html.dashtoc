@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"XmlGroovyMethods()","path":"XmlGroovyMethods()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"iterator(NodeList)","path":"iterator(org.w3c.dom.NodeList)","entryType":"Method"},{"name":"serialize(Element)","path":"serialize(org.w3c.dom.Element)","entryType":"Method"}]}

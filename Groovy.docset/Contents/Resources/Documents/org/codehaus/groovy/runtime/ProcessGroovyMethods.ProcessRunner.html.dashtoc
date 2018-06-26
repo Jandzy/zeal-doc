@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"ProcessGroovyMethods.ProcessRunner(Process)","path":"ProcessGroovyMethods.ProcessRunner(java.lang.Process)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"run()","path":"run()","entryType":"Method"},{"name":"waitForOrKill(long)","path":"waitForOrKill(long)","entryType":"Method"}]}

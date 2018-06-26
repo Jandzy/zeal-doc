@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"addResourceDir(File)","path":"addResourceDir-java.io.File-","entryType":"Method"},{"name":"getClassesDir()","path":"getClassesDir--","entryType":"Method"},{"name":"getResourceDirs()","path":"getResourceDirs--","entryType":"Method"},{"name":"setClassesDir(File)","path":"setClassesDir-java.io.File-","entryType":"Method"}]}

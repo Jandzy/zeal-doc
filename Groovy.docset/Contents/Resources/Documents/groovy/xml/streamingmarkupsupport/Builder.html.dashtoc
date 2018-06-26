@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"Builder(Map)","path":"Builder(java.util.Map)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"bind(Closure)","path":"bind(groovy.lang.Closure)","entryType":"Method"},{"name":"Fields","isHeader":true},{"name":"namespaceMethodMap","path":"namespaceMethodMap","entryType":"Field"}]}

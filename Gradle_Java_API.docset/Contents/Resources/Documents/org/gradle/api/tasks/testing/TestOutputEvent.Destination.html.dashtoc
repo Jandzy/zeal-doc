@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"valueOf(String)","path":"valueOf-java.lang.String-","entryType":"Method"},{"name":"values()","path":"values--","entryType":"Method"},{"name":"","isSpacer":true},{"name":"Constants","isHeader":true},{"name":"StdErr","path":"StdErr","entryType":"Constant"},{"name":"StdOut","path":"StdOut","entryType":"Constant"}]}

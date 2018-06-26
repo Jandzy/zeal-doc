@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"MetaClassSite(CallSite, MetaClass)","path":"MetaClassSite(org.codehaus.groovy.runtime.callsite.CallSite,%20groovy.lang.MetaClass)","entryType":"Constructor"},{"name":"Fields","isHeader":true},{"name":"metaClass","path":"metaClass","entryType":"Field"}]}

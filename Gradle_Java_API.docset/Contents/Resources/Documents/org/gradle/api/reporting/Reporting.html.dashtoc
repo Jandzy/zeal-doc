@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"getReports()","path":"getReports--","entryType":"Method"},{"name":"reports(Action)","path":"reports-org.gradle.api.Action-","entryType":"Method"},{"name":"reports(Closure)","path":"reports-groovy.lang.Closure-","entryType":"Method"}]}

@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"getAllGroovy()","path":"getAllGroovy--","entryType":"Method"},{"name":"getGroovy()","path":"getGroovy--","entryType":"Method"},{"name":"groovy(Action)","path":"groovy-org.gradle.api.Action-","entryType":"Method"},{"name":"groovy(Closure)","path":"groovy-groovy.lang.Closure-","entryType":"Method"}]}

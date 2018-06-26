@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"executables(Action)","path":"executables-org.gradle.api.Action-","entryType":"Method"},{"name":"getExecutables()","path":"getExecutables--","entryType":"Method"},{"name":"getLibraries()","path":"getLibraries--","entryType":"Method"},{"name":"libraries(Action)","path":"libraries-org.gradle.api.Action-","entryType":"Method"}]}

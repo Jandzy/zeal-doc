@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"StaticTypeCheckingVisitor.SignatureCodecFactory()","path":"StaticTypeCheckingVisitor.SignatureCodecFactory()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"getCodec(int, ClassLoader)","path":"getCodec(int,%20java.lang.ClassLoader)","entryType":"Method"}]}

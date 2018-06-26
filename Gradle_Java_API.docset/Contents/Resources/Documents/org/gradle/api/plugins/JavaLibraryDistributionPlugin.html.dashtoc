@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"JavaLibraryDistributionPlugin()","path":"JavaLibraryDistributionPlugin--","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"apply(ProjectInternal)","path":"apply-org.gradle.api.internal.project.ProjectInternal-","entryType":"Method"}]}

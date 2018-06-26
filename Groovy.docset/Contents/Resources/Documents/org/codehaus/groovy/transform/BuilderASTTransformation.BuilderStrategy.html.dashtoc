@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"build(BuilderASTTransformation, AnnotatedNode, AnnotationNode)","path":"build(org.codehaus.groovy.transform.BuilderASTTransformation,%20org.codehaus.groovy.ast.AnnotatedNode,%20org.codehaus.groovy.ast.AnnotationNode)","entryType":"Method"}]}

@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"ClosureUtils()","path":"ClosureUtils()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"convertClosureToSource(ReaderSource, ClosureExpression)","path":"convertClosureToSource(org.codehaus.groovy.control.io.ReaderSource,%20org.codehaus.groovy.ast.expr.ClosureExpression)","entryType":"Method"}]}

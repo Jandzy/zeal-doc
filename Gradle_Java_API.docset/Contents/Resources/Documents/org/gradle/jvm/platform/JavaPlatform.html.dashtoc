@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"getTargetCompatibility()","path":"getTargetCompatibility--","entryType":"Method"},{"name":"setTargetCompatibility(JavaVersion)","path":"setTargetCompatibility-org.gradle.api.JavaVersion-","entryType":"Method"}]}

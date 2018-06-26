@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"visitDir(FileVisitDetails)","path":"visitDir-org.gradle.api.file.FileVisitDetails-","entryType":"Method"},{"name":"visitFile(FileVisitDetails)","path":"visitFile-org.gradle.api.file.FileVisitDetails-","entryType":"Method"}]}

@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"StaticTypesWriterControllerFactoryImpl()","path":"StaticTypesWriterControllerFactoryImpl()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"makeController(WriterController)","path":"makeController(org.codehaus.groovy.classgen.asm.WriterController)","entryType":"Method"}]}

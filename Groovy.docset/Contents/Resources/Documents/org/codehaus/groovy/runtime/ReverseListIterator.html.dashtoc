@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"ReverseListIterator(List)","path":"ReverseListIterator(java.util.List)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"hasNext()","path":"hasNext()","entryType":"Method"},{"name":"next()","path":"next()","entryType":"Method"},{"name":"remove()","path":"remove()","entryType":"Method"}]}

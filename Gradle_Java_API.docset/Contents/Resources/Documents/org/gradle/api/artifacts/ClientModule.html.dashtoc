@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"addDependency(ModuleDependency)","path":"addDependency-org.gradle.api.artifacts.ModuleDependency-","entryType":"Method"},{"name":"copy()","path":"copy--","entryType":"Method"},{"name":"getDependencies()","path":"getDependencies--","entryType":"Method"},{"name":"getId()","path":"getId--","entryType":"Method"}]}

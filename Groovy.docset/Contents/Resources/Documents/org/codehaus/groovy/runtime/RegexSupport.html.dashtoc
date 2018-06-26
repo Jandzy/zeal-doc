@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"RegexSupport()","path":"RegexSupport()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"getLastMatcher()","path":"getLastMatcher()","entryType":"Method"},{"name":"setLastMatcher(Matcher)","path":"setLastMatcher(java.util.regex.Matcher)","entryType":"Method"}]}

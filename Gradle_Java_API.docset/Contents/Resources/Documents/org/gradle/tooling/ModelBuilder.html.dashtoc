@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"forTasks(Iterable)","path":"forTasks-java.lang.Iterable-","entryType":"Method"},{"name":"forTasks(String...)","path":"forTasks-java.lang.String...-","entryType":"Method"},{"name":"get()","path":"get--","entryType":"Method"},{"name":"get(ResultHandler)","path":"get-org.gradle.tooling.ResultHandler-","entryType":"Method"}]}

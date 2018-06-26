@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"NodeParents(GPathResult, Map)","path":"NodeParents(groovy.util.slurpersupport.GPathResult,%20java.util.Map)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"nodeIterator()","path":"nodeIterator()","entryType":"Method"}]}

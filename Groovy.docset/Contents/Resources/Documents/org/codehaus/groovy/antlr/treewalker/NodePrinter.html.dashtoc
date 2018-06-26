@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"NodePrinter(PrintStream, String[])","path":"NodePrinter(java.io.PrintStream,%20java.lang.String%5B%5D)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"visitDefault(GroovySourceAST, int)","path":"visitDefault(org.codehaus.groovy.antlr.GroovySourceAST,%20int)","entryType":"Method"}]}

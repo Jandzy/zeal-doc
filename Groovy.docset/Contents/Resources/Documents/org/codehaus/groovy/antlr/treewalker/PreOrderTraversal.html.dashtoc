@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"PreOrderTraversal(Visitor)","path":"PreOrderTraversal(org.codehaus.groovy.antlr.treewalker.Visitor)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"accept(GroovySourceAST)","path":"accept(org.codehaus.groovy.antlr.GroovySourceAST)","entryType":"Method"}]}

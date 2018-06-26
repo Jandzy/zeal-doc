@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"InvalidModelException(String)","path":"InvalidModelException-java.lang.String-","entryType":"Constructor"},{"name":"InvalidModelException(String, Exception)","path":"InvalidModelException-java.lang.String-java.lang.Exception-","entryType":"Constructor"}]}

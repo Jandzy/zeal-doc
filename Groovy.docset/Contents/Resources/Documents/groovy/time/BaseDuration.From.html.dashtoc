@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"BaseDuration.From()","path":"BaseDuration.From()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"getNow()","path":"getNow()","entryType":"Method"},{"name":"getToday()","path":"getToday()","entryType":"Method"}]}

@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"getAt(EmptyRange)","path":"getAt(groovy.lang.EmptyRange)","entryType":"Method"},{"name":"getAt(Range)","path":"getAt(groovy.lang.Range)","entryType":"Method"},{"name":"getAt(Collection)","path":"getAt(java.util.Collection)","entryType":"Method"}]}

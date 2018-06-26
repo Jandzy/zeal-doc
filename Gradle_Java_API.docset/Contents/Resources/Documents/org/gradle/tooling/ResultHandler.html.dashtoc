@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"onComplete(T)","path":"onComplete-T-","entryType":"Method"},{"name":"onFailure(GradleConnectionException)","path":"onFailure-org.gradle.tooling.GradleConnectionException-","entryType":"Method"}]}

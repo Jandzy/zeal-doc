@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"GroovyClassValueJava7(ComputeValue)","path":"GroovyClassValueJava7(org.codehaus.groovy.reflection.GroovyClassValue.ComputeValue)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"computeValue(Class)","path":"computeValue(java.lang.Class)","entryType":"Method"}]}

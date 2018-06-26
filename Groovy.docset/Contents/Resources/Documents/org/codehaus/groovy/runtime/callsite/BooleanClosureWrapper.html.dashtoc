@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"BooleanClosureWrapper(Closure)","path":"BooleanClosureWrapper(groovy.lang.Closure)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"call(Object...)","path":"call(java.lang.Object...)","entryType":"Method"},{"name":"callForMap(Entry)","path":"callForMap(java.util.Map.Entry)","entryType":"Method"}]}

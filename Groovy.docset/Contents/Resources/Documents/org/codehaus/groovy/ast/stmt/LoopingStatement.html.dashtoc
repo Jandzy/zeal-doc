@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"getLoopBlock()","path":"getLoopBlock()","entryType":"Method"},{"name":"setLoopBlock(Statement)","path":"setLoopBlock(org.codehaus.groovy.ast.stmt.Statement)","entryType":"Method"}]}

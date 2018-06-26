@@ -1,1 +1,0 @@
-{"entries":[{"name":"Methods","isHeader":true},{"name":"componentFilter(Spec)","path":"componentFilter-org.gradle.api.specs.Spec-","entryType":"Method"},{"name":"isLenient()","path":"isLenient--","entryType":"Method"},{"name":"lenient(boolean)","path":"lenient-boolean-","entryType":"Method"},{"name":"setLenient(boolean)","path":"setLenient-boolean-","entryType":"Method"}]}

@@ -1,1 +1,0 @@
-{"entries":[{"name":"Constructors","isHeader":true},{"name":"MethodHelper()","path":"MethodHelper()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"isPublic(Method)","path":"isPublic(java.lang.reflect.Method)","entryType":"Method"},{"name":"isStatic(Method)","path":"isStatic(java.lang.reflect.Method)","entryType":"Method"}]}

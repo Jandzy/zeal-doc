@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"leftShift(Object)","path":"leftShift(java.lang.Object)","entryType":"Method"},{"name":"withFormatter(Closure)","path":"withFormatter(groovy.lang.Closure)","entryType":"Method"},{"name":"withFormatter(Locale, Closure)","path":"withFormatter(java.util.Locale,%20groovy.lang.Closure)","entryType":"Method"}]}

@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ListenerFailedException(String, List)","path":"ListenerFailedException-java.lang.String-java.util.List-","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"getCauses()","path":"getCauses--","entryType":"Method"}]}

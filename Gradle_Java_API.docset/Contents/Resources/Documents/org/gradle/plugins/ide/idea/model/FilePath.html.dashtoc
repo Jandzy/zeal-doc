@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"FilePath(File, String, String, String)","path":"FilePath-java.io.File-java.lang.String-java.lang.String-java.lang.String-","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"getFile()","path":"getFile--","entryType":"Method"}]}

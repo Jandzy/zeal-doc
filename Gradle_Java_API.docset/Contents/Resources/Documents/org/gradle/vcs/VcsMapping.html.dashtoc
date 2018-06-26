@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"from(Class, Action)","path":"from-java.lang.Class-org.gradle.api.Action-","entryType":"Method"},{"name":"from(VersionControlSpec)","path":"from-org.gradle.vcs.VersionControlSpec-","entryType":"Method"},{"name":"getRequested()","path":"getRequested--","entryType":"Method"}]}

@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"isUndefined(ClassNode)","path":"isUndefined(org.codehaus.groovy.ast.ClassNode)","entryType":"Method"},{"name":"isUndefined(String)","path":"isUndefined(java.lang.String)","entryType":"Method"},{"name":"Fields","isHeader":true},{"name":"STRING","path":"STRING","entryType":"Field"}]}

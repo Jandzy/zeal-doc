@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"SimpleHttpFileServerFactory()","path":"SimpleHttpFileServerFactory--","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"start(File, int)","path":"start-java.io.File-int-","entryType":"Method"}]}

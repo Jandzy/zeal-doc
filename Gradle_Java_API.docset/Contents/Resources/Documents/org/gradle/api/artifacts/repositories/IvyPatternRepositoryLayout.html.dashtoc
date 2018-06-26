@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"artifact(String)","path":"artifact-java.lang.String-","entryType":"Method"},{"name":"getM2Compatible()","path":"getM2Compatible--","entryType":"Method"},{"name":"ivy(String)","path":"ivy-java.lang.String-","entryType":"Method"},{"name":"setM2compatible(boolean)","path":"setM2compatible-boolean-","entryType":"Method"}]}

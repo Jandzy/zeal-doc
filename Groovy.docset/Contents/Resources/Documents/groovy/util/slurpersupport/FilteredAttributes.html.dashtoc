@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"FilteredAttributes(GPathResult, Closure, Map)","path":"FilteredAttributes(groovy.util.slurpersupport.GPathResult,%20groovy.lang.Closure,%20java.util.Map)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"nodeIterator()","path":"nodeIterator()","entryType":"Method"}]}

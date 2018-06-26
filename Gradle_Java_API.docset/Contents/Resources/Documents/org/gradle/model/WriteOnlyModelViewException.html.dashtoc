@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"WriteOnlyModelViewException(String, ModelPath, ModelType, ModelRuleDescriptor)","path":"WriteOnlyModelViewException-java.lang.String-org.gradle.model.internal.core.ModelPath-org.gradle.model.internal.type.ModelType-org.gradle.model.internal.core.rule.describe.ModelRuleDescriptor-","entryType":"Constructor"}]}

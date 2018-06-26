@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"beforeGet(Object, String)","path":"beforeGet(java.lang.Object,%20java.lang.String)","entryType":"Method"},{"name":"beforeSet(Object, String, Object)","path":"beforeSet(java.lang.Object,%20java.lang.String,%20java.lang.Object)","entryType":"Method"}]}

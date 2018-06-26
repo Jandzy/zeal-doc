@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ManifestException(String)","path":"ManifestException-java.lang.String-","entryType":"Constructor"},{"name":"ManifestException(String, Throwable)","path":"ManifestException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

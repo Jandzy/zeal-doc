@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"CoffeeScriptCompileOptions()","path":"CoffeeScriptCompileOptions--","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"getEncoding()","path":"getEncoding--","entryType":"Method"},{"name":"setEncoding(String)","path":"setEncoding-java.lang.String-","entryType":"Method"}]}

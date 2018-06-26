@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ScriptReference(Script, String)","path":"ScriptReference(groovy.lang.Script,%20java.lang.String)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"get()","path":"get()","entryType":"Method"},{"name":"set(Object)","path":"set(java.lang.Object)","entryType":"Method"}]}

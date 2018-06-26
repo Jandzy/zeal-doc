@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"MethodSelectionException(String, FastArray, Class[])","path":"MethodSelectionException(java.lang.String,%20org.codehaus.groovy.util.FastArray,%20java.lang.Class%5B%5D)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"getMessage()","path":"getMessage()","entryType":"Method"}]}

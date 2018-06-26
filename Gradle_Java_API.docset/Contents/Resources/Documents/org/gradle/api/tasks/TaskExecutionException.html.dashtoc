@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"TaskExecutionException(Task, Throwable)","path":"TaskExecutionException-org.gradle.api.Task-java.lang.Throwable-","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"getTask()","path":"getTask--","entryType":"Method"}]}

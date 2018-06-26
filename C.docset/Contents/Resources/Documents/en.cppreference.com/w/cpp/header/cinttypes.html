@@ -1,0 +1,533 @@
+<html><head><meta charset="utf-8"><title>Standard library header &lt;cinttypes&gt;</title><link href="../../css.css" rel="stylesheet" type="text/css"><script src="../../js.js" type="text/javascript"></script><style>.t-example-live-link {display:none !important} .t-sidebar-body {display:none}\nbody{min-width:0}\ndiv.mw-geshi{width:95%}\ndiv#content {width:auto !important} div#content{background-image:none; margin-left:0px;} .t-lines {background:inherit !important} pre, div.mw-geshi {width: 100% !important} body {background:white !important} div#content {width:100% !important} pre, div.mw-geshi {width:auto !important} .t-example-live-link, #mw-head, #cpp-footer-base {display:none !important} .t-navbar-menu > div {position:relative !important}</style></head><body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_header_cinttypes skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <div class="noprint" id="mw-head">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/mwiki/index.php" id="searchform">
+		<input name="title" type="hidden" value="Special:Search">
+				<div id="simpleSearch">
+						<input accesskey="f" id="searchInput" name="search" title="Search cppreference.com [f]">						<button id="searchButton" name="button" title="Search the pages for this text" type="submit"><img alt="Search" src="../../../mwiki/skins/cppreference2/images/search-ltr.png"></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div class="" id="p-personal">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fheader%2Fcinttypes&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a accesskey="o" href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fheader%2Fcinttypes" title="You are encouraged to log in; however, it is not mandatory [o]">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-namespaces">
+	<h5>Namespaces</h5>
+	<ul>
+					<li class="selected" id="ca-nstab-main"><span><a accesskey="c" href="./cinttypes.html" title="View the content page [c]">Page</a></span></li>
+					<li class="new" id="ca-talk"><span><a accesskey="t" href="http://en.cppreference.com/mwiki/index.php?title=Talk:cpp/header/cinttypes&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-variants">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-views">
+	<h5>Views</h5>
+	<ul>
+					<li class="selected" id="ca-view"><span><a href="./cinttypes.html">View</a></span></li>
+					<li id="ca-edit"><span><a accesskey="e" href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;action=edit" title="You can edit this page. Please use the preview button before saving [e]">Edit</a></span></li>
+					<li class="collapsible" id="ca-history"><span><a accesskey="h" href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;action=history" title="Past revisions of this page [h]">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-cactions">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 class="firstHeading" id="firstHeading"><span style="font-size:0.7em; line-height:130%">Standard library header</span> &lt;cinttypes&gt;</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../header.html" title="cpp/header">header</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../concept.html" title="cpp/concept"> Library concepts</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../header.html" title="cpp/header"> Standard Library header files </a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv-h2"><td colspan="5"> Language Support</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cstddef.html" title="cpp/header/cstddef"><tt>&lt;cstddef&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./limits.html" title="cpp/header/limits"><tt>&lt;limits&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./climits.html" title="cpp/header/climits"><tt>&lt;climits&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./version.html" title="cpp/header/version"><tt>&lt;version&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cfloat.html" title="cpp/header/cfloat"><tt>&lt;cfloat&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cstdint.html" title="cpp/header/cstdint"><tt>&lt;cstdint&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./new.html" title="cpp/header/new"><tt>&lt;new&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./typeinfo.html" title="cpp/header/typeinfo"><tt>&lt;typeinfo&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./exception.html" title="cpp/header/exception"><tt>&lt;exception&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./initializer_list.html" title="cpp/header/initializer list"><tt>&lt;initializer_list&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./csignal.html" title="cpp/header/csignal"><tt>&lt;csignal&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./csetjmp.html" title="cpp/header/csetjmp"><tt>&lt;csetjmp&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cstdarg.html" title="cpp/header/cstdarg"><tt>&lt;cstdarg&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Diagnostics</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./stdexcept.html" title="cpp/header/stdexcept"><tt>&lt;stdexcept&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cassert.html" title="cpp/header/cassert"><tt>&lt;cassert&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cerrno.html" title="cpp/header/cerrno"><tt>&lt;cerrno&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./system_error.html" title="cpp/header/system error"><tt>&lt;system_error&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> General utilities</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./utility.html" title="cpp/header/utility"><tt>&lt;utility&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./memory_resource.html" title="cpp/header/memory resource"><tt>&lt;memory_resource&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./scoped_allocator.html" title="cpp/header/scoped allocator"><tt>&lt;scoped_allocator&gt;</tt></a>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./compare.html" title="cpp/header/compare"><tt>&lt;compare&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./bitset.html" title="cpp/header/bitset"><tt>&lt;bitset&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./tuple.html" title="cpp/header/tuple"><tt>&lt;tuple&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./optional.html" title="cpp/header/optional"><tt>&lt;optional&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./any.html" title="cpp/header/any"><tt>&lt;any&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./variant.html" title="cpp/header/variant"><tt>&lt;variant&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./type_traits.html" title="cpp/header/type traits"><tt>&lt;type_traits&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./ratio.html" title="cpp/header/ratio"><tt>&lt;ratio&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./chrono.html" title="cpp/header/chrono"><tt>&lt;chrono&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./typeindex.html" title="cpp/header/typeindex"><tt>&lt;typeindex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./ctime.html" title="cpp/header/ctime"><tt>&lt;ctime&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cstdlib.html" title="cpp/header/cstdlib"><tt>&lt;cstdlib&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Strings</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./string.html" title="cpp/header/string"><tt>&lt;string&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./string_view.html" title="cpp/header/string view"><tt>&lt;string_view&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cctype.html" title="cpp/header/cctype"><tt>&lt;cctype&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cwctype.html" title="cpp/header/cwctype"><tt>&lt;cwctype&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cwchar.html" title="cpp/header/cwchar"><tt>&lt;cwchar&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cuchar.html" title="cpp/header/cuchar"><tt>&lt;cuchar&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cstring.html" title="cpp/header/cstring"><tt>&lt;cstring&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./charconv.html" title="cpp/header/charconv"><tt>&lt;charconv&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Localization</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./locale.html" title="cpp/header/locale"><tt>&lt;locale&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./clocale.html" title="cpp/header/clocale"><tt>&lt;clocale&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Containers</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./span.html" title="cpp/header/span"><tt>&lt;span&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./array.html" title="cpp/header/array"><tt>&lt;array&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./vector.html" title="cpp/header/vector"><tt>&lt;vector&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./deque.html" title="cpp/header/deque"><tt>&lt;deque&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./forward_list.html" title="cpp/header/forward list"><tt>&lt;forward_list&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./list.html" title="cpp/header/list"><tt>&lt;list&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./map.html" title="cpp/header/map"><tt>&lt;map&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./set.html" title="cpp/header/set"><tt>&lt;set&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./queue.html" title="cpp/header/queue"><tt>&lt;queue&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./unordered_map.html" title="cpp/header/unordered map"><tt>&lt;unordered_map&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./unordered_set.html" title="cpp/header/unordered set"><tt>&lt;unordered_set&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./stack.html" title="cpp/header/stack"><tt>&lt;stack&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Iterators</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./iterator.html" title="cpp/header/iterator"><tt>&lt;iterator&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Algorithms</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./algorithm.html" title="cpp/header/algorithm"><tt>&lt;algorithm&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./execution.html" title="cpp/header/execution"><tt>&lt;execution&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Numerics</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./complex.html" title="cpp/header/complex"><tt>&lt;complex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./random.html" title="cpp/header/random"><tt>&lt;random&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./valarray.html" title="cpp/header/valarray"><tt>&lt;valarray&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./numeric.html" title="cpp/header/numeric"><tt>&lt;numeric&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cfenv.html" title="cpp/header/cfenv"><tt>&lt;cfenv&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cmath.html" title="cpp/header/cmath"><tt>&lt;cmath&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Input/Output</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./iosfwd.html" title="cpp/header/iosfwd"><tt>&lt;iosfwd&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./ios.html" title="cpp/header/ios"><tt>&lt;ios&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./iomanip.html" title="cpp/header/iomanip"><tt>&lt;iomanip&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./streambuf.html" title="cpp/header/streambuf"><tt>&lt;streambuf&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./istream.html" title="cpp/header/istream"><tt>&lt;istream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./ostream.html" title="cpp/header/ostream"><tt>&lt;ostream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./iostream.html" title="cpp/header/iostream"><tt>&lt;iostream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./sstream.html" title="cpp/header/sstream"><tt>&lt;sstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./fstream.html" title="cpp/header/fstream"><tt>&lt;fstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./syncstream.html" title="cpp/header/syncstream"><tt>&lt;syncstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cstdio.html" title="cpp/header/cstdio"><tt>&lt;cstdio&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <strong class="selflink"><tt>&lt;cinttypes&gt;</tt></strong></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./strstream.html" title="cpp/header/strstream"><tt>&lt;strstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Regular expressions</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./regex.html" title="cpp/header/regex"><tt>&lt;regex&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Filesystem support</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./filesystem.html" title="cpp/header/filesystem"><tt>&lt;filesystem&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Thread support</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./thread.html" title="cpp/header/thread"><tt>&lt;thread&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./atomic.html" title="cpp/header/atomic"><tt>&lt;atomic&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./mutex.html" title="cpp/header/mutex"><tt>&lt;mutex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./shared_mutex.html" title="cpp/header/shared mutex"><tt>&lt;shared_mutex&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./condition_variable.html" title="cpp/header/condition variable"><tt>&lt;condition_variable&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./future.html" title="cpp/header/future"><tt>&lt;future&gt;</tt></a></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> C compatibility</td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./ciso646.html" title="cpp/header/ciso646"><tt>&lt;ciso646&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./cstdalign.html" title="cpp/header/cstdalign"><tt>&lt;cstdalign&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./cstdbool.html" title="cpp/header/cstdbool"><tt>&lt;cstdbool&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="./ccomplex.html" title="cpp/header/ccomplex"><tt>&lt;ccomplex&gt;</tt></a></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="./ctgmath.html" title="cpp/header/ctgmath"><tt>&lt;ctgmath&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/header/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
+<p>This header was originally in the C standard library as <code><b>&lt;inttypes.h&gt;</b></code>.
+</p><p>Provides conversions from C <a href="../string/byte.html" title="cpp/string/byte">byte</a> and <a href="../string/wide.html" title="cpp/string/wide">wide</a> strings to <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intmax_t</a></span> and <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>, overloads some <a href="../numeric/math.html" title="cpp/numeric/math">math functions</a> for <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intmax_t</a></span> and provide <a href="../io/c.html" title="cpp/io/c">C style input/output</a> format macros for the types declared in <a href="./cstdint.html" title="cpp/header/cstdint"><tt>&lt;cstdint&gt;</tt></a>.
+</p>
+<table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a class="internal" href="#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Includes"><span class="tocnumber">1</span> <span class="toctext">Includes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Types"><span class="tocnumber">2</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Functions"><span class="tocnumber">3</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Macros"><span class="tocnumber">4</span> <span class="toctext">Macros</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Format_constants_for_the_std::fprintf_family_of_functions"><span class="tocnumber">4.1</span> <span class="toctext">Format constants for the <span>std::fprintf</span> family of functions</span></a></li>
+<li class="toclevel-2"><a href="#Format_constants_for_the_std::fscanf_family_of_functions"><span class="tocnumber">4.2</span> <span class="toctext">Format constants for the <span>std::fscanf</span> family of functions</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;action=edit&amp;section=1" title="Edit section: Includes">edit</a>]</span> <span class="mw-headline" id="Includes">Includes</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td colspan="2"> <a href="./cstdint.html" title="cpp/header/cstdint"><tt>&lt;cstdint&gt;</tt></a>
+</td></tr>
+
+</tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;action=edit&amp;section=2" title="Edit section: Types">edit</a>]</span> <span class="mw-headline" id="Types">Types</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr id="//apple_ref/cpp/tdef/imaxdiv_t"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/tdef/imaxdiv_t"></a><a name="imaxdiv_t"></a><a href="../numeric/math/div.html" title="cpp/numeric/math/div"> <span class="t-lines"><span>imaxdiv_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   structure type, return of the <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../numeric/math/div.html"><span class="kw1306">std::<span class="me2">imaxdiv</span></span></a></span></span> function  <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/dsc_imaxdiv_t&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;action=edit&amp;section=3" title="Edit section: Functions">edit</a>]</span> <span class="mw-headline" id="Functions">Functions</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr id="//apple_ref/cpp/func/abs"></tr><tr id="//apple_ref/cpp/func/imaxabs"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/func/abs"></a><a name="abs"></a><a name="//apple_ref/cpp/func/imaxabs"></a><a name="imaxabs"></a><a href="../numeric/math/abs.html" title="cpp/numeric/math/abs"> <span class="t-lines"><span>abs<span class="t-dsc-small">(std::intmax_t)</span></span><span>imaxabs</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   computes absolute value of an integral value (<span class="texhtml" style="white-space: nowrap;">|x|</span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/dsc_imaxabs&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/func/div"></tr><tr id="//apple_ref/cpp/func/imaxdiv"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/func/div"></a><a name="div"></a><a name="//apple_ref/cpp/func/imaxdiv"></a><a name="imaxdiv"></a><a href="../numeric/math/div.html" title="cpp/numeric/math/div"> <span class="t-lines"><span>div<span class="t-dsc-small">(std::intmax_t)</span></span><span>imaxdiv</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   computes quotient and remainder of integer division  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/dsc_imaxdiv&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/func/strtoimax"></tr><tr id="//apple_ref/cpp/func/strtoumax"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/func/strtoimax"></a><a name="strtoimax"></a><a name="//apple_ref/cpp/func/strtoumax"></a><a name="strtoumax"></a><a href="../string/byte/strtoimax.html" title="cpp/string/byte/strtoimax"> <span class="t-lines"><span>strtoimax</span><span>strtoumax</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   converts a byte string to <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intmax_t</a></span> or <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/byte/dsc_strtoimax&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+
+<tr id="//apple_ref/cpp/func/wcstoimax"></tr><tr id="//apple_ref/cpp/func/wcstoumax"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a name="//apple_ref/cpp/func/wcstoimax"></a><a name="wcstoimax"></a><a name="//apple_ref/cpp/func/wcstoumax"></a><a name="wcstoumax"></a><a href="../string/wide/wcstoimax.html" title="cpp/string/wide/wcstoimax"> <span class="t-lines"><span>wcstoimax</span><span>wcstoumax</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>   converts a wide string to <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intmax_t</a></span> or <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/wide/dsc_wcstoimax&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;action=edit&amp;section=4" title="Edit section: Macros">edit</a>]</span> <span class="mw-headline" id="Macros">Macros</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Format_constants_for_the_std::fprintf_family_of_functions">  Format constants for the <span class="t-lc"><a href="../io/c/fprintf.html" title="cpp/io/c/fprintf">std::fprintf</a></span> family of functions </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/macro/PRId8"></tr><tr id="//apple_ref/cpp/macro/PRId16"></tr><tr id="//apple_ref/cpp/macro/PRId32"></tr><tr id="//apple_ref/cpp/macro/PRId64"></tr><tr id="//apple_ref/cpp/macro/PRIdLEAST8"></tr><tr id="//apple_ref/cpp/macro/PRIdLEAST16"></tr><tr id="//apple_ref/cpp/macro/PRIdLEAST32"></tr><tr id="//apple_ref/cpp/macro/PRIdLEAST64"></tr><tr id="//apple_ref/cpp/macro/PRIdFAST8"></tr><tr id="//apple_ref/cpp/macro/PRIdFAST16"></tr><tr id="//apple_ref/cpp/macro/PRIdFAST32"></tr><tr id="//apple_ref/cpp/macro/PRIdFAST64"></tr><tr id="//apple_ref/cpp/macro/PRIdMAX"></tr><tr id="//apple_ref/cpp/macro/PRIdPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/PRId8"></a><a name="PRId8"></a><a name="//apple_ref/cpp/macro/PRId16"></a><a name="PRId16"></a><a name="//apple_ref/cpp/macro/PRId32"></a><a name="PRId32"></a><a name="//apple_ref/cpp/macro/PRId64"></a><a name="PRId64"></a><a name="//apple_ref/cpp/macro/PRIdLEAST8"></a><a name="PRIdLEAST8"></a><a name="//apple_ref/cpp/macro/PRIdLEAST16"></a><a name="PRIdLEAST16"></a><a name="//apple_ref/cpp/macro/PRIdLEAST32"></a><a name="PRIdLEAST32"></a><a name="//apple_ref/cpp/macro/PRIdLEAST64"></a><a name="PRIdLEAST64"></a><a name="//apple_ref/cpp/macro/PRIdFAST8"></a><a name="PRIdFAST8"></a><a name="//apple_ref/cpp/macro/PRIdFAST16"></a><a name="PRIdFAST16"></a><a name="//apple_ref/cpp/macro/PRIdFAST32"></a><a name="PRIdFAST32"></a><a name="//apple_ref/cpp/macro/PRIdFAST64"></a><a name="PRIdFAST64"></a><a name="//apple_ref/cpp/macro/PRIdMAX"></a><a name="PRIdMAX"></a><a name="//apple_ref/cpp/macro/PRIdPTR"></a><a name="PRIdPTR"></a><div><span class="t-lines"><span>PRId8</span><span>PRId16</span><span>PRId32</span><span>PRId64</span><span>PRIdLEAST8</span><span>PRIdLEAST16</span><span>PRIdLEAST32</span><span>PRIdLEAST64</span><span>PRIdFAST8</span><span>PRIdFAST16</span><span>PRIdFAST32</span><span>PRIdFAST64</span><span>PRIdMAX</span><span>PRIdPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to output a signed decimal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intptr_t</a></span> respectively, equivalent to <code>d</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/macro/PRIi8"></tr><tr id="//apple_ref/cpp/macro/PRIi16"></tr><tr id="//apple_ref/cpp/macro/PRIi32"></tr><tr id="//apple_ref/cpp/macro/PRIi64"></tr><tr id="//apple_ref/cpp/macro/PRIiLEAST8"></tr><tr id="//apple_ref/cpp/macro/PRIiLEAST16"></tr><tr id="//apple_ref/cpp/macro/PRIiLEAST32"></tr><tr id="//apple_ref/cpp/macro/PRIiLEAST64"></tr><tr id="//apple_ref/cpp/macro/PRIiFAST8"></tr><tr id="//apple_ref/cpp/macro/PRIiFAST16"></tr><tr id="//apple_ref/cpp/macro/PRIiFAST32"></tr><tr id="//apple_ref/cpp/macro/PRIiFAST64"></tr><tr id="//apple_ref/cpp/macro/PRIiMAX"></tr><tr id="//apple_ref/cpp/macro/PRIiPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/PRIi8"></a><a name="PRIi8"></a><a name="//apple_ref/cpp/macro/PRIi16"></a><a name="PRIi16"></a><a name="//apple_ref/cpp/macro/PRIi32"></a><a name="PRIi32"></a><a name="//apple_ref/cpp/macro/PRIi64"></a><a name="PRIi64"></a><a name="//apple_ref/cpp/macro/PRIiLEAST8"></a><a name="PRIiLEAST8"></a><a name="//apple_ref/cpp/macro/PRIiLEAST16"></a><a name="PRIiLEAST16"></a><a name="//apple_ref/cpp/macro/PRIiLEAST32"></a><a name="PRIiLEAST32"></a><a name="//apple_ref/cpp/macro/PRIiLEAST64"></a><a name="PRIiLEAST64"></a><a name="//apple_ref/cpp/macro/PRIiFAST8"></a><a name="PRIiFAST8"></a><a name="//apple_ref/cpp/macro/PRIiFAST16"></a><a name="PRIiFAST16"></a><a name="//apple_ref/cpp/macro/PRIiFAST32"></a><a name="PRIiFAST32"></a><a name="//apple_ref/cpp/macro/PRIiFAST64"></a><a name="PRIiFAST64"></a><a name="//apple_ref/cpp/macro/PRIiMAX"></a><a name="PRIiMAX"></a><a name="//apple_ref/cpp/macro/PRIiPTR"></a><a name="PRIiPTR"></a><div><span class="t-lines"><span>PRIi8</span><span>PRIi16</span><span>PRIi32</span><span>PRIi64</span><span>PRIiLEAST8</span><span>PRIiLEAST16</span><span>PRIiLEAST32</span><span>PRIiLEAST64</span><span>PRIiFAST8</span><span>PRIiFAST16</span><span>PRIiFAST32</span><span>PRIiFAST64</span><span>PRIiMAX</span><span>PRIiPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to output a signed decimal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intptr_t</a></span> respectively, equivalent to <code>i</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/macro/PRIu8"></tr><tr id="//apple_ref/cpp/macro/PRIu16"></tr><tr id="//apple_ref/cpp/macro/PRIu32"></tr><tr id="//apple_ref/cpp/macro/PRIu64"></tr><tr id="//apple_ref/cpp/macro/PRIuLEAST8"></tr><tr id="//apple_ref/cpp/macro/PRIuLEAST16"></tr><tr id="//apple_ref/cpp/macro/PRIuLEAST32"></tr><tr id="//apple_ref/cpp/macro/PRIuLEAST64"></tr><tr id="//apple_ref/cpp/macro/PRIuFAST8"></tr><tr id="//apple_ref/cpp/macro/PRIuFAST16"></tr><tr id="//apple_ref/cpp/macro/PRIuFAST32"></tr><tr id="//apple_ref/cpp/macro/PRIuFAST64"></tr><tr id="//apple_ref/cpp/macro/PRIuMAX"></tr><tr id="//apple_ref/cpp/macro/PRIuPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/PRIu8"></a><a name="PRIu8"></a><a name="//apple_ref/cpp/macro/PRIu16"></a><a name="PRIu16"></a><a name="//apple_ref/cpp/macro/PRIu32"></a><a name="PRIu32"></a><a name="//apple_ref/cpp/macro/PRIu64"></a><a name="PRIu64"></a><a name="//apple_ref/cpp/macro/PRIuLEAST8"></a><a name="PRIuLEAST8"></a><a name="//apple_ref/cpp/macro/PRIuLEAST16"></a><a name="PRIuLEAST16"></a><a name="//apple_ref/cpp/macro/PRIuLEAST32"></a><a name="PRIuLEAST32"></a><a name="//apple_ref/cpp/macro/PRIuLEAST64"></a><a name="PRIuLEAST64"></a><a name="//apple_ref/cpp/macro/PRIuFAST8"></a><a name="PRIuFAST8"></a><a name="//apple_ref/cpp/macro/PRIuFAST16"></a><a name="PRIuFAST16"></a><a name="//apple_ref/cpp/macro/PRIuFAST32"></a><a name="PRIuFAST32"></a><a name="//apple_ref/cpp/macro/PRIuFAST64"></a><a name="PRIuFAST64"></a><a name="//apple_ref/cpp/macro/PRIuMAX"></a><a name="PRIuMAX"></a><a name="//apple_ref/cpp/macro/PRIuPTR"></a><a name="PRIuPTR"></a><div><span class="t-lines"><span>PRIu8</span><span>PRIu16</span><span>PRIu32</span><span>PRIu64</span><span>PRIuLEAST8</span><span>PRIuLEAST16</span><span>PRIuLEAST32</span><span>PRIuLEAST64</span><span>PRIuFAST8</span><span>PRIuFAST16</span><span>PRIuFAST32</span><span>PRIuFAST64</span><span>PRIuMAX</span><span>PRIuPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to output an unsigned decimal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintptr_t</a></span> respectively, equivalent to <code>u</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/macro/PRIo8"></tr><tr id="//apple_ref/cpp/macro/PRIo16"></tr><tr id="//apple_ref/cpp/macro/PRIo32"></tr><tr id="//apple_ref/cpp/macro/PRIo64"></tr><tr id="//apple_ref/cpp/macro/PRIoLEAST8"></tr><tr id="//apple_ref/cpp/macro/PRIoLEAST16"></tr><tr id="//apple_ref/cpp/macro/PRIoLEAST32"></tr><tr id="//apple_ref/cpp/macro/PRIoLEAST64"></tr><tr id="//apple_ref/cpp/macro/PRIoFAST8"></tr><tr id="//apple_ref/cpp/macro/PRIoFAST16"></tr><tr id="//apple_ref/cpp/macro/PRIoFAST32"></tr><tr id="//apple_ref/cpp/macro/PRIoFAST64"></tr><tr id="//apple_ref/cpp/macro/PRIoMAX"></tr><tr id="//apple_ref/cpp/macro/PRIoPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/PRIo8"></a><a name="PRIo8"></a><a name="//apple_ref/cpp/macro/PRIo16"></a><a name="PRIo16"></a><a name="//apple_ref/cpp/macro/PRIo32"></a><a name="PRIo32"></a><a name="//apple_ref/cpp/macro/PRIo64"></a><a name="PRIo64"></a><a name="//apple_ref/cpp/macro/PRIoLEAST8"></a><a name="PRIoLEAST8"></a><a name="//apple_ref/cpp/macro/PRIoLEAST16"></a><a name="PRIoLEAST16"></a><a name="//apple_ref/cpp/macro/PRIoLEAST32"></a><a name="PRIoLEAST32"></a><a name="//apple_ref/cpp/macro/PRIoLEAST64"></a><a name="PRIoLEAST64"></a><a name="//apple_ref/cpp/macro/PRIoFAST8"></a><a name="PRIoFAST8"></a><a name="//apple_ref/cpp/macro/PRIoFAST16"></a><a name="PRIoFAST16"></a><a name="//apple_ref/cpp/macro/PRIoFAST32"></a><a name="PRIoFAST32"></a><a name="//apple_ref/cpp/macro/PRIoFAST64"></a><a name="PRIoFAST64"></a><a name="//apple_ref/cpp/macro/PRIoMAX"></a><a name="PRIoMAX"></a><a name="//apple_ref/cpp/macro/PRIoPTR"></a><a name="PRIoPTR"></a><div><span class="t-lines"><span>PRIo8</span><span>PRIo16</span><span>PRIo32</span><span>PRIo64</span><span>PRIoLEAST8</span><span>PRIoLEAST16</span><span>PRIoLEAST32</span><span>PRIoLEAST64</span><span>PRIoFAST8</span><span>PRIoFAST16</span><span>PRIoFAST32</span><span>PRIoFAST64</span><span>PRIoMAX</span><span>PRIoPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to output an unsigned octal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintptr_t</a></span> respectively, equivalent to <code>o</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/macro/PRIx8"></tr><tr id="//apple_ref/cpp/macro/PRIx16"></tr><tr id="//apple_ref/cpp/macro/PRIx32"></tr><tr id="//apple_ref/cpp/macro/PRIx64"></tr><tr id="//apple_ref/cpp/macro/PRIxLEAST8"></tr><tr id="//apple_ref/cpp/macro/PRIxLEAST16"></tr><tr id="//apple_ref/cpp/macro/PRIxLEAST32"></tr><tr id="//apple_ref/cpp/macro/PRIxLEAST64"></tr><tr id="//apple_ref/cpp/macro/PRIxFAST8"></tr><tr id="//apple_ref/cpp/macro/PRIxFAST16"></tr><tr id="//apple_ref/cpp/macro/PRIxFAST32"></tr><tr id="//apple_ref/cpp/macro/PRIxFAST64"></tr><tr id="//apple_ref/cpp/macro/PRIxMAX"></tr><tr id="//apple_ref/cpp/macro/PRIxPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/PRIx8"></a><a name="PRIx8"></a><a name="//apple_ref/cpp/macro/PRIx16"></a><a name="PRIx16"></a><a name="//apple_ref/cpp/macro/PRIx32"></a><a name="PRIx32"></a><a name="//apple_ref/cpp/macro/PRIx64"></a><a name="PRIx64"></a><a name="//apple_ref/cpp/macro/PRIxLEAST8"></a><a name="PRIxLEAST8"></a><a name="//apple_ref/cpp/macro/PRIxLEAST16"></a><a name="PRIxLEAST16"></a><a name="//apple_ref/cpp/macro/PRIxLEAST32"></a><a name="PRIxLEAST32"></a><a name="//apple_ref/cpp/macro/PRIxLEAST64"></a><a name="PRIxLEAST64"></a><a name="//apple_ref/cpp/macro/PRIxFAST8"></a><a name="PRIxFAST8"></a><a name="//apple_ref/cpp/macro/PRIxFAST16"></a><a name="PRIxFAST16"></a><a name="//apple_ref/cpp/macro/PRIxFAST32"></a><a name="PRIxFAST32"></a><a name="//apple_ref/cpp/macro/PRIxFAST64"></a><a name="PRIxFAST64"></a><a name="//apple_ref/cpp/macro/PRIxMAX"></a><a name="PRIxMAX"></a><a name="//apple_ref/cpp/macro/PRIxPTR"></a><a name="PRIxPTR"></a><div><span class="t-lines"><span>PRIx8</span><span>PRIx16</span><span>PRIx32</span><span>PRIx64</span><span>PRIxLEAST8</span><span>PRIxLEAST16</span><span>PRIxLEAST32</span><span>PRIxLEAST64</span><span>PRIxFAST8</span><span>PRIxFAST16</span><span>PRIxFAST32</span><span>PRIxFAST64</span><span>PRIxMAX</span><span>PRIxPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to output an unsigned lowercase hexadecimal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintptr_t</a></span> respectively, equivalent to <code>x</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/macro/PRIX8"></tr><tr id="//apple_ref/cpp/macro/PRIX16"></tr><tr id="//apple_ref/cpp/macro/PRIX32"></tr><tr id="//apple_ref/cpp/macro/PRIX64"></tr><tr id="//apple_ref/cpp/macro/PRIXLEAST8"></tr><tr id="//apple_ref/cpp/macro/PRIXLEAST16"></tr><tr id="//apple_ref/cpp/macro/PRIXLEAST32"></tr><tr id="//apple_ref/cpp/macro/PRIXLEAST64"></tr><tr id="//apple_ref/cpp/macro/PRIXFAST8"></tr><tr id="//apple_ref/cpp/macro/PRIXFAST16"></tr><tr id="//apple_ref/cpp/macro/PRIXFAST32"></tr><tr id="//apple_ref/cpp/macro/PRIXFAST64"></tr><tr id="//apple_ref/cpp/macro/PRIXMAX"></tr><tr id="//apple_ref/cpp/macro/PRIXPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/PRIX8"></a><a name="PRIX8"></a><a name="//apple_ref/cpp/macro/PRIX16"></a><a name="PRIX16"></a><a name="//apple_ref/cpp/macro/PRIX32"></a><a name="PRIX32"></a><a name="//apple_ref/cpp/macro/PRIX64"></a><a name="PRIX64"></a><a name="//apple_ref/cpp/macro/PRIXLEAST8"></a><a name="PRIXLEAST8"></a><a name="//apple_ref/cpp/macro/PRIXLEAST16"></a><a name="PRIXLEAST16"></a><a name="//apple_ref/cpp/macro/PRIXLEAST32"></a><a name="PRIXLEAST32"></a><a name="//apple_ref/cpp/macro/PRIXLEAST64"></a><a name="PRIXLEAST64"></a><a name="//apple_ref/cpp/macro/PRIXFAST8"></a><a name="PRIXFAST8"></a><a name="//apple_ref/cpp/macro/PRIXFAST16"></a><a name="PRIXFAST16"></a><a name="//apple_ref/cpp/macro/PRIXFAST32"></a><a name="PRIXFAST32"></a><a name="//apple_ref/cpp/macro/PRIXFAST64"></a><a name="PRIXFAST64"></a><a name="//apple_ref/cpp/macro/PRIXMAX"></a><a name="PRIXMAX"></a><a name="//apple_ref/cpp/macro/PRIXPTR"></a><a name="PRIXPTR"></a><div><span class="t-lines"><span>PRIX8</span><span>PRIX16</span><span>PRIX32</span><span>PRIX64</span><span>PRIXLEAST8</span><span>PRIXLEAST16</span><span>PRIXLEAST32</span><span>PRIXLEAST64</span><span>PRIXFAST8</span><span>PRIXFAST16</span><span>PRIXFAST32</span><span>PRIXFAST64</span><span>PRIXMAX</span><span>PRIXPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to output an unsigned uppercase hexadecimal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintptr_t</a></span> respectively, equivalent to <code>X</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Format_constants_for_the_std::fscanf_family_of_functions">  Format constants for the <span class="t-lc"><a href="../io/c/fscanf.html" title="cpp/io/c/fscanf">std::fscanf</a></span> family of functions </span></h5>
+</td></tr>
+
+<tr id="//apple_ref/cpp/macro/SCNd8"></tr><tr id="//apple_ref/cpp/macro/SCNd16"></tr><tr id="//apple_ref/cpp/macro/SCNd32"></tr><tr id="//apple_ref/cpp/macro/SCNd64"></tr><tr id="//apple_ref/cpp/macro/SCNdLEAST8"></tr><tr id="//apple_ref/cpp/macro/SCNdLEAST16"></tr><tr id="//apple_ref/cpp/macro/SCNdLEAST32"></tr><tr id="//apple_ref/cpp/macro/SCNdLEAST64"></tr><tr id="//apple_ref/cpp/macro/SCNdFAST8"></tr><tr id="//apple_ref/cpp/macro/SCNdFAST16"></tr><tr id="//apple_ref/cpp/macro/SCNdFAST32"></tr><tr id="//apple_ref/cpp/macro/SCNdFAST64"></tr><tr id="//apple_ref/cpp/macro/SCNdMAX"></tr><tr id="//apple_ref/cpp/macro/SCNdPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/SCNd8"></a><a name="SCNd8"></a><a name="//apple_ref/cpp/macro/SCNd16"></a><a name="SCNd16"></a><a name="//apple_ref/cpp/macro/SCNd32"></a><a name="SCNd32"></a><a name="//apple_ref/cpp/macro/SCNd64"></a><a name="SCNd64"></a><a name="//apple_ref/cpp/macro/SCNdLEAST8"></a><a name="SCNdLEAST8"></a><a name="//apple_ref/cpp/macro/SCNdLEAST16"></a><a name="SCNdLEAST16"></a><a name="//apple_ref/cpp/macro/SCNdLEAST32"></a><a name="SCNdLEAST32"></a><a name="//apple_ref/cpp/macro/SCNdLEAST64"></a><a name="SCNdLEAST64"></a><a name="//apple_ref/cpp/macro/SCNdFAST8"></a><a name="SCNdFAST8"></a><a name="//apple_ref/cpp/macro/SCNdFAST16"></a><a name="SCNdFAST16"></a><a name="//apple_ref/cpp/macro/SCNdFAST32"></a><a name="SCNdFAST32"></a><a name="//apple_ref/cpp/macro/SCNdFAST64"></a><a name="SCNdFAST64"></a><a name="//apple_ref/cpp/macro/SCNdMAX"></a><a name="SCNdMAX"></a><a name="//apple_ref/cpp/macro/SCNdPTR"></a><a name="SCNdPTR"></a><div><span class="t-lines"><span>SCNd8</span><span>SCNd16</span><span>SCNd32</span><span>SCNd64</span><span>SCNdLEAST8</span><span>SCNdLEAST16</span><span>SCNdLEAST32</span><span>SCNdLEAST64</span><span>SCNdFAST8</span><span>SCNdFAST16</span><span>SCNdFAST32</span><span>SCNdFAST64</span><span>SCNdMAX</span><span>SCNdPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to input a signed decimal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intptr_t</a></span> respectively, equivalent to <code>d</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/macro/SCNi8"></tr><tr id="//apple_ref/cpp/macro/SCNi16"></tr><tr id="//apple_ref/cpp/macro/SCNi32"></tr><tr id="//apple_ref/cpp/macro/SCNi64"></tr><tr id="//apple_ref/cpp/macro/SCNiLEAST8"></tr><tr id="//apple_ref/cpp/macro/SCNiLEAST16"></tr><tr id="//apple_ref/cpp/macro/SCNiLEAST32"></tr><tr id="//apple_ref/cpp/macro/SCNiLEAST64"></tr><tr id="//apple_ref/cpp/macro/SCNiFAST8"></tr><tr id="//apple_ref/cpp/macro/SCNiFAST16"></tr><tr id="//apple_ref/cpp/macro/SCNiFAST32"></tr><tr id="//apple_ref/cpp/macro/SCNiFAST64"></tr><tr id="//apple_ref/cpp/macro/SCNiMAX"></tr><tr id="//apple_ref/cpp/macro/SCNiPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/SCNi8"></a><a name="SCNi8"></a><a name="//apple_ref/cpp/macro/SCNi16"></a><a name="SCNi16"></a><a name="//apple_ref/cpp/macro/SCNi32"></a><a name="SCNi32"></a><a name="//apple_ref/cpp/macro/SCNi64"></a><a name="SCNi64"></a><a name="//apple_ref/cpp/macro/SCNiLEAST8"></a><a name="SCNiLEAST8"></a><a name="//apple_ref/cpp/macro/SCNiLEAST16"></a><a name="SCNiLEAST16"></a><a name="//apple_ref/cpp/macro/SCNiLEAST32"></a><a name="SCNiLEAST32"></a><a name="//apple_ref/cpp/macro/SCNiLEAST64"></a><a name="SCNiLEAST64"></a><a name="//apple_ref/cpp/macro/SCNiFAST8"></a><a name="SCNiFAST8"></a><a name="//apple_ref/cpp/macro/SCNiFAST16"></a><a name="SCNiFAST16"></a><a name="//apple_ref/cpp/macro/SCNiFAST32"></a><a name="SCNiFAST32"></a><a name="//apple_ref/cpp/macro/SCNiFAST64"></a><a name="SCNiFAST64"></a><a name="//apple_ref/cpp/macro/SCNiMAX"></a><a name="SCNiMAX"></a><a name="//apple_ref/cpp/macro/SCNiPTR"></a><a name="SCNiPTR"></a><div><span class="t-lines"><span>SCNi8</span><span>SCNi16</span><span>SCNi32</span><span>SCNi64</span><span>SCNiLEAST8</span><span>SCNiLEAST16</span><span>SCNiLEAST32</span><span>SCNiLEAST64</span><span>SCNiFAST8</span><span>SCNiFAST16</span><span>SCNiFAST32</span><span>SCNiFAST64</span><span>SCNiMAX</span><span>SCNiPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to input a signed decimal/octal/hexadecimal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::int_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::intptr_t</a></span> respectively, equivalent to <code>i</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/macro/SCNu8"></tr><tr id="//apple_ref/cpp/macro/SCNu16"></tr><tr id="//apple_ref/cpp/macro/SCNu32"></tr><tr id="//apple_ref/cpp/macro/SCNu64"></tr><tr id="//apple_ref/cpp/macro/SCNuLEAST8"></tr><tr id="//apple_ref/cpp/macro/SCNuLEAST16"></tr><tr id="//apple_ref/cpp/macro/SCNuLEAST32"></tr><tr id="//apple_ref/cpp/macro/SCNuLEAST64"></tr><tr id="//apple_ref/cpp/macro/SCNuFAST8"></tr><tr id="//apple_ref/cpp/macro/SCNuFAST16"></tr><tr id="//apple_ref/cpp/macro/SCNuFAST32"></tr><tr id="//apple_ref/cpp/macro/SCNuFAST64"></tr><tr id="//apple_ref/cpp/macro/SCNuMAX"></tr><tr id="//apple_ref/cpp/macro/SCNuPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/SCNu8"></a><a name="SCNu8"></a><a name="//apple_ref/cpp/macro/SCNu16"></a><a name="SCNu16"></a><a name="//apple_ref/cpp/macro/SCNu32"></a><a name="SCNu32"></a><a name="//apple_ref/cpp/macro/SCNu64"></a><a name="SCNu64"></a><a name="//apple_ref/cpp/macro/SCNuLEAST8"></a><a name="SCNuLEAST8"></a><a name="//apple_ref/cpp/macro/SCNuLEAST16"></a><a name="SCNuLEAST16"></a><a name="//apple_ref/cpp/macro/SCNuLEAST32"></a><a name="SCNuLEAST32"></a><a name="//apple_ref/cpp/macro/SCNuLEAST64"></a><a name="SCNuLEAST64"></a><a name="//apple_ref/cpp/macro/SCNuFAST8"></a><a name="SCNuFAST8"></a><a name="//apple_ref/cpp/macro/SCNuFAST16"></a><a name="SCNuFAST16"></a><a name="//apple_ref/cpp/macro/SCNuFAST32"></a><a name="SCNuFAST32"></a><a name="//apple_ref/cpp/macro/SCNuFAST64"></a><a name="SCNuFAST64"></a><a name="//apple_ref/cpp/macro/SCNuMAX"></a><a name="SCNuMAX"></a><a name="//apple_ref/cpp/macro/SCNuPTR"></a><a name="SCNuPTR"></a><div><span class="t-lines"><span>SCNu8</span><span>SCNu16</span><span>SCNu32</span><span>SCNu64</span><span>SCNuLEAST8</span><span>SCNuLEAST16</span><span>SCNuLEAST32</span><span>SCNuLEAST64</span><span>SCNuFAST8</span><span>SCNuFAST16</span><span>SCNuFAST32</span><span>SCNuFAST64</span><span>SCNuMAX</span><span>SCNuPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to input an unsigned decimal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintptr_t</a></span> respectively, equivalent to <code>u</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/macro/SCNo8"></tr><tr id="//apple_ref/cpp/macro/SCNo16"></tr><tr id="//apple_ref/cpp/macro/SCNo32"></tr><tr id="//apple_ref/cpp/macro/SCNo64"></tr><tr id="//apple_ref/cpp/macro/SCNoLEAST8"></tr><tr id="//apple_ref/cpp/macro/SCNoLEAST16"></tr><tr id="//apple_ref/cpp/macro/SCNoLEAST32"></tr><tr id="//apple_ref/cpp/macro/SCNoLEAST64"></tr><tr id="//apple_ref/cpp/macro/SCNoFAST8"></tr><tr id="//apple_ref/cpp/macro/SCNoFAST16"></tr><tr id="//apple_ref/cpp/macro/SCNoFAST32"></tr><tr id="//apple_ref/cpp/macro/SCNoFAST64"></tr><tr id="//apple_ref/cpp/macro/SCNoMAX"></tr><tr id="//apple_ref/cpp/macro/SCNoPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/SCNo8"></a><a name="SCNo8"></a><a name="//apple_ref/cpp/macro/SCNo16"></a><a name="SCNo16"></a><a name="//apple_ref/cpp/macro/SCNo32"></a><a name="SCNo32"></a><a name="//apple_ref/cpp/macro/SCNo64"></a><a name="SCNo64"></a><a name="//apple_ref/cpp/macro/SCNoLEAST8"></a><a name="SCNoLEAST8"></a><a name="//apple_ref/cpp/macro/SCNoLEAST16"></a><a name="SCNoLEAST16"></a><a name="//apple_ref/cpp/macro/SCNoLEAST32"></a><a name="SCNoLEAST32"></a><a name="//apple_ref/cpp/macro/SCNoLEAST64"></a><a name="SCNoLEAST64"></a><a name="//apple_ref/cpp/macro/SCNoFAST8"></a><a name="SCNoFAST8"></a><a name="//apple_ref/cpp/macro/SCNoFAST16"></a><a name="SCNoFAST16"></a><a name="//apple_ref/cpp/macro/SCNoFAST32"></a><a name="SCNoFAST32"></a><a name="//apple_ref/cpp/macro/SCNoFAST64"></a><a name="SCNoFAST64"></a><a name="//apple_ref/cpp/macro/SCNoMAX"></a><a name="SCNoMAX"></a><a name="//apple_ref/cpp/macro/SCNoPTR"></a><a name="SCNoPTR"></a><div><span class="t-lines"><span>SCNo8</span><span>SCNo16</span><span>SCNo32</span><span>SCNo64</span><span>SCNoLEAST8</span><span>SCNoLEAST16</span><span>SCNoLEAST32</span><span>SCNoLEAST64</span><span>SCNoFAST8</span><span>SCNoFAST16</span><span>SCNoFAST32</span><span>SCNoFAST64</span><span>SCNoMAX</span><span>SCNoPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to input an unsigned octal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintptr_t</a></span> respectively, equivalent to <code>o</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/macro/SCNx8"></tr><tr id="//apple_ref/cpp/macro/SCNx16"></tr><tr id="//apple_ref/cpp/macro/SCNx32"></tr><tr id="//apple_ref/cpp/macro/SCNx64"></tr><tr id="//apple_ref/cpp/macro/SCNxLEAST8"></tr><tr id="//apple_ref/cpp/macro/SCNxLEAST16"></tr><tr id="//apple_ref/cpp/macro/SCNxLEAST32"></tr><tr id="//apple_ref/cpp/macro/SCNxLEAST64"></tr><tr id="//apple_ref/cpp/macro/SCNxFAST8"></tr><tr id="//apple_ref/cpp/macro/SCNxFAST16"></tr><tr id="//apple_ref/cpp/macro/SCNxFAST32"></tr><tr id="//apple_ref/cpp/macro/SCNxFAST64"></tr><tr id="//apple_ref/cpp/macro/SCNxMAX"></tr><tr id="//apple_ref/cpp/macro/SCNxPTR"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/macro/SCNx8"></a><a name="SCNx8"></a><a name="//apple_ref/cpp/macro/SCNx16"></a><a name="SCNx16"></a><a name="//apple_ref/cpp/macro/SCNx32"></a><a name="SCNx32"></a><a name="//apple_ref/cpp/macro/SCNx64"></a><a name="SCNx64"></a><a name="//apple_ref/cpp/macro/SCNxLEAST8"></a><a name="SCNxLEAST8"></a><a name="//apple_ref/cpp/macro/SCNxLEAST16"></a><a name="SCNxLEAST16"></a><a name="//apple_ref/cpp/macro/SCNxLEAST32"></a><a name="SCNxLEAST32"></a><a name="//apple_ref/cpp/macro/SCNxLEAST64"></a><a name="SCNxLEAST64"></a><a name="//apple_ref/cpp/macro/SCNxFAST8"></a><a name="SCNxFAST8"></a><a name="//apple_ref/cpp/macro/SCNxFAST16"></a><a name="SCNxFAST16"></a><a name="//apple_ref/cpp/macro/SCNxFAST32"></a><a name="SCNxFAST32"></a><a name="//apple_ref/cpp/macro/SCNxFAST64"></a><a name="SCNxFAST64"></a><a name="//apple_ref/cpp/macro/SCNxMAX"></a><a name="SCNxMAX"></a><a name="//apple_ref/cpp/macro/SCNxPTR"></a><a name="SCNxPTR"></a><div><span class="t-lines"><span>SCNx8</span><span>SCNx16</span><span>SCNx32</span><span>SCNx64</span><span>SCNxLEAST8</span><span>SCNxLEAST16</span><span>SCNxLEAST32</span><span>SCNxLEAST64</span><span>SCNxFAST8</span><span>SCNxFAST16</span><span>SCNxFAST32</span><span>SCNxFAST64</span><span>SCNxMAX</span><span>SCNxPTR</span></span></div></div>
+</td>
+<td>   format conversion specifier to input an unsigned hexadecimal integer value of type <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast8_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast16_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast32_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_fast64_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintmax_t</a></span>, <span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uintptr_t</a></span> respectively, equivalent to <code>x</code> for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 8506/1000000
+Preprocessor generated node count: 10327/1000000
+Post‐expand include size: 249915/2097152 bytes
+Template argument size: 79221/2097152 bytes
+Highest expansion depth: 22/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9789-0!*!0!!en!*!* and timestamp 20180329004703 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from &quot;<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;oldid=94908">http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;oldid=94908</a>&quot;                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div class="catlinks catlinks-allhidden" id="catlinks"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div class="noprint" id="cpp-footer-base">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a accesskey="r" href="http://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]">Recent changes</a></li><li id="n-FAQ"><a href="http://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="http://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a accesskey="j" href="http://en.cppreference.com/w/Special:WhatLinksHere/cpp/header/cinttypes" title="A list of all wiki pages that link here [j]">What links here</a></li><li id="t-recentchangeslinked"><a accesskey="k" href="http://en.cppreference.com/w/Special:RecentChangesLinked/cpp/header/cinttypes" title="Recent changes in pages linked from this page [k]">Related changes</a></li><li id="t-upload"><a accesskey="u" href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]">Upload file</a></li><li id="t-specialpages"><a accesskey="q" href="http://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]">Special pages</a></li><li id="t-print"><a accesskey="p" href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;printable=yes" rel="alternate" title="Printable version of this page [p]">Printable version</a></li><li id="t-permalink"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;oldid=94908" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/header/cinttypes&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>In other languages</li></ul></div>
+            <div><ul>
+<li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/header/cinttypes" hreflang="zh" lang="zh" title="cpp/header/cinttypes">&#x4E2D;&#x6587;</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 8 August 2017, at 08:44.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 28,400 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="http://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="http://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="http://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul class="noprint" id="footer-icons">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" src="../../../mwiki/skins/common/images/poweredby_mediawiki_88x31.png" width="88"></a>                                            <a href="http://qbnz.com/highlighter/"><img alt="Powered by GeSHi" height="31" src="../../../../upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" width="88"></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img alt="Hosted by Tiger Technologies" height="31" src="../../../../upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" width="88"></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.041 secs. -->
+	
+<!-- Cached 20180329055925 -->
+
+</body><!-- Online page at http://en.cppreference.com/w/cpp/header/cinttypes --></html>

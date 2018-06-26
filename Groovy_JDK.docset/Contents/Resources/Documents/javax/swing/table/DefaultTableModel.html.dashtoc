@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"iterator()","path":"iterator()","entryType":"Method"},{"name":"leftShift(Object)","path":"leftShift(java.lang.Object)","entryType":"Method"},{"name":"putAt(int, Object)","path":"putAt(int,%20java.lang.Object)","entryType":"Method"}]}

@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ObjectiveCCompile()","path":"ObjectiveCCompile--","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"createCompileSpec()","path":"createCompileSpec--","entryType":"Method"}]}

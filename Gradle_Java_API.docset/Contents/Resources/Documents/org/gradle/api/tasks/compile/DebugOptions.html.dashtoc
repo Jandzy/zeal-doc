@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"DebugOptions()","path":"DebugOptions--","entryType":"Constructor"},{"name":"","isSpacer":true},{"name":"Methods","isHeader":true},{"name":"getDebugLevel()","path":"getDebugLevel--","entryType":"Method"},{"name":"setDebugLevel(String)","path":"setDebugLevel-java.lang.String-","entryType":"Method"}]}

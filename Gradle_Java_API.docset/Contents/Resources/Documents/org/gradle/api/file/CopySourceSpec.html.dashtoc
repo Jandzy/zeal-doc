@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"from(Object...)","path":"from-java.lang.Object...-","entryType":"Method"},{"name":"from(Object, Action)","path":"from-java.lang.Object-org.gradle.api.Action-","entryType":"Method"},{"name":"from(Object, Closure)","path":"from-java.lang.Object-groovy.lang.Closure-","entryType":"Method"}]}

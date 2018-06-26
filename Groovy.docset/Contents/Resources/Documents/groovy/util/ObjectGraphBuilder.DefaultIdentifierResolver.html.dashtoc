@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ObjectGraphBuilder.DefaultIdentifierResolver()","path":"ObjectGraphBuilder.DefaultIdentifierResolver()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"getIdentifierFor(String)","path":"getIdentifierFor(java.lang.String)","entryType":"Method"}]}

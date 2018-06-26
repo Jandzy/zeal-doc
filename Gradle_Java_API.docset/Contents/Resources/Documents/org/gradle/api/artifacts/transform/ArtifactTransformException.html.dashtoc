@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ArtifactTransformException(File, AttributeContainer, Class, Throwable)","path":"ArtifactTransformException-java.io.File-org.gradle.api.attributes.AttributeContainer-java.lang.Class-java.lang.Throwable-","entryType":"Constructor"}]}

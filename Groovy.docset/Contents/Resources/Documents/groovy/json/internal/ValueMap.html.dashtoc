@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"add(MapItemValue)","path":"add(groovy.json.internal.MapItemValue)","entryType":"Method"},{"name":"hydrated()","path":"hydrated()","entryType":"Method"},{"name":"items()","path":"items()","entryType":"Method"},{"name":"len()","path":"len()","entryType":"Method"}]}

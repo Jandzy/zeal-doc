@@ -1,0 +1,429 @@
+<html><head><meta charset="utf-8"><title>std::monostate</title><link href="../../../css.css" rel="stylesheet" type="text/css"><script src="../../../js.js" type="text/javascript"></script><style>.t-example-live-link {display:none !important} .t-sidebar-body {display:none}\nbody{min-width:0}\ndiv.mw-geshi{width:95%}\ndiv#content {width:auto !important} div#content{background-image:none; margin-left:0px;} .t-lines {background:inherit !important} pre, div.mw-geshi {width: 100% !important} body {background:white !important} div#content {width:100% !important} pre, div.mw-geshi {width:auto !important} .t-example-live-link, #mw-head, #cpp-footer-base {display:none !important} .t-navbar-menu > div {position:relative !important}</style></head><body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_utility_variant_monostate skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <div class="noprint" id="mw-head">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/mwiki/index.php" id="searchform">
+		<input name="title" type="hidden" value="Special:Search">
+				<div id="simpleSearch">
+						<input accesskey="f" id="searchInput" name="search" title="Search cppreference.com [f]">						<button id="searchButton" name="button" title="Search the pages for this text" type="submit"><img alt="Search" src="../../../../mwiki/skins/cppreference2/images/search-ltr.png"></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div class="" id="p-personal">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Futility%2Fvariant%2Fmonostate&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a accesskey="o" href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Futility%2Fvariant%2Fmonostate" title="You are encouraged to log in; however, it is not mandatory [o]">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-namespaces">
+	<h5>Namespaces</h5>
+	<ul>
+					<li class="selected" id="ca-nstab-main"><span><a accesskey="c" href="./monostate.html" title="View the content page [c]">Page</a></span></li>
+					<li class="new" id="ca-talk"><span><a accesskey="t" href="http://en.cppreference.com/mwiki/index.php?title=Talk:cpp/utility/variant/monostate&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-variants">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div class="vectorTabs" id="p-views">
+	<h5>Views</h5>
+	<ul>
+					<li class="selected" id="ca-view"><span><a href="./monostate.html">View</a></span></li>
+					<li id="ca-edit"><span><a accesskey="e" href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;action=edit" title="You can edit this page. Please use the preview button before saving [e]">Edit</a></span></li>
+					<li class="collapsible" id="ca-history"><span><a accesskey="h" href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;action=history" title="Past revisions of this page [h]">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-cactions">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 class="firstHeading" id="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>monostate</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../../utility.html" title="cpp/utility">utility</a>&lrm; | <a href="../variant.html" title="cpp/utility/variant">variant</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../concept.html" title="cpp/concept"> Library concepts</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../utility.html" title="cpp/utility"> Utilities library</a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="../../types.html" title="cpp/types"> Type support</a> (basic types, RTTI, type traits) </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../memory.html" title="cpp/memory"> Dynamic memory management</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Error handling</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../program.html" title="cpp/utility/program"> Program utilities</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../variadic.html" title="cpp/utility/variadic"> Variadic functions</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../chrono.html" title="cpp/chrono"> Date and time</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../functional.html" title="cpp/utility/functional"> Function objects</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../initializer_list.html" title="cpp/utility/initializer list"><span class="t-lines"><span>initializer_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../bitset.html" title="cpp/utility/bitset"><span class="t-lines"><span>bitset</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../hash.html" title="cpp/utility/hash"><span class="t-lines"><span>hash</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../integer_sequence.html" title="cpp/utility/integer sequence"><span class="t-lines"><span>integer_sequence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx14">(C++14)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Relational operators <span class="t-mark">(deprecated)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../rel_ops/operator_cmp.html" title="cpp/utility/rel ops/operator cmp"><span class="t-lines"><span>rel_ops::operator!=</span><span>rel_ops::operator&gt;</span><span>rel_ops::operator&lt;=</span><span>rel_ops::operator&gt;=</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Comparisons <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/strong_order.html" title="cpp/utility/compare/strong order"><span class="t-lines"><span>strong_order</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/weak_order.html" title="cpp/utility/compare/weak order"><span class="t-lines"><span>weak_order</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/partial_order.html" title="cpp/utility/compare/partial order"><span class="t-lines"><span>partial_order</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/strong_equal.html" title="cpp/utility/compare/strong equal"><span class="t-lines"><span>strong_equal</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/weak_equal.html" title="cpp/utility/compare/weak equal"><span class="t-lines"><span>weak_equal</span></span></a></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/strong_ordering.html" title="cpp/utility/compare/strong ordering"><span class="t-lines"><span>strong_ordering</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/weak_ordering.html" title="cpp/utility/compare/weak ordering"><span class="t-lines"><span>weak_ordering</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/partial_ordering.html" title="cpp/utility/compare/partial ordering"><span class="t-lines"><span>partial_ordering</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/strong_equality.html" title="cpp/utility/compare/strong equality"><span class="t-lines"><span>strong_equality</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/weak_equality.html" title="cpp/utility/compare/weak equality"><span class="t-lines"><span>weak_equality</span></span></a></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/named_comparison_functions.html" title="cpp/utility/compare/named comparison functions"><span class="t-lines"><span>is_eq</span><span>is_neq</span><span>is_lt</span><span>is_lteq</span><span>is_gt</span><span>is_gteq</span></span></a></div></div></td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/common_comparison_category.html" title="cpp/utility/compare/common comparison category"><span class="t-lines"><span>common_comparison_category</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Common vocabulary types </td></tr>
+<tr class="t-nv-col-table"><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../pair.html" title="cpp/utility/pair"><span class="t-lines"><span>pair</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../tuple.html" title="cpp/utility/tuple"><span class="t-lines"><span>tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../apply.html" title="cpp/utility/apply"><span class="t-lines"><span>apply</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../make_from_tuple.html" title="cpp/utility/make from tuple"><span class="t-lines"><span>make_from_tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../optional.html" title="cpp/utility/optional"><span class="t-lines"><span>optional</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../any.html" title="cpp/utility/any"><span class="t-lines"><span>any</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../variant.html" title="cpp/utility/variant"><span class="t-lines"><span>variant</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+</tbody></table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Swap, forward and move</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../algorithm/swap.html" title="cpp/algorithm/swap"><span class="t-lines"><span>swap</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../exchange.html" title="cpp/utility/exchange"><span class="t-lines"><span>exchange</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx14">(C++14)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../forward.html" title="cpp/utility/forward"><span class="t-lines"><span>forward</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../move.html" title="cpp/utility/move"><span class="t-lines"><span>move</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../move_if_noexcept.html" title="cpp/utility/move if noexcept"><span class="t-lines"><span>move_if_noexcept</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Elementary string conversions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../to_chars.html" title="cpp/utility/to chars"><span class="t-lines"><span>to_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../from_chars.html" title="cpp/utility/from chars"><span class="t-lines"><span>from_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../chars_format.html" title="cpp/utility/chars format"><span class="t-lines"><span>chars_format</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Type operations</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../declval.html" title="cpp/utility/declval"><span class="t-lines"><span>declval</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../as_const.html" title="cpp/utility/as const"><span class="t-lines"><span>as_const</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/utility/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../variant.html" title="cpp/utility/variant"><tt>std::variant</tt></a><div class="t-navbar-menu"><div><div><table cellpadding="0" class="t-nv-begin" style="">
+<tbody><tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./variant.html" title="cpp/utility/variant/variant"><span class="t-lines"><span>variant::variant</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./%257Evariant.html" title="cpp/utility/variant/~variant"><span class="t-lines"><span>variant::~variant</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./operator%253D.html" title="cpp/utility/variant/operator="><span class="t-lines"><span>variant::operator=</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Observers</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./index.html" title="cpp/utility/variant/index"><span class="t-lines"><span>variant::index</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./valueless_by_exception.html" title="cpp/utility/variant/valueless by exception"><span class="t-lines"><span>variant::valueless_by_exception</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Modifiers</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./emplace.html" title="cpp/utility/variant/emplace"><span class="t-lines"><span>variant::emplace</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./swap.html" title="cpp/utility/variant/swap"><span class="t-lines"><span>variant::swap</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Non-member functions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./visit.html" title="cpp/utility/variant/visit"><span class="t-lines"><span>visit</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./holds_alternative.html" title="cpp/utility/variant/holds alternative"><span class="t-lines"><span>holds_alternative</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./get.html" title="cpp/utility/variant/get"><span class="t-lines"><span>get</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./get_if.html" title="cpp/utility/variant/get if"><span class="t-lines"><span>get_if</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./operator_cmp.html" title="cpp/utility/variant/operator cmp"><span class="t-lines"><span>operator==</span><span>operator!=</span><span>operator&lt;</span><span>operator&lt;=</span><span>operator&gt;</span><span>operator&gt;=</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./swap2.html" title="cpp/utility/variant/swap2"><span class="t-lines"><span>swap</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Helper classes</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>monostate</span></span></strong></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./bad_variant_access.html" title="cpp/utility/variant/bad variant access"><span class="t-lines"><span>bad_variant_access</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./variant_size.html" title="cpp/utility/variant/variant size"><span class="t-lines"><span>variant_size</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./variant_alternative.html" title="cpp/utility/variant/variant alternative"><span class="t-lines"><span>variant_alternative</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./hash.html" title="cpp/utility/variant/hash"><span class="t-lines"><span>hash</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Helper objects</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="./variant_npos.html" title="cpp/utility/variant/variant npos"><span class="t-lines"><span>variant_npos</span></span></a></div></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/utility/variant/navbar_content&amp;action=edit" rel="nofollow">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../../header/variant.html" title="cpp/header/variant">&lt;variant&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dcl t-since-cxx17">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">struct</span> monostate <span class="br0">{</span> <span class="br0">}</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>Unit type intended for use as a well-behaved empty alternative in <span class="t-lc"><a href="../variant.html" title="cpp/utility/variant">std::variant</a></span>. In particular, a variant of non-default-constructible types may list <code>std::monostate</code> as its first alternative: this makes the variant itself default-constructible.
+</p>
+<table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a class="internal" href="#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Member_functions"><span class="tocnumber">1</span> <span class="toctext">Member functions</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Non-member_functions"><span class="tocnumber">2</span> <span class="toctext">Non-member functions</span></a></li>
+<li class="toclevel-1"><a href="#"><span class="tocnumber">3</span> <span class="toctext"></span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Helper_classes"><span class="tocnumber">3.1</span> <span class="toctext">Helper classes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#std::hash.3Cstd::monostate.3E"><span class="tocnumber">4</span> <span class="toctext">std::hash<span>&lt;std::monostate&gt;</span></span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#See_also"><span class="tocnumber">4.2</span> <span class="toctext">See also</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;action=edit&amp;section=1" title="Edit section: Member functions">edit</a>]</span> <span class="mw-headline" id="Member_functions">Member functions</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr id="//apple_ref/cpp/clm/%28constructor%29"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><a name="//apple_ref/cpp/clm/%28constructor%29"></a><a name="%28constructor%29"></a><div><span class="t-lines"><span>(constructor)</span></span></div><div><span class="t-lines"><span><span class="t-mark">(implicitly declared)</span></span></span></div></div>
+</td>
+<td>  trivial implicit default/copy/move constructor <br> <span class="t-mark">(public member function)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/clm/%28destructor%29"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><a name="//apple_ref/cpp/clm/%28destructor%29"></a><a name="%28destructor%29"></a><div><span class="t-lines"><span>(destructor)</span></span></div><div><span class="t-lines"><span><span class="t-mark">(implicitly declared)</span></span></span></div></div>
+</td>
+<td>  trivial implicit destructor <br> <span class="t-mark">(public member function)</span>
+</td></tr>
+
+
+<tr id="//apple_ref/cpp/clm/operator%3D"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><a name="//apple_ref/cpp/clm/operator%3D"></a><a name="operator%3D"></a><div><span class="t-lines"><span>operator=</span></span></div><div><span class="t-lines"><span><span class="t-mark">(implicitly declared)</span></span></span></div></div>
+</td>
+<td>  trivial implicit copy/move assignment  <br> <span class="t-mark">(public member function)</span>
+</td></tr>
+
+</tbody></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;action=edit&amp;section=2" title="Edit section: Non-member functions">edit</a>]</span> <span class="mw-headline" id="Non-member_functions">Non-member functions</span></h3>
+<div class="t-member">
+<h2> <span class="mw-headline" id=""> </span></h2>
+<table class="t-dcl-begin"><tbody>
+
+<tr class="t-dcl">
+<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">&lt;</span><span class="br0">(</span>monostate, monostate<span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span> <span class="br0">}</span><br>
+<p><span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">&gt;</span><span class="br0">(</span>monostate, monostate<span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span> <span class="br0">}</span><br>
+<span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">&lt;=</span><span class="br0">(</span>monostate, monostate<span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span><br>
+<span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">&gt;=</span><span class="br0">(</span>monostate, monostate<span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span><br>
+<span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">(</span>monostate, monostate<span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span><br>
+</p>
+<span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy3">!</span><span class="sy1">=</span><span class="br0">(</span>monostate, monostate<span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span> <span class="br0">}</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td class="t-dcl-nopad">  </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>All instances of <code>std::monostate</code> compare equal.
+</p>
+</div>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;action=edit&amp;section=3" title="Edit section: Helper classes">edit</a>]</span> <span class="mw-headline" id="Helper_classes">Helper classes</span></h3>
+<div class="t-member">
+<h2> <span class="mw-headline" id="std::hash.3Cstd::monostate.3E"> std::hash<span style="font-size:0.7em; line-height:130%">&lt;std::monostate&gt;</span></span></h2>
+<table class="t-dcl-begin"><tbody>
+
+<tr class="t-dcl">
+<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span> <span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> <a href="../hash.html"><span class="kw1123">std::<span class="me2">hash</span></span></a><span class="sy1">&lt;</span>monostate<span class="sy1">&gt;</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td class="t-dcl-nopad">  </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>Specializes the <span class="t-lc"><a href="../hash.html" title="cpp/utility/hash">std::hash</a></span> algorithm for <code>std::monostate</code>.
+</p>
+</div>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div class="mw-geshi" dir="ltr" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;variant&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+&nbsp;
+<span class="kw1">struct</span> S
+<span class="br0">{</span>
+    S<span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span> <span class="sy4">:</span> i<span class="br0">(</span>i<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
+    <span class="kw4">int</span> i<span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+&nbsp;
+    <span class="co1">// Without the monostate type this declaration will fail.</span>
+    <span class="co1">// This is because S is not default-constructible.</span>
+&nbsp;
+    <a href="../variant.html"><span class="kw1085">std::<span class="me2">variant</span></span></a><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">monostate</span>, S<span class="sy1">&gt;</span> var<span class="sy4">;</span> 
+&nbsp;
+    <span class="co1">// var.index() is now 0 - the first element</span>
+    <span class="co1">// std::get&lt;S&gt; will throw! We need to assign a value</span>
+&nbsp;
+    var <span class="sy1">=</span> <span class="nu0">12</span><span class="sy4">;</span> 
+&nbsp;
+    <a href="../../io/cout.html"><span class="kw1757">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">get</span><span class="sy1">&lt;</span>S<span class="sy1">&gt;</span><span class="br0">(</span>var<span class="br0">)</span>.<span class="me1">i</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&#39;<span class="es1">\n</span>&#39;</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Output:
+</p>
+<div class="mw-geshi" dir="ltr" style="text-align: left;"><div class="text source-text"><pre class="de1">12</pre></div></div> 
+</div>
+<p><br>
+</p>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr id="//apple_ref/cpp/clm/%28constructor%29"></tr><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a name="//apple_ref/cpp/clm/%28constructor%29"></a><a name="%28constructor%29"></a><a href="./variant.html" title="cpp/utility/variant/variant"> <span class="t-lines"><span>(constructor)</span></span></a></div></div>
+</td>
+<td>  constructs the variant object <br> <span class="t-mark">(public member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a class="external text" href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/utility/variant/dsc_constructor&amp;action=edit" rel="nofollow">[edit]</a></span>
+</td></tr>
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 5274/1000000
+Preprocessor generated node count: 9269/1000000
+Post‐expand include size: 138687/2097152 bytes
+Template argument size: 27685/2097152 bytes
+Highest expansion depth: 19/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15619-0!*!0!!en!*!* and timestamp 20180329004356 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from &quot;<a href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;oldid=95560">http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;oldid=95560</a>&quot;                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div class="catlinks catlinks-allhidden" id="catlinks"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div class="noprint" id="cpp-footer-base">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a accesskey="r" href="http://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]">Recent changes</a></li><li id="n-FAQ"><a href="http://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="http://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a accesskey="j" href="http://en.cppreference.com/w/Special:WhatLinksHere/cpp/utility/variant/monostate" title="A list of all wiki pages that link here [j]">What links here</a></li><li id="t-recentchangeslinked"><a accesskey="k" href="http://en.cppreference.com/w/Special:RecentChangesLinked/cpp/utility/variant/monostate" title="Recent changes in pages linked from this page [k]">Related changes</a></li><li id="t-upload"><a accesskey="u" href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]">Upload file</a></li><li id="t-specialpages"><a accesskey="q" href="http://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]">Special pages</a></li><li id="t-print"><a accesskey="p" href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;printable=yes" rel="alternate" title="Printable version of this page [p]">Printable version</a></li><li id="t-permalink"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;oldid=95560" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.cppreference.com/mwiki/index.php?title=cpp/utility/variant/monostate&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>In other languages</li></ul></div>
+            <div><ul>
+<li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/utility/variant/monostate" hreflang="zh" lang="zh" title="cpp/utility/variant/monostate">&#x4E2D;&#x6587;</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 13 September 2017, at 04:23.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 15,401 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="http://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="http://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="http://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul class="noprint" id="footer-icons">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" src="../../../../mwiki/skins/common/images/poweredby_mediawiki_88x31.png" width="88"></a>                                            <a href="http://qbnz.com/highlighter/"><img alt="Powered by GeSHi" height="31" src="../../../../../upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" width="88"></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img alt="Hosted by Tiger Technologies" height="31" src="../../../../../upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" width="88"></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.041 secs. -->
+	
+<!-- Cached 20180329043720 -->
+
+</body><!-- Online page at http://en.cppreference.com/w/cpp/utility/variant/monostate --></html>

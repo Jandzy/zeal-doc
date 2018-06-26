@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"printError(String)","path":"printError(java.lang.String)","entryType":"Method"},{"name":"printNotice(String)","path":"printNotice(java.lang.String)","entryType":"Method"},{"name":"printWarning(String)","path":"printWarning(java.lang.String)","entryType":"Method"}]}

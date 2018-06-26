@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"CompilationUnit.ClassgenCallback()","path":"CompilationUnit.ClassgenCallback()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"call(ClassVisitor, ClassNode)","path":"call(org.objectweb.asm.ClassVisitor,%20org.codehaus.groovy.ast.ClassNode)","entryType":"Method"}]}

@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"TaskInstantiationException(String)","path":"TaskInstantiationException-java.lang.String-","entryType":"Constructor"},{"name":"TaskInstantiationException(String, Throwable)","path":"TaskInstantiationException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

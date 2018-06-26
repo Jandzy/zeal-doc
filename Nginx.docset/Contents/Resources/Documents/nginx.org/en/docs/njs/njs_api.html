@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Mirrored from nginx.org/en/docs/njs/njs_api.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jun 2018 16:34:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>njs API</title><style type="text/css">body { background: white; color: black; font-family: sans-serif; line-height: 1.4em; text-align: center; margin: 0; padding: 0; } #banner { background: black; color: #F2F2F2; line-height: 1.2em; padding: .3em 0; box-shadow: 0 5px 10px black; } #banner a { color: #00B140; } #main { text-align: left; margin: 0 auto; min-width: 32em; max-width: 64em; } #menu { float: right; width: 11em; padding: 0 .5em 1em .5em; border-left: 2px solid #DDD; } #content { margin-right: 13.5em; padding: 0 .2em 0 1.5em; } h1 { display: block; font-size: 3em; text-align: left; height: .7em; margin: 0; margin-bottom: .5em; } h1 img { width: 100%; } h2 { text-align: center; } p { text-align: justify; } table.news p { margin-top: 0; } table.news td { vertical-align: baseline; } table.news .date { text-align: right; padding-right: 0.5em; white-space: nowrap; } table.donors td { vertical-align: baseline; } table.donors li { text-align: left; } div.directive { background: #F2F2F2; line-height: 1em; margin: 1em 0 1em -1em; padding: .7em .7em .7em 1em; border-top: 2px solid #DDD; } div.directive th { padding-left: 0; padding-right: .5em; vertical-align: baseline; text-align: left; font-weight: normal; } div.directive td { vertical-align: baseline; } div.directive pre { padding: 0; margin: 0; } div.directive p { margin: .5em 0 0 .1em; font-size: .8em; } a.notrans { color: gray; text-decoration:none; } span.initial { font-size: 200%; float: left; padding-right: 10pt;} ul, ol { margin: .5em 0 1em 1em; padding: 0 .5em; } ol { list-style-position: inside; } li { text-align: justify; padding: .5em 0 0 1px; } .compact li { padding-top: 0; } dl { margin: .5em 0 1em 0; } dt { margin: .5em 0; } .compact dt { margin-bottom: .2em; } dd { margin-left: 1.5em; padding-left: 1px; text-align: justify; } td.list { background: #F2F2F2; } blockquote { margin: 1em 0 1em 1em; padding: .5em; } li blockquote, dd blockquote { margin: .7em 0; } blockquote.note { border: 1px dotted #999; line-height: 1.2em; text-align: justify; } blockquote.example { line-height: 1em; border-left: 1px solid #BBB; } blockquote.example pre { padding: 0; margin: 0; } sup { font-size: 50%; }#banner {display:none !important} #menu {display:none !important} #content { margin-right:0px !important; padding: 0 1em 0 1.4em !important;} h2 {margin-top:15px !important} #main {min-width:0 !important; max-width: none !important}</style><script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '../../../../www.googletagmanager.com/gtm5445.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TPSP33');
+    </script></head><body><div id="banner">
+        Learn how to configure caching, load balancing, cloud deployments, and other critical NGINX features.<br><a href="https://www.nginx.com/resources/library/complete-nginx-cookbook/?utm_source=nginxorg&amp;utm_medium=homepagebanner&amp;utm_campaign=complete_cookbook">Download the Complete NGINX Cookbook</a></div><div id="main"><div id="menu"><h1><a href="https://nginx.org/"><img src="../../../nginx.png" alt="nginx"></a></h1><div>english<br><a href="https://nginx.org/ru/docs/njs/njs_api.html">русский</a><br><br><a href="https://nginx.org/">news</a><br><a href="https://nginx.org/en/">about</a><br><a href="https://nginx.org/en/download.html">download</a><br><a href="https://nginx.org/en/security_advisories.html">security</a><br><a href="../index.html">documentation</a><br><a href="../faq.html">faq</a><br><a href="https://nginx.org/en/books.html">books</a><br><a href="https://nginx.org/en/support.html">support</a><br><br><a href="http://trac.nginx.org/nginx">trac</a><br><a href="http://twitter.com/nginxorg">twitter</a><br><a href="https://www.nginx.com/blog/">blog</a><br><br><a href="https://unit.nginx.org/">unit</a><br></div></div><div id="content"><h2>njs API</h2><table width="100%"><tr><td align="left"><a href="#core">Core</a><br>     <a href="#core_json">JSON</a><br>     <a href="#crypto">Crypto</a><br><a href="#http">HTTP</a><br>     <a href="#http_request">Request</a><br>     <a href="#http_response">Response</a><br>     <a href="#http_reply">Reply</a><br><a href="#stream">Stream</a><br>     <a href="#stream_session">Session</a><br><a href="#example">Examples</a><br>     <a href="#example_urldecode">URL Decoding</a><br>     <a href="#example_urlencode">URL Encoding</a><br>     <a href="#example_fast_response">Returning Fastest Response from Proxy</a><br>     <a href="#example_jwt">Creating HS JWT</a><br>     <a href="#example_subrequest">Accessing API from a Subrequest</a><br>     <a href="#example_secure_link">Creating secure_link Hash</a><br></td></tr></table><a name="summary"></a><p>
+<a href="../njs_about.html">njs</a> provides objects, methods and properties
+for extending nginx functionality.
+</p><a name="core"></a><center><h4>Core</h4></center><a name="core_json"></a><center><h4>JSON</h4></center><p>
+The <code>JSON</code> object (ES 5.1) provides functions
+to convert njs values to and from JSON format.
+</p> <dl class="compact">
+
+<dt><code>JSON.parse(<code><i>string</i></code>[,
+<code><i>reviver</i></code>])</code></dt>
+<dd>
+Converts a <code>string</code> that represents JSON data
+into an njs object (<code>{...}</code>) or
+array (<code>[...]</code>).
+The optional <code>reviver</code> parameter is a function (key, value)
+that will be called for each (key,value) pair and can transform the value.
+</dd>
+
+<dt><code>JSON.stringify(<code><i>value</i></code>[,
+<code><i>replacer</i></code>] [, <code><i>space</i></code>])</code></dt>
+<dd>
+Converts an njs object back to JSON.
+The obligatory <code>value</code> parameter is generally a JSON
+<code>object</code> or <code>array</code> that will be converted.
+If the value has a <code>toJSON()</code> method,
+it defines how the object will be serialized.
+The optional <code>replacer</code> parameter is
+a <code>function</code> or <code>array</code>
+that transforms results.
+The optional <code>space</code> parameter is
+a <code>string</code> or <code>number</code>.
+If it is a <code>number</code>,
+it indicates the number of white spaces placed before a result
+(no more than 10).
+If it is a <code>string</code>,
+it is used as a white space (or first 10 characters of it).
+If omitted or is <code>null</code>, no white space is used.
+</dd>
+</dl><p> 
+</p><p>
+</p> <blockquote class="example"><pre>
+&gt;&gt; var json = JSON.parse('{"a":1, "b":true}')
+&gt;&gt; json.a
+1
+
+&gt;&gt; JSON.stringify(json)
+{"a":1,"b":true}
+
+&gt;&gt; JSON.stringify(json, undefined, 1)
+{
+"a": 1,
+"b": true
+}
+
+&gt;&gt; JSON.stringify({ x: [10, undefined, function(){}] })
+{"x":[10,null,null]}
+
+&gt;&gt; JSON.stringify({"a":1, "toJSON": function() {return "xxx"}})
+"xxx"
+
+# Example with function replacer
+
+&gt;&gt; function replacer(key, value) {return (typeof value === 'string') ? undefined : value}
+&gt;&gt;JSON.stringify({a:1, b:"b", c:true}, replacer)
+{"a":1,"c":true}
+</pre></blockquote><p> 
+</p><a name="crypto"></a><center><h4>Crypto</h4></center><p>
+The Crypto module provides cryptographic functionality support.
+The Crypto module object is returned by <code>require('crypto')</code>.
+</p><p>
+</p> <dl class="compact">
+
+<dt><code>crypto.createHash(<code><i>algorithm</i></code>)</code></dt>
+<dd>
+Creates and returns a <a href="#crypto_hash">Hash</a> object
+that can be used to generate hash digests
+using the given <code><i>algorithm</i></code>.
+The algorighm can be
+<code>md5</code>,
+<code>sha1</code>, and
+<code>sha256</code>.
+</dd>
+
+<dt><code>crypto.createHmac(<code><i>algorithm</i></code>,
+<code><i>secret key</i></code>)</code></dt>
+<dd>
+Creates and returns an <a href="#crypto_hmac">HMAC</a> object
+that uses the given <code><i>algorithm</i></code> and <code><i>secret key</i></code>.
+The algorighm can be
+<code>md5</code>,
+<code>sha1</code>, and
+<code>sha256</code>.
+</dd>
+
+</dl><p> 
+</p><a name="crypto_hash"></a><center><h4>Hash</h4></center><p>
+</p> <dl class="compact">
+
+<dt><code>hash.update(<code><i>data</i></code>)</code></dt>
+<dd>
+Updates the hash content with the given <code><i>data</i></code>.
+</dd>
+
+<dt><code>hash.digest([<code><i>encoding</i></code>])</code></dt>
+<dd>
+Calculates the digest of all of the data passed using
+<code>hash.update()</code>.
+The encoding can be
+<code>hex</code>,
+<code>base64</code>, and
+<code>base64url</code>.
+If encoding is not provided, a byte string is returned.
+</dd>
+
+</dl><p> 
+</p><p>
+</p> <blockquote class="example"><pre>
+&gt;&gt; var cr = require('crypto')
+undefined
+
+&gt;&gt; cr.createHash('sha1').update('A').update('B').digest('base64url')
+BtlFlCqiamG-GMPiK_GbvKjdK10
+</pre></blockquote><p> 
+</p><a name="crypto_hmac"></a><center><h4>HMAC</h4></center><p>
+</p> <dl class="compact">
+
+<dt><code>hmac.update(<code><i>data</i></code>)</code></dt>
+<dd>
+Updates the HMAC content with the given <code><i>data</i></code>.
+</dd>
+
+<dt><code>hmac.digest([<code><i>encoding</i></code>])</code></dt>
+<dd>
+Calculates the HMAC digest of all of the data passed using
+<code>hmac.update()</code>.
+The encoding can be
+<code>hex</code>,
+<code>base64</code>, and
+<code>base64url</code>.
+If encoding is not provided, a byte string is returned.
+</dd>
+</dl><p> 
+</p><p>
+</p> <blockquote class="example"><pre>
+&gt;&gt; var cr = require('crypto')
+undefined
+
+&gt;&gt; cr.createHmac('sha1', 'secret.key').update('AB').digest('base64url')
+Oglm93xn23_MkiaEq_e9u8zk374
+</pre></blockquote><p> 
+</p><a name="http"></a><center><h4>HTTP</h4></center><p>
+The <code>HTTP</code> objects are available only in the
+<a href="../http/ngx_http_js_module.html">ngx_http_js_module</a> module.
+</p><a name="http_request"></a><center><h4>Request</h4></center><p>
+</p> <dl class="compact">
+
+<dt><code>req.uri</code></dt>
+<dd>
+current URI in a request, read-only
+</dd>
+
+<dt><code>req.method</code></dt>
+<dd>
+request method, read-only
+</dd>
+
+<dt><code>req.httpVersion</code></dt>
+<dd>
+HTTP version, read-only
+</dd>
+
+<dt><code>req.remoteAddress</code></dt>
+<dd>
+client address, read-only
+</dd>
+
+<dt><code>req.headers{}</code></dt>
+<dd>
+request headers object, read-only.
+<p>
+For example, the <code>Header-Name</code> header
+can be accessed with the syntax <code>headers['Header-Name']</code>
+or <code>headers.Header_name</code>
+</p>
+</dd>
+
+<dt><code>req.args{}</code></dt>
+<dd>
+request arguments object, read-only
+</dd>
+
+<dt><code>request.variables{}</code></dt>
+<dd>
+nginx variables object, read-only
+</dd>
+
+<dt><code>req.response</code></dt>
+<dd>
+the <a href="#http_response">response</a> object (0.2.0), read-only
+</dd>
+
+<dt><code>req.log(<code><i>string</i></code>)</code></dt>
+<dd>
+writes a <code>string</code> to the error log
+on the <code>info</code> level of logging
+</dd>
+
+<dt><code>req.warn(<code><i>string</i></code>)</code></dt>
+<dd>
+writes a <code>string</code> to the error log
+on the <code>warning</code> level of logging (0.2.0)
+</dd>
+
+<dt><code>req.error(<code><i>string</i></code>)</code></dt>
+<dd>
+writes a <code>string</code> to the error log
+on the <code>error</code> level of logging (0.2.0)
+</dd>
+
+<dt id="subrequest"><code>req.subrequest(<code><i>uri</i></code>[,
+<code><i>options</i></code>[, <code><i>callback</i></code>]])</code></dt>
+<dd>
+creates a subrequest with the given <code>uri</code> and
+<code>options</code>, and installs
+an optional completion <code>callback</code> (0.2.0).
+
+<p>
+If <code>options</code> is a string, then it
+holds the subrequest arguments string.
+Otherwise, <code>options</code> is expected to be
+an object with the following keys:
+
+</p> <dl class="compact">
+<dt><code>args</code></dt>
+<dd>
+arguments string
+</dd>
+
+<dt><code>body</code></dt>
+<dd>
+request body
+</dd>
+
+<dt><code>method</code></dt>
+<dd>
+HTTP method
+</dd>
+</dl><p> 
+</p>
+
+<p>
+The completion <code>callback</code>
+receives a <a href="#http_reply_object">reply</a> object.
+</p>
+</dd>
+
+</dl><p> 
+</p><a name="http_response"></a><center><h4>Response</h4></center><p>
+</p> <dl class="compact">
+
+<dt><code>res.status</code></dt>
+<dd>
+response status, writable
+</dd>
+
+<dt><code>res.headers{}</code></dt>
+<dd>
+response headers object
+</dd>
+
+<dt><code>res.contentType</code></dt>
+<dd>
+the response “Content-Type” header field value, writable
+</dd>
+
+<dt><code>res.contentLength</code></dt>
+<dd>
+the response “Content-Length” header field value, writable
+</dd>
+
+<dt><code>res.sendHeader()</code></dt>
+<dd>
+sends the HTTP header to the client
+</dd>
+
+<dt><code>res.send(<code><i>string</i></code>)</code></dt>
+<dd>
+sends a part of the response body to the client
+</dd>
+
+<dt><code>res.finish()</code></dt>
+<dd>
+finishes sending a response to the client
+</dd>
+
+<dt><code>res.return(status[, string])</code></dt>
+<dd>
+sends
+the entire response with the specified <code>status</code> to the client
+(0.2.0)
+<p>
+It is possible to specify either a redirect URL
+(for codes 301, 302, 303, 307, and 308)
+or the response body text (for other codes) as the second argument
+</p>
+</dd>
+
+</dl><p> 
+</p><a name="http_reply"></a><center><h4>Reply</h4></center><p>
+</p> <dl class="compact">
+
+<dt><code>reply.uri</code></dt>
+<dd>
+current URI in a reply, read-only
+</dd>
+
+<dt><code>reply.method</code></dt>
+<dd>
+reply method, read-only
+</dd>
+
+<dt><code>reply.status</code></dt>
+<dd>
+reply status, writable
+</dd>
+
+<dt><code>reply.contentType</code></dt>
+<dd>
+the response “Content-Type” header field value, writable
+</dd>
+
+<dt><code>reply.contentLength</code></dt>
+<dd>
+the response “Content-Length” header field value, writable
+</dd>
+
+<dt><code>reply.headers{}</code></dt>
+<dd>
+reply headers object, read-only
+</dd>
+
+</dl><p> 
+</p><p>
+Additionally, the <code>reply</code> object has
+the following properties:
+
+</p> <dl class="compact">
+
+<dt><code>reply.body</code></dt>
+<dd>
+holds the subrequest response body
+</dd>
+
+<dt><code>reply.parent</code></dt>
+<dd>
+references the parent request object
+</dd>
+
+</dl><p> 
+</p><a name="stream"></a><center><h4>Stream</h4></center><p>
+The <code>stream</code> objects are available only in the
+<a href="../stream/ngx_stream_js_module.html">ngx_stream_js_module</a>
+module.
+</p><a name="stream_session"></a><center><h4>Session</h4></center><p>
+</p> <dl class="compact">
+
+<dt><code>s.remoteAddress</code></dt>
+<dd>
+client address, read-only
+</dd>
+
+<dt><code>s.eof</code></dt>
+<dd>
+a boolean read-only property, true if the current buffer is the last buffer
+</dd>
+
+<dt><code>s.fromUpstream</code></dt>
+<dd>
+a boolean read-only property,
+true if the current buffer is from the upstream server to the client
+</dd>
+
+<dt><code>s.buffer</code></dt>
+<dd>
+the current buffer, writable
+</dd>
+
+<dt><code>s.variables{}</code></dt>
+<dd>
+nginx variables object, read-only
+</dd>
+
+<dt><code>s.OK</code></dt>
+<dd>
+the <code>OK</code> return code
+</dd>
+
+<dt><code>s.DECLINED</code></dt>
+<dd>
+the <code>DECLINED</code> return code
+</dd>
+
+<dt><code>s.AGAIN</code></dt>
+<dd>
+the <code>AGAIN</code> return code
+</dd>
+
+<dt><code>s.ERROR</code></dt>
+<dd>
+the <code>ERROR</code> return code
+</dd>
+
+<dt><code>s.ABORT</code></dt>
+<dd>
+the <code>ABORT</code> return code
+</dd>
+
+<dt><code>s.log(<code><i>string</i></code>)</code></dt>
+<dd>
+writes a sent <code><i>string</i></code> to the error log
+on the <code>info</code> level of logging
+</dd>
+
+<dt><code>s.warn(<code><i>string</i></code>)</code></dt>
+<dd>
+writes a sent <code>string</code> to the error log
+on the <code>warning</code> level of logging (0.2.0)
+</dd>
+
+<dt><code>s.error(<code><i>string</i></code>)</code></dt>
+<dd>
+writes a sent <code>string</code> to the error log
+on the <code>error</code> level of logging (0.2.0)
+</dd>
+
+</dl><p> 
+</p><a name="example"></a><center><h4>Examples</h4></center><a name="example_urldecode"></a><center><h4>URL Decoding</h4></center><p>
+</p> <blockquote class="example"><pre>
+js_include urldecode.js;
+
+js_set $decoded_foo decoded_foo;
+</pre></blockquote><p> 
+</p><p>
+The <code>urldecode.js</code> file:
+</p> <blockquote class="example"><pre>
+function decoded_foo(req, res) {
+    return decodeURIComponent(req.args.foo);
+}
+</pre></blockquote><p> 
+</p><a name="example_urlencode"></a><center><h4>URL Encoding</h4></center><p>
+</p> <blockquote class="example"><pre>
+js_include urlencode.js;
+
+js_set $encoded_foo encoded_foo;
+...
+
+location / {
+    proxy_pass http://example.com?foo=$encoded_foo;
+}
+</pre></blockquote><p> 
+</p><p>
+The <code>urlencode.js</code> file:
+</p> <blockquote class="example"><pre>
+function encoded_foo(req, res) {
+    return encodeURIComponent('foo &amp; bar?');
+}
+</pre></blockquote><p> 
+</p><a name="example_fast_response"></a><center><h4>Returning Fastest Response from Proxy</h4></center><p>
+</p> <blockquote class="example"><pre>
+js_include fastresponse.js;
+
+location /start {
+    js_content content;
+}
+
+location /foo {
+    proxy_pass http://backend1;
+}
+
+location /bar {
+    proxy_pass http://backend2;
+}
+</pre></blockquote><p> 
+</p><p>
+The <code>fastresponse.js</code> file:
+</p> <blockquote class="example"><pre>
+function content(req, res) {
+    var n = 0;
+
+    function done(reply) {
+        if (n++ == 0) {
+            res.return(reply.status, reply.body);
+        }
+    }
+
+    req.subrequest('/foo', req.variables.args, done);
+    req.subrequest('/bar', req.variables.args, done);
+}
+</pre></blockquote><p> 
+</p><a name="example_jwt"></a><center><h4>Creating HS JWT</h4></center><p>
+</p> <blockquote class="example"><pre>
+js_include hs_jwt.js;
+
+js_set $jwt jwt;
+</pre></blockquote><p> 
+</p><p>
+The <code>hs_jwt.js</code> file:
+</p> <blockquote class="example"><pre>
+function create_hs256_jwt(claims, key, valid) {
+    var header = { "typ" : "JWT", "alg" : "HS256", "exp" : Date.now() + valid };
+
+    var s = JSON.stringify(header).toBytes().toString('base64url') + '.'
+            + JSON.stringify(claims).toBytes().toString('base64url');
+
+    var h = require('crypto').createHmac('sha256', key);
+
+    return s + '.' + h.update(s).digest().toString('base64url');
+}
+
+function jwt(req, res) {
+    var claims = {
+        "iss" : "nginx",
+        "sub" : "alice",
+        "foo" : 123,
+        "bar" : "qq",
+        "zyx" : false
+    };
+
+    return create_hs256_jwt(claims, 'foo', 600);
+}
+</pre></blockquote><p> 
+</p><a name="example_subrequest"></a><center><h4>Accessing API from a Subrequest</h4></center><p>
+</p> <blockquote class="example"><pre>
+js_include subrequest.js;
+
+keyval_zone zone=foo:10m;
+...
+
+location /keyval {
+    js_content set_keyval;
+}
+
+location /version {
+    js_content version;
+}
+
+location /api {
+    api write=on;
+}
+</pre></blockquote><p> 
+</p><p>
+The <code>subrequest.js</code> file:
+</p> <blockquote class="example"><pre>
+function set_keyval(req, res) {
+    req.subrequest('/api/3/http/keyvals/foo',
+        { method: 'POST',
+          body: JSON.stringify({ foo: 789, bar: "ss dd 00" })},
+
+        function(reply) {
+            if (reply.status &gt;= 300) {
+                res.return(reply.status, reply.body);
+                return;
+            }
+            res.return(500);
+        });
+}
+function version(req, res) {
+    req.subrequest('/api/3/nginx', { method: 'GET' }, function(reply) {
+        if (reply.status != 200) {
+            res.return(reply.status);
+            return;
+        }
+
+        var json = JSON.parse(reply.body);
+        res.return(200, json.version);
+    });
+}
+</pre></blockquote><p> 
+</p><a name="example_secure_link"></a><center><h4>Creating secure_link Hash</h4></center><p>
+</p> <blockquote class="example"><pre>
+js_include hash.js;
+
+js_set $new_foo create_secure_link;
+...
+
+location / {
+    secure_link $cookie_foo;
+    secure_link_md5 "$uri mykey";
+    ...
+}
+
+location @login {
+    add_header Set-Cookie "foo=$new_foo; Max-Age=60";
+    return 302 /;
+}
+</pre></blockquote><p> 
+</p><p>
+The <code>hash.js</code> file:
+</p> <blockquote class="example"><pre>
+function create_secure_link(req, res) {
+    return require('crypto').createHash('md5')
+                            .update(req.uri).update(" mykey")
+                            .digest('base64url');
+}
+</pre></blockquote><p> 
+</p></div></div></body>
+<!-- Mirrored from nginx.org/en/docs/njs/njs_api.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jun 2018 16:34:25 GMT -->
+</html>

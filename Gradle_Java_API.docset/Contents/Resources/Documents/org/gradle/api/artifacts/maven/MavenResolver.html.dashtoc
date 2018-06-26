@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"beforeDeployment(Action)","path":"beforeDeployment-org.gradle.api.Action-","entryType":"Method"},{"name":"beforeDeployment(Closure)","path":"beforeDeployment-groovy.lang.Closure-","entryType":"Method"},{"name":"getSettings()","path":"getSettings--","entryType":"Method"}]}

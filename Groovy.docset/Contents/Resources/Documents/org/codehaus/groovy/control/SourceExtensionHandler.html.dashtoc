@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"SourceExtensionHandler()","path":"SourceExtensionHandler()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"getRegisteredExtensions(ClassLoader)","path":"getRegisteredExtensions(java.lang.ClassLoader)","entryType":"Method"}]}

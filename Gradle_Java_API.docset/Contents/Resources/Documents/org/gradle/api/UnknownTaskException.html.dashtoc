@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"UnknownTaskException(String)","path":"UnknownTaskException-java.lang.String-","entryType":"Constructor"},{"name":"UnknownTaskException(String, Throwable)","path":"UnknownTaskException-java.lang.String-java.lang.Throwable-","entryType":"Constructor"}]}

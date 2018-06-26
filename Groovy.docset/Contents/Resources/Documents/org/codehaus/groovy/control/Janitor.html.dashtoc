@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"Janitor()","path":"Janitor()","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"cleanup()","path":"cleanup()","entryType":"Method"},{"name":"register(HasCleanup)","path":"register(org.codehaus.groovy.control.HasCleanup)","entryType":"Method"}]}

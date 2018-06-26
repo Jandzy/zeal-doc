@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"get(KEY)","path":"get(KEY)","entryType":"Method"},{"name":"getSilent(KEY)","path":"getSilent(KEY)","entryType":"Method"},{"name":"put(KEY, VALUE)","path":"put(KEY,%20VALUE)","entryType":"Method"},{"name":"remove(KEY)","path":"remove(KEY)","entryType":"Method"},{"name":"size()","path":"size()","entryType":"Method"}]}

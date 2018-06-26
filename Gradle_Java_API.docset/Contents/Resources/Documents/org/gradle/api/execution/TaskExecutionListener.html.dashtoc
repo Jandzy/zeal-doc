@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"afterExecute(Task, TaskState)","path":"afterExecute-org.gradle.api.Task-org.gradle.api.tasks.TaskState-","entryType":"Method"},{"name":"beforeExecute(Task)","path":"beforeExecute-org.gradle.api.Task-","entryType":"Method"}]}

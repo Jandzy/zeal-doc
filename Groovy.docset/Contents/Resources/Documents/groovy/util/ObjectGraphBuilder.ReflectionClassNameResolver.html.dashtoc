@@ -1,0 +1,1 @@
+{"entries":[{"name":"Constructors","isHeader":true},{"name":"ObjectGraphBuilder.ReflectionClassNameResolver(String)","path":"ObjectGraphBuilder.ReflectionClassNameResolver(java.lang.String)","entryType":"Constructor"},{"name":"Methods","isHeader":true},{"name":"resolveClassname(String)","path":"resolveClassname(java.lang.String)","entryType":"Method"}]}

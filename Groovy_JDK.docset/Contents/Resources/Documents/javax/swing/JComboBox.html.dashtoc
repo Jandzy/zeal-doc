@@ -1,0 +1,1 @@
+{"entries":[{"name":"Methods","isHeader":true},{"name":"clear()","path":"clear()","entryType":"Method"},{"name":"getAt(int)","path":"getAt(int)","entryType":"Method"},{"name":"iterator()","path":"iterator()","entryType":"Method"},{"name":"leftShift(Object)","path":"leftShift(java.lang.Object)","entryType":"Method"},{"name":"size()","path":"size()","entryType":"Method"}]}
